@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Tail Key",
+    "type": "toggle",
+    "img": "images/keys/tail_key.png",
+    "codes": "tail_key"
+  },
+  {
+    "name": "Angler Key",
+    "type": "toggle",
+    "img": "images/keys/angler_key.png",
+    "codes": "angler_key"
+  },
+  {
+    "name": "Face Key",
+    "type": "toggle",
+    "img": "images/keys/face_key.png",
+    "codes": "face_key"
+  },
+  {
+    "name": "Bird Key",
+    "type": "toggle",
+    "img": "images/keys/bird_key.png",
+    "codes": "bird_key"
+  },
+  {
+    "name": "Slime Key",
+    "type": "toggle",
+    "img": "images/keys/slime_key.png",
+    "codes": "slime_key"
+  }
+]

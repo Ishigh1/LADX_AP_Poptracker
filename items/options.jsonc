@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Difficulty",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "name": "Normal Difficulty",
+        "img": "images/options/difficulty_normal.png",
+        "codes": "difficulty_normal",
+        "inherit_codes": false
+      },
+      {
+        "name": "Hard Difficulty",
+        "img": "images/options/difficulty_hard.png",
+        "codes": "difficulty_hard",
+        "inherit_codes": false
+      },
+      {
+        "name": "Glitched Difficulty",
+        "img": "images/options/difficulty_glitched.png",
+        "codes": "difficulty_glitched",
+        "inherit_codes": false
+      },
+      {
+        "name": "Hell Difficulty",
+        "img": "images/options/difficulty_hell.png",
+        "codes": "difficulty_hell",
+        "inherit_codes": false
+      }
+    ]
+  }
+]

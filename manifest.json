@@ -1,0 +1,17 @@
+{
+    "name": "Link's Awakening DX AP Randomizer",
+    "package_uid": "LADX-AP-rando-Ishigh",
+    "package_version": "0.1",
+    "platform": "GBC",
+    "variants": {
+        "base": {
+            "display_name": "Map Tracker",
+            "flags": [
+                "ap"
+            ]
+        }
+    },
+    "versions_url": "todo",
+    "min_poptracker_version": "0.25.5",
+    "target_poptracker_version": "0.25.5"
+}

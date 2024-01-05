@@ -1,0 +1,161 @@
+[
+    //Instruments
+    {
+        "name": "Full Moon Cello",
+        "type": "toggle",
+        "img": "images/dungeon/full_moon_cello.png",
+        "codes": "instrument1"
+    },
+    {
+        "name": "Conch Horn",
+        "type": "toggle",
+        "img": "images/dungeon/conch_horn.png",
+        "codes": "instrument2"
+    },
+    {
+        "name": "Sea Lily's Bell",
+        "type": "toggle",
+        "img": "images/dungeon/sea_lilys_bell.png",
+        "codes": "instrument3"
+    },
+    {
+        "name": "Surf Harp",
+        "type": "toggle",
+        "img": "images/dungeon/surf_harp.png",
+        "codes": "instrument4"
+    },
+    {
+        "name": "Wind Marimba",
+        "type": "toggle",
+        "img": "images/dungeon/wind_marimba.png",
+        "codes": "instrument5"
+    },
+    {
+        "name": "Coral Triangle",
+        "type": "toggle",
+        "img": "images/dungeon/coral_triangle.png",
+        "codes": "instrument6"
+    },
+    {
+        "name": "Organ of Evening Calm",
+        "type": "toggle",
+        "img": "images/dungeon/organ_of_evening_calm.png",
+        "codes": "instrument7"
+    },
+    {
+        "name": "Thunder Drum",
+        "type": "toggle",
+        "img": "images/dungeon/thunder_drum.png",
+        "codes": "instrument8"
+    },
+    //Small keys
+    {
+        "name": "Small Key (Tail Cave)",
+        "type": "consumable",
+        "img": "images/keys/small_key.png",
+        "codes": "small_key1"
+    },
+    {
+        "name": "Small Key (Bottle Grotto)",
+        "type": "consumable",
+        "img": "images/keys/small_key.png",
+        "codes": "small_key2"
+    },
+    {
+        "name": "Small Key (Key Cavern)",
+        "type": "consumable",
+        "img": "images/keys/small_key.png",
+        "codes": "small_key3"
+    },
+    {
+        "name": "Small Key (Angler's Tunnel)",
+        "type": "consumable",
+        "img": "images/keys/small_key.png",
+        "codes": "small_key4"
+    },
+    {
+        "name": "Small Key (Catfish's Maw)",
+        "type": "consumable",
+        "img": "images/keys/small_key.png",
+        "codes": "small_key5"
+    },
+    {
+        "name": "Small Key (Face Shrine)",
+        "type": "consumable",
+        "img": "images/keys/small_key.png",
+        "codes": "small_key6"
+    },
+    {
+        "name": "Small Key (Eagle's Tower)",
+        "type": "consumable",
+        "img": "images/keys/small_key.png",
+        "codes": "small_key7"
+    },
+    {
+        "name": "Small Key (Turtle Rock)",
+        "type": "consumable",
+        "img": "images/keys/small_key.png",
+        "codes": "small_key8"
+    },
+    {
+        "name": "Small Key (Color Dungeon)",
+        "type": "consumable",
+        "img": "images/keys/small_key.png",
+        "codes": "small_key9"
+    },
+    //Nightmare keys
+    {
+        "name": "Nightmare Key (Tail Cave)",
+        "type": "toggle",
+        "img": "images/keys/nightmare_key.png",
+        "codes": "nightmare_key1"
+    },
+    {
+        "name": "Nightmare Key (Bottle Grotto)",
+        "type": "toggle",
+        "img": "images/keys/nightmare_key.png",
+        "codes": "nightmare_key2"
+    },
+    {
+        "name": "Nightmare Key (Key Cavern)",
+        "type": "toggle",
+        "img": "images/keys/nightmare_key.png",
+        "codes": "nightmare_key3"
+    },
+    {
+        "name": "Nightmare Key (Angler's Tunnel)",
+        "type": "toggle",
+        "img": "images/keys/nightmare_key.png",
+        "codes": "nightmare_key4"
+    },
+    {
+        "name": "Nightmare Key (Catfish's Maw)",
+        "type": "toggle",
+        "img": "images/keys/nightmare_key.png",
+        "codes": "nightmare_key5"
+    },
+    {
+        "name": "Nightmare Key (Face Shrine)",
+        "type": "toggle",
+        "img": "images/keys/nightmare_key.png",
+        "codes": "nightmare_key6"
+    },
+    {
+        "name": "Nightmare Key (Eagle's Tower)",
+        "type": "toggle",
+        "img": "images/keys/nightmare_key.png",
+        "codes": "nightmare_key7"
+    },
+    {
+        "name": "Nightmare Key (Turtle Rock)",
+        "type": "toggle",
+        "img": "images/keys/nightmare_key.png",
+        "codes": "nightmare_key8"
+    },
+    {
+        "name": "Nightmare Key (Color Dungeon)",
+        "type": "toggle",
+        "img": "images/keys/nightmare_key.png",
+        "codes": "nightmare_key9"
+    }
+]

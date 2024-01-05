@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Rupees",
+        "type": "consumable",
+        "img": "images/currency/rupee.png",
+        "codes": "rupee",
+        "max_quantity": 999,
+        "increment": 10,
+        "decrement": 10
+    },
+    {
+        "name": "Seashells",
+        "type": "consumable",
+        "img": "images/currency/seashell.png",
+        "codes": "seashell"
+    },
+    {
+        "name": "Golden Leaves",
+        "type": "consumable",
+        "img": "images/currency/leaf.png",
+        "codes": "leaf"
+    }
+]

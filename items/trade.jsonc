@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Yoshi Doll",
+    "type": "toggle",
+    "img": "images/trade/yoshi_doll.png",
+    "codes": "trade_yoshi_doll"
+  },
+  {
+    "name": "Ribbon",
+    "type": "toggle",
+    "img": "images/trade/ribbon.png",
+    "codes": "trade_ribbon"
+  },
+  {
+    "name": "Dog Food",
+    "type": "toggle",
+    "img": "images/trade/dog_food.png",
+    "codes": "trade_dog_food"
+  },
+  {
+    "name": "Bananas",
+    "type": "toggle",
+    "img": "images/trade/bananas.png",
+    "codes": "trade_bananas"
+  },
+  {
+    "name": "Stick",
+    "type": "toggle",
+    "img": "images/trade/stick.png",
+    "codes": "trade_stick"
+  },
+  {
+    "name": "Honeycomb",
+    "type": "toggle",
+    "img": "images/trade/honeycomb.png",
+    "codes": "trade_honeycomb"
+  },
+  {
+    "name": "Pineapple",
+    "type": "toggle",
+    "img": "images/trade/pineapple.png",
+    "codes": "trade_pineapple"
+  },
+  {
+    "name": "Hibiscus",
+    "type": "toggle",
+    "img": "images/trade/hibiscus.png",
+    "codes": "trade_hibiscus"
+  },
+  {
+    "name": "Letter",
+    "type": "toggle",
+    "img": "images/trade/letter.png",
+    "codes": "trade_letter"
+  },
+  {
+    "name": "Broom",
+    "type": "toggle",
+    "img": "images/trade/broom.png",
+    "codes": "trade_broom"
+  },
+  {
+    "name": "Fishing Hook",
+    "type": "toggle",
+    "img": "images/trade/fishing_hook.png",
+    "codes": "trade_fishing_hook"
+  },
+  {
+    "name": "Necklace",
+    "type": "toggle",
+    "img": "images/trade/necklace.png",
+    "codes": "trade_necklace"
+  },
+  {
+    "name": "Scale",
+    "type": "toggle",
+    "img": "images/trade/scale.png",
+    "codes": "trade_scale"
+  }
+]

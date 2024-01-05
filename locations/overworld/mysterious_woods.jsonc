@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Mysterious Woods South",
+    "access_rules": [
+      "$bush, ^$can_access|@Mabe Village",
+      "^$can_access|@Mysterious Woods North"
+    ],
+    "children": [
+      {
+        "name": "Two Zol, Moblin Chest",
+        "access_rules": [
+          "bracelet1"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 233,
+            "y": 991
+          }
+        ]
+      },
+    ]
+  },
+  {
+    "name": "Mysterious Woods North",
+    "access_rules": [
+      "powder, ^$can_access|@Mysterious Woods South",
+      "$jump, ^$can_access|@Mysterious Woods South",
+      "$jump, ^$can_access|@Toadstool",
+      "^$can_access|@Goponga Swamp"
+    ],
+    "children": [
+      {
+        "name": "Tail Key Chest",
+        "access_rules": [
+          "$bush"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 233,
+            "y": 572
+          }
+        ]
+      },
+    ]
+  },
+  {
+    "name": "Mad Batter (Mysterious Woods)",
+    "access_rules": [
+      "powder, ^$can_access|@Mysterious Woods South"
+    ],
+    "sections": [
+      {
+        "item_count": 1,
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 442,
+        "y": 685
+      }
+    ]
+  },
+  {
+    "name": "Toadstool",
+    "access_rules": [
+      "^$can_access|@Forest Cave",
+      "$jump, ^$can_access|@Mysterious Woods North"
+    ],
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 40,
+        "y": 701
+      }
+    ]
+  },
+  {
+    "name": "Forest Cave",
+    "access_rules": [
+      "^$can_access|@Toadstool",
+      "^$can_access|@Mysterious Woods South"
+    ],
+    "sections": [
+      {
+        "name": "Cave Crystal Chest",
+        "item_count": 1,
+        "access_rules": [
+          "sword1"
+        ]
+      },
+      {
+        "name": "Cave Skull Heart Piece",
+        "item_count": 1,
+        "access_rules": [
+          "bracelet1"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 136,
+        "y": 677
+      },
+      {
+        "map": "overworld",
+        "x": 442,
+        "y": 822
+      }
+    ]
+  },
+  {
+    "name": "Hookshot Cave Entrance",
+    "access_rules": [
+      "bracelet1, ^$can_access|@Mysterious Woods South"
+    ]
+  },
+  {
+    "name": "Hookshot Cave",
+    "access_rules": [
+      "rooster, ^$can_access|@Hookshot Cave Entrance",
+      "hookshot, ^$can_access|@Hookshot Cave Entrance"
+    ],
+    "sections": [
+      {
+        "item_count": 1,
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 378,
+        "y": 564
+      }
+    ]
+  }
+]

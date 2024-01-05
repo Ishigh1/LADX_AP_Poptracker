@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Toronbo Shores",
+    "access_rules": [
+      "shield1",
+      "$bush",
+      "$attack_hookshot",
+      "bracelet1, ^$can_access|@Martha's Bay Outside Ghost House"
+    ],
+    "children": [
+      {
+        "name": "Banana Sale",
+        "access_rules": [
+          "trade_dog_food"
+        ],
+        "sections": [
+          {
+            "name": "Trade Food for Banana",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 555,
+            "y": 1846
+          }
+        ]
+      },
+      {
+        "name": "Boomerang Guy Item",
+        "access_rules": [
+          "bomb"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 668,
+            "y": 1959
+          }
+        ]
+      },
+      {
+        "name": "Sword on the Beach",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 410,
+            "y": 2023
+          }
+        ]
+      },
+      {
+        "name": "West of Ghost House Chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x":925,
+            "y":1846
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Outside D1 Tree Bonk",
+    "access_rules": [
+      "boots"
+    ],
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 386,
+        "y": 1757
+      }
+    ]
+  }
+]

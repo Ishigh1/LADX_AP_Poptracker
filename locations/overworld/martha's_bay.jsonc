@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Martha's Bay Outside Ghost House",
+    "access_rules": [
+      "bracelet1, ^$can_access|@Toronbo Shores"
+    ],
+    "children": [
+    ]
+  },
+  {
+    "name": "Martha's Bay Left",
+    "access_rules": [
+      "^$can_access|@Ukuku Prairie",
+      "feather, boots, ^$can_access|@Martha's Bay Outside Ghost House",
+      "feather, ^$difficulty|glitched, ^$can_access|@Martha's Bay Outside Ghost House",
+      "rooster, ^$can_access|@Martha's Bay Outside Ghost House",
+      "$or2|feather|rooster, $bush, ^can_access|$Mad Batter Connector (Martha's Bay)"
+    ],
+    "children": [
+      {
+        "name": "Lone Bush",
+        "access_rules": [
+          "$bush"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1489,
+            "y": 1910
+          }
+        ]
+      },
+      {
+        "name": "Island Bush of Destiny",
+        "access_rules": [
+          "flippers, $bush",
+          "rooster, $bush",
+          "feather, $bush, ^$difficulty|glitched",
+          "boots, $bush, ^$difficulty|hell"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1360,
+            "y": 2007
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ghost House Barrel",
+    "access_rules": [
+      "bracelet1, ^$can_access|@Martha's Bay Outside Ghost House"
+    ],
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 1054,
+        "y": 1991
+      }
+    ]
+  },
+  {
+    "name": "Mad Batter Connector (Martha's Bay)",
+    "children": [
+      {
+        "name": "Top Left",
+        "access_rules": ["^$can_access|@Outside Mad Batter (Martha's Bay)",
+        "flippers, ^$can_access|@Mad Batter Connector (Martha's Bay)/Bottom Right"],
+      },
+      {
+        "name": "Bottom Right",
+        "access_rules": ["^$can_access|@Martha's Bay Left, $or2|feather|rooster, $or3|sword|rod|boomerang",
+          "flippers, ^$can_access|@Mad Batter Connector (Martha's Bay)/Top Left"],
+      }
+    ]
+  },
+  {
+    "name": "Outside Mad Batter (Martha's Bay)",
+    "access_rules": ["^$can_access|@Mad Batter Connector (Martha's Bay)/Top Left"],
+  },
+  {
+    "name": "Mad Batter (Martha's Bay)",
+    "access_rules": ["powder, ^$can_access|@Outside Mad Batter (Martha's Bay)"],
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 1038,
+        "y": 1862
+      }
+    ]
+  }
+]

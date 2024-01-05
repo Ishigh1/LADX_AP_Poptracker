@@ -1,0 +1,345 @@
+[
+  {
+    "name": "Bottle Grotto",
+    "access_rules": [
+      "^$can_access|@Goponga Swamp"
+    ],
+    "children": [
+      {
+        "name": "Entrance Chest",
+        "access_rules": [
+          "bracelet1"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon2",
+            "x": 185,
+            "y": 814
+          }
+        ]
+      },
+      {
+        "name": "Dead Ends",
+        "access_rules": [
+          "[small_key2:5], small_key2:1"
+        ],
+        "children": [
+          {
+            "name": "Hardhat Beetle Pit Chest",
+            "access_rules": [
+              "$attack_hookshot_powder, feather",
+              "$attack_hookshot_powder, hookshot"
+            ],
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "dungeon2",
+                "x": 72,
+                "y": 556
+              }
+            ]
+          },
+          {
+            "name": "Mask-Mimic Chest",
+            "access_rules": [
+              "$rear_attack",
+              "$rear_attack_range"
+            ],
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "dungeon2",
+                "x": 458,
+                "y": 814
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Post Torches",
+        "access_rules": [
+          "$fire"
+        ],
+        "children": [
+          {
+            "name": "Two Stalfos Key",
+            "access_rules": [
+              "$attack_skeleton"
+            ],
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "dungeon2",
+                "x": 362,
+                "y": 701
+              }
+            ]
+          },
+          {
+            "name": "Mask-Mimic Key",
+            "access_rules": [
+              "$rear_attack",
+              "$rear_attack_range, ^$can_access|@Bottle Grotto/Post Torches/Post Switch/Post Holes]"
+            ],
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "dungeon2",
+                "x": 684,
+                "y": 701
+              }
+            ]
+          },
+          {
+            "name": "Post Switch",
+            "access_rules": [
+              "$attack_hookshot"
+            ],
+            "children": [
+              {
+                "name": "First Switch Locked Chest",
+                "sections": [
+                  {
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "dungeon2",
+                    "x": 539,
+                    "y": 846
+                  }
+                ]
+              },
+              {
+                "name": "Post Holes",
+                "access_rules": [
+                  "feather",
+                  "boots, ^$difficulty|hell",
+                  "hookshot, ^$difficulty|hell"
+                ],
+                "children": [
+                  {
+                    "name": "Button Spawn Chest",
+                    "sections": [
+                      {
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "dungeon2",
+                        "x": 780,
+                        "y": 814
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Post First Key",
+                    "access_rules": [
+                      "small_key2, [small_key2:3]"
+                    ],
+                    "children": [
+                      {
+                        "name": "Post Miniboss",
+                        "access_rules": [
+                          "$attack_hookshot, feather",
+                          "$attack_hookshot, boots, ^$difficulty|hell"
+                        ],
+                        "children": [
+                          {
+                            "name": "Vacuum Mouth Chest",
+                            "sections": [
+                              {
+                                "item_count": 1
+                              }
+                            ],
+                            "map_locations": [
+                              {
+                                "map": "dungeon2",
+                                "x": 201,
+                                "y": 169
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Outside Boo Buddies Room Chest",
+                            "sections": [
+                              {
+                                "item_count": 1
+                              }
+                            ],
+                            "map_locations": [
+                              {
+                                "map": "dungeon2",
+                                "x": 281,
+                                "y": 40
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Boo Buddies Room Chest",
+                            "access_rules": [
+                              "sword1, ^$difficulty|glitched, small_key2:2, [small_key2:5]",
+                              "$fire, small_key2:2, [small_key2:5]",
+                              "bow, small_key2:2, [small_key2:5]"
+                            ],
+                            "sections": [
+                              {
+                                "item_count": 1
+                              }
+                            ],
+                            "map_locations": [
+                              {
+                                "map": "dungeon2",
+                                "x": 136,
+                                "y": 40
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Switch Corridor",
+                            "access_rules": [
+                              "bracelet1",
+                              "feather, ^$difficulty|glitched"
+                            ],
+                            "children": [
+                              {
+                                "name": "Second Switch Locked Chest",
+                                "sections": [
+                                  {
+                                    "item_count": 1
+                                  }
+                                ],
+                                "map_locations": [
+                                  {
+                                    "map": "dungeon2",
+                                    "x": 442,
+                                    "y": 40
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Enemy Order Room Chest",
+                                "access_rules": [
+                                  "bracelet1, $attack_hookshot_powder",
+                                  "$attack_pols_voice, $attack_hookshot_powder"
+                                ],
+                                "sections": [
+                                  {
+                                    "name": "Pols Voice, Keese then Stalfos",
+                                    "item_count": 1
+                                  }
+                                ],
+                                "map_locations": [
+                                  {
+                                    "map": "dungeon2",
+                                    "x": 780,
+                                    "y": 169
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Pre Stairs",
+                                "access_rules": [
+                                  "bracelet1, small_key2:2, [small_key2:5]",
+                                  "hookshot, $attack_pols_voice, small_key2:2, [small_key2:5], ^$difficulty|hell"
+                                ],
+                                "children": [
+                                  {
+                                    "name": "Post Stairs",
+                                    "access_rules": [
+                                      "bracelet1",
+                                      "bomb, ^$difficulty|hell",
+                                      "boots, feather, ^$difficulty|hell"
+                                    ],
+                                    "children": [
+                                      {
+                                        "name": "Boss Access",
+                                        "access_rules": [
+                                          "nightmare_key2, feather",
+                                          "nightmare_key2, boots, hookshot, ^$difficulty|hell"
+                                        ],
+                                        "children": [
+                                          {
+                                            "name": "Boss Killed",
+                                            "access_rules": [
+                                              "sword, bracelet1",
+                                              "rod, bracelet1"
+                                            ],
+                                            "children": [
+                                              {
+                                                "name": "Genie Heart Container",
+                                                "sections": [
+                                                  {
+                                                    "item_count": 1
+                                                  }
+                                                ],
+                                                "map_locations": [
+                                                  {
+                                                    "map": "dungeon2",
+                                                    "x": 885,
+                                                    "y": 314
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "name": "Conch Horn",
+                                                "sections": [
+                                                  {
+                                                    "item_count": 1
+                                                  }
+                                                ],
+                                                "map_locations": [
+                                                  {
+                                                    "map": "dungeon2",
+                                                    "x": 724,
+                                                    "y": 298
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

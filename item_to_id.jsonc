@@ -1,0 +1,85 @@
+{
+    "Progressive Power Bracelet": 10000000,
+    "Progressive Shield": 10000001,
+    "Bow": 10000002,
+    "Hookshot": 10000003,
+    "Magic Rod": 10000004,
+    "Pegasus Boots": 10000005,
+    "Ocarina": 10000006,
+    "Feather": 10000007,
+    "Shovel": 10000008,
+    "Magic Powder": 10000009,
+    "Bomb": 10000010,
+    "Progressive Sword": 10000011,
+    "Flippers": 10000012,
+
+    //Dungeon keys
+    "Tail Key": 10000017,
+    "Angler Key": 10000018,
+    "Face Key": 10000019,
+    "Bird Key": 10000020,
+    "Slime Key": 10000015,
+
+    "20 Rupees": 10000028,
+    "50 Rupees": 10000027,
+    "100 Rupees": 10000029,
+    "200 Rupees": 10000030,
+    "500 Rupees": 10000031,
+    "Seashell": 10000032,
+    "Gold Leaf": 10000021,
+
+    "Boomerang": 10000014,
+    "BowWow": 10000129,
+    "Rooster": 10000150,
+    "Toadstool": 10000080,
+
+    //ocarina
+    "Ballad of the Wind Fish": 10000139,
+    "Frog's Song of Soul": 10000141,
+
+    //dungeon rewards
+    "Full Moon Cello": 10000142,
+    "Conch Horn": 10000143,
+    "Sea Lily's Bell": 10000144,
+    "Surf Harp": 10000145,
+    "Wind Marimba": 10000146,
+    "Coral Triangle": 10000147,
+    "Organ of Evening Calm": 10000148,
+    "Thunder Drum": 10000149,
+
+    //small keys
+    "Small Key (Tail Cave)": 10000035,
+    "Small Key (Bottle Grotto)": 10000036,
+    "Small Key (Key Cavern)": 10000037,
+    "Small Key (Angler's Tunnel)": 10000038,
+    "Small Key (Catfish's Maw)": 10000039,
+    "Small Key (Face Shrine)": 10000040,
+    "Small Key (Eagle's Tower)": 10000041,
+    "Small Key (Turtle Rock)": 10000042,
+    "Small Key (Color Dungeon)": 10000043,
+    
+    //nightmare keys
+    "Nightmare Key (Tail Cave)": 10000071,
+    "Nightmare Key (Bottle Grotto)": 10000072,
+    "Nightmare Key (Key Cavern)": 10000073,
+    "Nightmare Key (Angler's Tunnel)": 10000074,
+    "Nightmare Key (Catfish's Maw)": 10000075,
+    "Nightmare Key (Face Shrine)": 10000076,
+    "Nightmare Key (Eagle's Tower)": 10000077,
+    "Nightmare Key (Turtle Rock)": 10000078,
+    "Nightmare Key (Color Dungeon)": 10000079,
+
+    "Yoshi Doll": 10000151,
+    "Ribbon": 10000152,
+    "Dog Food": 10000153,
+    "Bananas": 10000154,
+    "Stick": 10000155,
+    "Honeycomb": 10000156,
+    "Pineapple": 10000157,
+    "Hibiscus": 10000158,
+    "Letter": 10000159,
+    "Broom": 10000160,
+    "Fishing Hook": 10000161,
+    "Necklace": 10000162,
+    "Scale": 10000163
+}

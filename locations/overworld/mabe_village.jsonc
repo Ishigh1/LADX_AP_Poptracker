@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Mabe Village",
+    "children": [
+      {
+        "name": "Fishing Game Heart Piece",
+        "access_rules": [
+          "[rupee:20],$bush"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 265,
+            "y": 1104
+          }
+        ]
+      },
+      {
+        "name": "Bush Field",
+        "access_rules": [
+          "$bush"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 571,
+            "y": 1346
+          }
+        ]
+      },
+      {
+        "name": "Ballad of the Wind Fish",
+        "access_rules": [
+          "ocarina"
+        ],
+        "sections": [
+          {
+            "name": "Talk to Marin while having the ocarina",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 362,
+            "y": 1233
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Well Heart Piece",
+    "access_rules": [
+      "$bush"
+    ],
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 88,
+        "y": 1378
+      }
+    ]
+  },
+  {
+    "name": "Rooster",
+    "access_rules": [
+      "ocarina,song3"
+    ],
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 410,
+        "y": 1233
+      }
+    ]
+  },
+  {
+    "name": "Papahl's Wife",
+    "access_rules": [
+      "trade_yoshi_doll"
+    ],
+    "sections": [
+      {
+        "name": "Yoshi Trade",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 426,
+        "y": 1088
+      }
+    ]
+  },
+  {
+    "name": "Trendy Game",
+    "access_rules": [
+      "$bush"
+    ],
+    "sections": [
+      {
+        "item_count": 1
+      },
+      {
+        "name": "region",
+        "visibility_rules": [
+          "false"
+        ]
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 570,
+        "y": 1473
+      }
+    ]
+  },
+  {
+    "name": "Shop",
+    "sections": [
+      {
+        "name": "Shop 200 Item",
+        "access_rules": [
+          "[false],$rupee_farm_ool",
+          "rupee:500,$rupee_farm"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Shop 980 Item",
+        "access_rules": [
+          "[false],$rupee_farm_ool",
+          "rupee:1480,$rupee_farm",
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 554,
+        "y": 1231
+      }
+    ]
+  },
+  {
+    "name": "Tarin's Gift",
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 410,
+        "y": 1354
+      }
+    ]
+  },
+  {
+    "name": "Dream Hut",
+    "access_rules": [
+      "bracelet1"
+    ],
+    "sections": [
+      {
+        "name": "Dream Hut East",
+        "item_count": 1,
+        "access_rules": [
+          "sword1",
+          "boomerang",
+          "hookshot",
+          "feather"
+        ],
+      },
+      {
+        "name": "Dream Hut West",
+        "item_count": 1,
+        "access_rules": [
+          "sword1,boots",
+          "boomerang,boots",
+          "hookshot,boots",
+          "feather,boots"
+        ],
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 523,
+        "y": 1088
+      }
+    ]
+  },
+  {
+    "name": "Kennel",
+    "sections": [
+      {
+        "name": "Dog House Dig",
+        "item_count": 1,
+        "access_rules": [
+          "shovel"
+        ],
+      },
+      {
+        "name": "YipYip",
+        "item_count": 1,
+        "access_rules": [
+          "trade_ribbon"
+        ],
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 249,
+        "y": 1346
+      }
+    ]
+  }
+]

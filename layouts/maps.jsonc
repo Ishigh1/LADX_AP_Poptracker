@@ -1,0 +1,34 @@
+{
+  "maps": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Overworld",
+        "content": {
+          "type": "map",
+          "maps": [
+            "overworld"
+          ]
+        }
+      },
+      {
+        "title": "Tail Cave (D1)",
+        "content": {
+          "type": "map",
+          "maps": [
+            "dungeon1"
+          ]
+        }
+      },
+      {
+        "title": "Bottle Grotto (D2)",
+        "content": {
+          "type": "map",
+          "maps": [
+            "dungeon2"
+          ]
+        }
+      }
+    ]
+  }
+}

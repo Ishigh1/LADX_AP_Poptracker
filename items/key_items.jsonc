@@ -1,0 +1,143 @@
+[
+    //Inventory
+    {
+        "name": "Bracelet",
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/key_items/bracelet.png",
+                "codes": "bracelet1"
+            },
+            {
+                "img": "images/key_items/bracelet_2.png",
+                "codes": "bracelet2"
+            }
+        ]
+    },
+    {
+        "name": "Shield",
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/key_items/shield.png",
+                "codes": "shield1"
+            },
+            {
+                "img": "images/key_items/shield_2.png",
+                "codes": "shield2"
+            }
+        ]
+    },
+    {
+        "name": "Bow",
+        "type": "toggle",
+        "img": "images/key_items/bow.png",
+        "codes": "bow"
+    },
+    {
+        "name": "Hookshot",
+        "type": "toggle",
+        "img": "images/key_items/hookshot.png",
+        "codes": "hookshot"
+    },
+    {
+        "name": "Magic Rod",
+        "type": "toggle",
+        "img": "images/key_items/rod.png",
+        "codes": "rod"
+    },
+    {
+        "name": "Pegasus Boots",
+        "type": "toggle",
+        "img": "images/key_items/boots.png",
+        "codes": "boots"
+    },
+    {
+        "name": "Feather",
+        "type": "toggle",
+        "img": "images/key_items/feather.png",
+        "codes": "feather"
+    },
+    {
+        "name": "Shovel",
+        "type": "toggle",
+        "img": "images/key_items/shovel.png",
+        "codes": "shovel"
+    },
+    {
+        "name": "Magic Powder",
+        "type": "toggle",
+        "img": "images/key_items/powder.png",
+        "codes": "powder"
+    },
+    {
+        "name": "Bomb",
+        "type": "toggle",
+        "img": "images/key_items/bomb.png",
+        "codes": "bomb"
+    },
+    {
+        "name": "Progressive Sword",
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/key_items/sword.png",
+                "codes": "sword1"
+            },
+            {
+                "img": "images/key_items/sword_2.png",
+                "codes": "sword2"
+            }
+        ]
+    },
+    {
+        "name": "Boomerang",
+        "type": "toggle",
+        "img": "images/key_items/boomerang.png",
+        "codes": "boomerang"
+    },
+    {
+        "name": "Toadstool",
+        "type": "toggle",
+        "img": "images/key_items/toadstool.png",
+        "codes": "toadstool"
+    },
+    {
+        "name": "Rooster",
+        "type": "toggle",
+        "img": "images/key_items/rooster.png",
+        "codes": "rooster"
+    },
+    {
+        "name": "Ocarina",
+        "type": "toggle",
+        "img": "images/key_items/ocarina.png",
+        "codes": "ocarina"
+    },
+    //Songs
+    {
+        "name": "Ballad of the Wind Fish",
+        "type": "toggle",
+        "img": "images/key_items/marin.png",
+        "codes": "song1"
+    },
+    {
+        "name": "Frog's Song of Soul",
+        "type": "toggle",
+        "img": "images/key_items/frog.png",
+        "codes": "song3"
+    },
+    //Passives
+    {
+        "name": "Flippers",
+        "type": "toggle",
+        "img": "images/key_items/flippers.png",
+        "codes": "flippers"
+    },
+    {
+        "name": "BowWow",
+        "type": "toggle",
+        "img": "images/key_items/bowwow.png",
+        "codes": "bowWow"
+    }
+]

@@ -1,0 +1,25 @@
+[
+  //Big overworld
+  {
+    "name": "overworld",
+    "location_size": 30,
+    "location_border_thickness": 5,
+    "img": "images/map/overworld/overworld.png"
+  },
+
+  //Overworld parts
+
+  //Dungeon
+  {
+    "name": "dungeon1",
+    "location_size": 14,
+    "location_border_thickness": 2,
+    "img": "images/map/dungeons/dungeon1.png"
+  },
+  {
+    "name": "dungeon2",
+    "location_size": 14,
+    "location_border_thickness": 2,
+    "img": "images/map/dungeons/dungeon2.png"
+  }
+]

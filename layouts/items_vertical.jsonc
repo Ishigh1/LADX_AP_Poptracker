@@ -1,0 +1,113 @@
+{
+  "shared_item_grid_vertical": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "center",
+        "rows": [
+          [
+            "sword1",
+            "shield1",
+            "bracelet1",
+            "toadstool",
+            "powder",
+            "bow",
+            "bomb",
+            "feather",
+            "ocarina",
+            "song1",
+            "song3"
+          ],
+          [
+            "boots",
+            "hookshot",
+            "rod",
+            "shovel",
+            "boomerang",
+            "rooster",
+            "flippers",
+            "bowWow",
+            "rupee",
+            "seashell",
+            "leaf"
+          ],
+          [
+            "tail_key",
+            "angler_key",
+            "face_key",
+            "bird_key",
+            "slime_key"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "instrument1",
+            "instrument2",
+            "instrument3",
+            "instrument4",
+            "instrument5",
+            "instrument6",
+            "instrument7",
+            "instrument8"
+          ],
+          [
+            "small_key1",
+            "small_key2",
+            "small_key3",
+            "small_key4",
+            "small_key5",
+            "small_key6",
+            "small_key7",
+            "small_key8",
+            "small_key9"
+          ],
+          [
+            "nightmare_key1",
+            "nightmare_key2",
+            "nightmare_key3",
+            "nightmare_key4",
+            "nightmare_key5",
+            "nightmare_key6",
+            "nightmare_key7",
+            "nightmare_key8",
+            "nightmare_key9"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "5, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "trade_yoshi_doll",
+            "trade_ribbon",
+            "trade_dog_food",
+            "trade_bananas",
+            "trade_stick",
+            "trade_honeycomb",
+            "trade_pineapple",
+            "trade_hibiscus",
+            "trade_letter",
+            "trade_broom",
+            "trade_fishing_hook",
+            "trade_necklace",
+            "trade_scale"
+          ],
+          [
+            "difficulty_normal"
+          ]
+        ]
+      }
+    ]
+  }
+}

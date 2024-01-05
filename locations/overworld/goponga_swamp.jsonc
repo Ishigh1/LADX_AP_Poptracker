@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Goponga Swamp",
+    "access_rules": [
+      "^$can_access|@Mysterious Woods North"
+    ],
+    "children": [
+      {
+        "name": "Swampy Chest",
+        "access_rules": [
+          "bowWow",
+          "hookshot",
+          "rod",
+          "boomerang"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 668,
+            "y": 411
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ouside Write Hut",
+    "access_rules": [
+      "feather",
+      "rooster"
+    ],
+    "children": []
+  },
+  {
+    "name": "Write Cave",
+    "access_rules": [
+      "feather, ^$can_access|@Ouside Write Hut",
+      "rooster, ^$can_access|@Ouside Write Hut"
+    ],
+    "sections": [
+      {
+        "name": "Write Cave West",
+        "access_rules": [
+          "feather",
+          "rooster",
+          "hookshot"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Write Cave East",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 136,
+        "y": 298
+      }
+    ]
+  },
+  {
+    "name": "MrWrite",
+    "access_rules": [
+      "trade_broom, ^$can_access|@Outsite Write Hut"
+    ],
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 120,
+        "y": 428
+      }
+    ]
+  }
+]

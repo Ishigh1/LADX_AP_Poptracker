@@ -1,0 +1,149 @@
+[
+  {
+    "name": "Ukuku Prairie",
+    //This area is what is just right of the village's rocks
+    "access_rules": [
+      "bracelet1, ^^$can_access|@Mabe Village"
+    ],
+    "children": [
+      {
+        "name": "Boots 'n' Bomb Cave Entrance",
+        "access_rules": [
+          "bomb"
+        ],
+      },
+      {
+        "name": "Outside D3",
+        "access_rules": [
+          "feather",
+          "rooster",
+          "flippers"
+        ],
+        "children": [
+          {
+            "name": "Outside D3 Ledge Dig",
+            "access_rules": ["shovel"],
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworld",
+                "x": 893,
+                "y": 1362
+              }
+            ]
+          },
+          {
+            "name": "Outside D3 Island Bush",
+            "access_rules": ["flippers, $bush"],
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworld",
+                "x": 1070,
+                "y": 1362
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "East of Seashell Mansion Bush",
+        "access_rules": ["$bush"],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1843,
+            "y": 1104
+          }
+        ]
+      },
+      {
+        "name": "East of Mabe Tree Bonk",
+        "access_rules": ["boots"],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 756,
+            "y": 1338
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cave East of Mabe",
+    "access_rules": [
+      "^$can_access|@Ukuku Prairie"
+    ],
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 796,
+        "y": 1120
+      }
+    ]
+  },
+  {
+    "name": "Boots 'n' Bomb Cave",
+    "access_rules": [
+      "boots, ^$can_access|@Ukuku Prairie/Boots 'n' Bomb Cave Entrance"
+    ],
+    "sections": [
+      {
+        "name": "Boots 'n' Bomb Cave Chest",
+        "item_count": 1
+      },
+      {
+        "name": "Boots 'n' Bomb Cave Bombable Wall",
+        "item_count": 1,
+        "access_rules": "bomb"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 990,
+        "y": 1088
+      }
+    ]
+  },
+  {
+    "name": "Seashell Mansion",
+    "access_rules": ["seashell:20, ^$can_access|@Ukuku Prairie"],
+    "sections": [
+      {
+        "item_count": 1
+      },
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 990,
+        "y": 1088
+      }
+    ]
+  }
+]
