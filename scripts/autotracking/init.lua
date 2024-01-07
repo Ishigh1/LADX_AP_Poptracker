@@ -1,8 +1,8 @@
 --AUTOTRACKER_ENABLE_DEBUG_LOGGING = true and ENABLE_DEBUG_LOG
 --AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP = true and AUTOTRACKER_ENABLE_DEBUG_LOGGING
 
-require("scripts/autotracking/item_mapping.lua")
-require("scripts/autotracking/location_mapping/init.lua")
+require("scripts/autotracking/item_mapping")
+require("scripts/autotracking/location_mapping/init")
 
 CUR_INDEX = -1
 SLOT_DATA = nil

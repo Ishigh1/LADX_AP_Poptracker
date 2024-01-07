@@ -1,6 +1,6 @@
 ENABLE_DEBUG_LOG = true
 
-require("scripts/utils.lua")
+require("scripts/utils")
 
 --Items
 Tracker:AddItems("items/key_items.jsonc")
@@ -14,7 +14,7 @@ Tracker:AddItems("items/trade.jsonc")
 Tracker:AddMaps("maps/maps.jsonc")
 
 -- Logic
-require("scripts/logic/init.lua")
+require("scripts/logic/init")
 
 -- Locations
 --- Overworld
@@ -37,4 +37,4 @@ Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/brodcast.jsonc")
 
 -- Autotracking
-require("scripts/autotracking/init.lua")
+require("scripts/autotracking/init")

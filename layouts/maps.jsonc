@@ -28,6 +28,15 @@
             "dungeon2"
           ]
         }
+      },
+      {
+        "title": "Key Cavern (D3)",
+        "content": {
+          "type": "map",
+          "maps": [
+            "dungeon3"
+          ]
+        }
       }
     ]
   }

@@ -1,0 +1,204 @@
+[
+  {
+    "name": "Color Dungeon",
+    "access_rules": [
+      "^$can_access|@Color Dungeon/Entrance"
+    ],
+    "children": [
+      {
+        "name": "Lower Small Key",
+        "access_rules": [
+          "^$can_access|@Color Dungeon/Entrance"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 144,
+            "y": 80
+          }
+        ]
+      },
+      {
+        "name": "Upper Key Owl",
+        "access_rules": "^$d9_lower_small_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 64,
+            "y": 208
+          }
+        ]
+      },
+      {
+        "name": "Upper Small Key",
+        "access_rules": "^$d9_upper_key_owl",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 192,
+            "y": 208
+          }
+        ]
+      },
+      {
+        "name": "Entrance Owl",
+        "access_rules": "^$d9_upper_small_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 80,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Entrance Chest",
+        "access_rules": "^$d9_entrance_owl",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 208,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Two Socket Chest",
+        "access_rules": "^$d9_entrance_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 336,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Nightmare Key Chest",
+        "access_rules": "^$d9_two_socket_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 464,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Zol Chest",
+        "access_rules": "^$d9_nightmare_key_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 592,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Bullshit Room",
+        "access_rules": "^$d9_zol_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 720,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Puzzowl",
+        "access_rules": "^$d9_bullshit_room",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 848,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Tunic Fairy Item 1",
+        "access_rules": "^$d9_puzzowl",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 976,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Tunic Fairy Item 2",
+        "access_rules": "^$d9_tunic_fairy_item_1",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon9",
+            "x": 1104,
+            "y": 336
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -144,16 +144,14 @@
       {
         "name": "Shop 200 Item",
         "access_rules": [
-          "[false],$rupee_farm_ool",
-          "rupee:500,$rupee_farm"
+          "^$can_spend|500"
         ],
         "item_count": 1
       },
       {
         "name": "Shop 980 Item",
         "access_rules": [
-          "[false],$rupee_farm_ool",
-          "rupee:1480,$rupee_farm",
+          "^$can_spend|1480",
         ],
         "item_count": 1
       }

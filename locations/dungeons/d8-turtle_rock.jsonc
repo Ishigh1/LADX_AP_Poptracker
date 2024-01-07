@@ -1,0 +1,348 @@
+[
+  {
+    "name": "Turtle Rock",
+    "access_rules": [
+      "^$can_access|@Turtle Rock/Entrance"
+    ],
+    "children": [
+      {
+        "name": "Push Block Chest",
+        "access_rules": [
+          "^$can_access|@Turtle Rock/Entrance"
+        ],
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 448,
+            "y": 64
+          }
+        ]
+      },
+      {
+        "name": "Left of Hinox Zamboni Chest",
+        "access_rules": "^$d8_post_push_block_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 416,
+            "y": 192
+          }
+        ]
+      },
+      {
+        "name": "Vacuum Mouth Chest",
+        "access_rules": "^$d8_post_push_block_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 480,
+            "y": 352
+          }
+        ]
+      },
+      {
+        "name": "Left Vire Key",
+        "access_rules": "^$d8_post_left_of_hinox_zamboni_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 640,
+            "y": 352
+          }
+        ]
+      },
+      {
+        "name": "Spark, Pit Chest",
+        "access_rules": "^$d8_post_left_of_hinox_zamboni_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 560,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "Two Torches Room Chest",
+        "access_rules": "^$d8_post_left_vire_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 688,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "Zamboni, Two Zol Key",
+        "access_rules": "^$d8_post_left_vire_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 624,
+            "y": 608
+          }
+        ]
+      },
+      {
+        "name": "Four Ropes Pot Chest",
+        "access_rules": "^$d8_post_two_torches_room_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 816,
+            "y": 608
+          }
+        ]
+      },
+      {
+        "name": "Bombable Blocks Owl",
+        "access_rules": "^$d8_post_two_torches_room_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 944,
+            "y": 608
+          }
+        ]
+      },
+      {
+        "name": "Gibdos on Cracked Floor Key",
+        "access_rules": "^$d8_post_two_torches_room_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 816,
+            "y": 736
+          }
+        ]
+      },
+      {
+        "name": "Lava Ledge Chest",
+        "access_rules": "^$d8_post_gibdos_on_cracked_floor_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 688,
+            "y": 864
+          }
+        ]
+      },
+      {
+        "name": "Magic Rod Chest",
+        "access_rules": "^$d8_post_gibdos_on_cracked_floor_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 816,
+            "y": 992
+          }
+        ]
+      },
+      {
+        "name": "Beamos Blocked Chest",
+        "access_rules": "^$d8_post_gibdos_on_cracked_floor_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 992,
+            "y": 992
+          }
+        ]
+      },
+      {
+        "name": "Dodongo Chest",
+        "access_rules": "^$d8_post_beamos_blocked_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 928,
+            "y": 1120
+          }
+        ]
+      },
+      {
+        "name": "Outside Heart Piece",
+        "access_rules": "^$d8_post_beamos_blocked_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 1168,
+            "y": 1120
+          }
+        ]
+      },
+      {
+        "name": "Lava Arrow Statue Key",
+        "access_rules": "^$d8_post_outside_heart_piece",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 816,
+            "y": 1248
+          }
+        ]
+      },
+      {
+        "name": "Lava Arrow Statue Owl",
+        "access_rules": "^$d8_post_lava_arrow_statue_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 944,
+            "y": 1248
+          }
+        ]
+      },
+      {
+        "name": "West of Boss Door Ledge Chest",
+        "access_rules": "^$d8_post_lava_arrow_statue_owl",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 1072,
+            "y": 1120
+          }
+        ]
+      },
+      {
+        "name": "Nightmare Key/Big Zamboni Chest",
+        "access_rules": "^$d8_post_west_of_boss_door_ledge_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 960,
+            "y": 960
+          }
+        ]
+      },
+      {
+        "name": "Hot Head Heart Container",
+        "access_rules": "^$d8_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 1152,
+            "y": 1152
+          }
+        ]
+      },
+      {
+        "name": "Thunder Drum",
+        "access_rules": "^$d8_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon8",
+            "x": 1344,
+            "y": 1152
+          }
+        ]
+      }
+    ]
+  }
+]

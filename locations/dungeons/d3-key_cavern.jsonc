@@ -1,7 +1,314 @@
 [
   {
     "name": "Key Cavern",
-    "access_rules": "^$d3_access",
-    "children": []
+    "access_rules": [
+      "^$d3_access"
+    ],
+    "children": [
+      {
+        "name": "Vacuum Mouth Chest",
+        "access_rules": "^$d3_vacuum_mouth_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 459,
+            "y": 944
+          }
+        ]
+      },
+      {
+        "name": "Two Bombite, Sword Stalfos, Zol Chest",
+        "access_rules": "^$d3_two_bombite_sword_stalfos_zol_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 298,
+            "y": 815
+          }
+        ]
+      },
+      {
+        "name": "Four Zol Chest",
+        "access_rules": "^$d3_four_zol_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 282,
+            "y": 686
+          }
+        ]
+      },
+      {
+        "name": "Two Stalfos, Zol Chest",
+        "access_rules": "^$d3_two_stalfos_zol_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 298,
+            "y": 557
+          }
+        ]
+      },
+      {
+        "name": "North Key Room Key",
+        "access_rules": "^$d3_north_key_room_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 1007,
+            "y": 315
+          }
+        ]
+      },
+      {
+        "name": "Sword Stalfos, Keese Switch Chest",
+        "access_rules": "^$d3_sword_stalfos_keese_switch_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 411,
+            "y": 702
+          }
+        ]
+      },
+      {
+        "name": "Zol Switch Chest",
+        "access_rules": "^$d3_zol_switch_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 218,
+            "y": 444
+          }
+        ]
+      },
+      {
+        "name": "West Key Room Key",
+        "access_rules": "^$d3_west_key_room_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 846,
+            "y": 444
+          }
+        ]
+      },
+      {
+        "name": "South Key Room Key",
+        "access_rules": "^$d3_south_key_room_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 1007,
+            "y": 573
+          }
+        ]
+      },
+      {
+        "name": "After Stairs Key",
+        "access_rules": "^$d3_after_stairs_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 363,
+            "y": 444
+          }
+        ]
+      },
+      {
+        "name": "Tile Arrow Ledge Chest",
+        "access_rules": "^$d3_tile_arrow_ledge_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 620,
+            "y": 154
+          }
+        ]
+      },
+      {
+        "name": "Boots Chest",
+        "access_rules": "^$d3_boots_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 395,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "Three Zol, Stalfos Chest",
+        "access_rules": "^$d3_three_zol_stalfos_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 395,
+            "y": 41
+          }
+        ]
+      },
+      {
+        "name": "Three Bombite Key",
+        "access_rules": "^$d3_three_bombite_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 202,
+            "y": 57
+          }
+        ]
+      },
+      {
+        "name": "Two Zol, Two Pairodd Key",
+        "access_rules": "^$d3_two_zol_two_pairodd_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 41,
+            "y": 315
+          }
+        ]
+      },
+      {
+        "name": "Two Zol, Stalfos Ledge Chest",
+        "access_rules": "^$d3_two_zol_stalfos_ledge_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 137,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "Nightmare Door Key",
+        "access_rules": "^$d3_nightmare_door_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 1007,
+            "y": 960
+          }
+        ]
+      },
+      {
+        "name": "Slime Eye Heart Container",
+        "access_rules": "^$d3_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 1047,
+            "y": 831
+          }
+        ]
+      },
+      {
+        "name": "Sea Lily's Bell",
+        "access_rules": "^$d3_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon3",
+            "x": 1047,
+            "y": 686
+          }
+        ]
+      }
+    ]
   }
 ]

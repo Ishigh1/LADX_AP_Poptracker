@@ -58,7 +58,7 @@ function can_access(region_name)
     access_stack[region_name] = true
     local region = Tracker:FindObjectForCode(region_name)
     if region == nil then
-        print(region_name .. "not found!")
+        print(region_name .. " not found!")
         return AccessibilityLevel.None
     end
     local level = region.AccessibilityLevel
@@ -80,14 +80,6 @@ function difficulty(target)
     else
         return AccessibilityLevel.SequenceBreak
     end
-end
-
-function or2(item1, item2)
-    return has(item1) or has(item2)
-end
-
-function or3(item1, item2, item3)
-    return has(item1) or has(item2) or has(item3)
 end
 
 function andA(...)

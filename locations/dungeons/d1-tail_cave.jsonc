@@ -158,6 +158,22 @@
         ]
       },
       {
+        "name": "Nightmare Key Chest",
+        "access_rules": "^$d1_nightmare_key_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon1",
+            "x": 555,
+            "y": 282
+          }
+        ]
+      },
+      {
         "name": "Moldorm Heart Container",
         "access_rules": "^$d1_boss_kill",
         "sections": [
@@ -188,22 +204,6 @@
             "y": 40,
           },
         ]
-      }
-    ]
-  },
-  {
-    "name": "Nightmare Key Chest",
-    "access_rules": "^$d1_nightmare_key_chest",
-    "sections": [
-      {
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "dungeon1",
-        "x": 555,
-        "y": 282
       }
     ]
   }

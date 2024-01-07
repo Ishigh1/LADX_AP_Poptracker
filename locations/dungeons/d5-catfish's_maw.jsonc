@@ -1,0 +1,266 @@
+[
+  {
+    "name": "Catfish's Maw",
+    "access_rules": [
+      "^$can_access|@Tabahl Wasteland/Dungeon Access"
+    ],
+    "children": [
+      {
+        "name": "Entrance Hookshottable Chest",
+        "access_rules": "^$d5_post_miniboss",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 344,
+            "y": 112
+          }
+        ]
+      },
+      {
+        "name": "Spark, Two Iron Mask Chest",
+        "access_rules": "^$d5_post_miniboss",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 640,
+            "y": 56
+          }
+        ]
+      },
+      {
+        "name": "Crystal Key",
+        "access_rules": "^$d5_post_miniboss",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 640,
+            "y": 224
+          }
+        ]
+      },
+      {
+        "name": "Crystal Owl",
+        "access_rules": "^$d5_post_crystal",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 656,
+            "y": 224
+          }
+        ]
+      },
+      {
+        "name": "Flying Bomb Chest South",
+        "access_rules": "^$d5_post_spark",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 640,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "name": "Three Iron Mask Chest",
+        "access_rules": "^$d5_post_flying_bomb_south",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 328,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Hookshot Note Chest",
+        "access_rules": "^$d5_post_flying_bomb_south",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 344,
+            "y": 744
+          }
+        ]
+      },
+      {
+        "name": "Star Owl",
+        "access_rules": "^$d5_post_hookshot_note",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 496,
+            "y": 824
+          }
+        ]
+      },
+      {
+        "name": "Two Stalfos, Star Pit Chest",
+        "access_rules": "^$d5_post_star_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 640,
+            "y": 968
+          }
+        ]
+      },
+      {
+        "name": "Sword Stalfos, Star, Bridge Chest",
+        "access_rules": "^$d5_post_two_stalfos_star_pit",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 656,
+            "y": 1128
+          }
+        ]
+      },
+      {
+        "name": "Flying Bomb Chest East",
+        "access_rules": "^$d5_post_flying_bomb_east",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 800,
+            "y": 1152
+          }
+        ]
+      },
+      {
+        "name": "Master Stalfos Item",
+        "access_rules": "^$d5_post_master_stalfos",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 992,
+            "y": 1064
+          }
+        ]
+      },
+      {
+        "name": "Three Stalfos Chest",
+        "access_rules": "^$d5_post_master_stalfos",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 1184,
+            "y": 1064
+          }
+        ]
+      },
+      {
+        "name": "Nightmare Key/Torch Cross Chest",
+        "access_rules": "^$d5_post_nightmare_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 1312,
+            "y": 1184
+          }
+        ]
+      },
+      {
+        "name": "Slime Eel Heart Container",
+        "access_rules": "^$d5_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 1312,
+            "y": 1312
+          }
+        ]
+      },
+      {
+        "name": "Wind Marimba",
+        "access_rules": "^$d5_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon5",
+            "x": 1312,
+            "y": 1312
+          }
+        ]
+      }
+    ]
+  }
+]

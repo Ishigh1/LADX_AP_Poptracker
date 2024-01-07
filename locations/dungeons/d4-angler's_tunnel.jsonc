@@ -1,0 +1,250 @@
+[
+  {
+    "name": "Angler's Tunnel",
+    "access_rules": [
+      "^$can_access|@Yarna Desert/Dungeon Access"
+    ],
+    "children": [
+      {
+        "name": "Movable Wall Seashell Chest",
+        "access_rules": "^$d4_post_miniboss",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 208,
+            "y": 136
+          }
+        ]
+      },
+      {
+        "name": "NW of Boots Pit Ledge Chest",
+        "access_rules": "^$d4_post_miniboss",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 472,
+            "y": 184
+          }
+        ]
+      },
+      {
+        "name": "Two Spiked Beetle, Zol Chest",
+        "access_rules": "^$d4_post_miniboss",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 344,
+            "y": 296
+          }
+        ]
+      },
+      {
+        "name": "Crystal Chest",
+        "access_rules": "^$d4_post_two_watery_chests",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 656,
+            "y": 264
+          }
+        ]
+      },
+      {
+        "name": "Lower Bomb Locked Watery Chest",
+        "access_rules": "^$d4_post_miniboss",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 584,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "name": "Upper Bomb Locked Watery Chest",
+        "access_rules": "^$d4_post_miniboss",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 472,
+            "y": 536
+          }
+        ]
+      },
+      {
+        "name": "Flipper Locked Before Boots Pit Chest",
+        "access_rules": "^$d4_post_flipper_locked",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 344,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Pit Key",
+        "access_rules": "^$d4_post_flipper_locked",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 128,
+            "y": 656
+          }
+        ]
+      },
+      {
+        "name": "Flipper Locked After Boots Pit Chest",
+        "access_rules": "^$d4_post_flipper_locked",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 344,
+            "y": 760
+          }
+        ]
+      },
+      {
+        "name": "Blob Chest",
+        "access_rules": "^$d4_post_upper_watery_chests",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 472,
+            "y": 808
+          }
+        ]
+      },
+      {
+        "name": "Spark Chest",
+        "access_rules": "^$d4_post_upper_watery_chests",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 656,
+            "y": 760
+          }
+        ]
+      },
+      {
+        "name": "Flippers Chest",
+        "access_rules": "^$d4_post_flipper_locked",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 344,
+            "y": 1040
+          }
+        ]
+      },
+      {
+        "name": "Nightmare Key Ledge Chest",
+        "access_rules": "^$d4_post_upper_watery_chests",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 760,
+            "y": 968
+          }
+        ]
+      },
+      {
+        "name": "Angler Fish Heart Container",
+        "access_rules": "^$d4_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 992,
+            "y": 936
+          }
+        ]
+      },
+      {
+        "name": "Surf Harp",
+        "access_rules": "^$d4_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon4",
+            "x": 656,
+            "y": 1144
+          }
+        ]
+      }
+    ]
+  }
+]

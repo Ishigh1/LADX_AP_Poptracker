@@ -51,13 +51,40 @@ function push_hardhat()
 end
 
 function rupee_farm_ool()
-    return bush() or attack()
+    if (bush() or attack()) then
+        return AccessibilityLevel.SequenceBreak
+    else
+        return AccessibilityLevel.None
+    end
 end
 
 function rupee_farm()
-    return free_weapon() and can_access("@Trendy Game", AccessibilityLevel.Normal) or can_access("@Raft", AccessibilityLevel.Normal)
+    return andA(
+        free_weapon(),
+        orA(
+            can_access("@Trendy Game"),
+            can_access("@Raft")
+        )
+    )
+end
+
+function can_spend(amount)
+    return andA(
+        has("rupee", amount),
+        orA(
+            rupee_farm(),
+            rupee_farm_ool()
+        )
+    )
 end
 
 function jump()
     return has("feather") or has("rooster")
+end
+
+function medicine()
+    return andA(
+        can_spend(50),
+        can_access("@Crazy Tracy's House")
+    )
 end
