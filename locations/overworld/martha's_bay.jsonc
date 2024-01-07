@@ -9,13 +9,7 @@
   },
   {
     "name": "Martha's Bay Left",
-    "access_rules": [
-      "^$can_access|@Ukuku Prairie",
-      "feather, boots, ^$can_access|@Martha's Bay Outside Ghost House",
-      "feather, ^$difficulty|glitched, ^$can_access|@Martha's Bay Outside Ghost House",
-      "rooster, ^$can_access|@Martha's Bay Outside Ghost House",
-      "$or2|feather|rooster, $bush, ^can_access|$Mad Batter Connector (Martha's Bay)"
-    ],
+    "access_rules": "^$marthas_bay_left",
     "children": [
       {
         "name": "Lone Bush",
@@ -37,12 +31,7 @@
       },
       {
         "name": "Island Bush of Destiny",
-        "access_rules": [
-          "flippers, $bush",
-          "rooster, $bush",
-          "feather, $bush, ^$difficulty|glitched",
-          "boots, $bush, ^$difficulty|hell"
-        ],
+        "access_rules": "^$island_bush_of_destiny",
         "sections": [
           {
             "item_count": 1
@@ -81,13 +70,11 @@
     "children": [
       {
         "name": "Top Left",
-        "access_rules": ["^$can_access|@Outside Mad Batter (Martha's Bay)",
-        "flippers, ^$can_access|@Mad Batter Connector (Martha's Bay)/Bottom Right"],
+        "access_rules": "^$mad_batter_martha_connector_top_left",
       },
       {
         "name": "Bottom Right",
-        "access_rules": ["^$can_access|@Martha's Bay Left, $or2|feather|rooster, $or3|sword|rod|boomerang",
-          "flippers, ^$can_access|@Mad Batter Connector (Martha's Bay)/Top Left"],
+        "access_rules": "^$mad_batter_martha_connector_bottom_right",
       }
     ]
   },

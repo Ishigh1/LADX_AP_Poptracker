@@ -14,7 +14,7 @@ Tracker:AddItems("items/trade.jsonc")
 Tracker:AddMaps("maps/maps.jsonc")
 
 -- Logic
-require("scripts/logic/logic.lua")
+require("scripts/logic/init.lua")
 
 -- Locations
 --- Overworld
@@ -27,6 +27,7 @@ Tracker:AddLocations("locations/overworld/martha's_bay.jsonc")
 --- Dungeon
 Tracker:AddLocations("locations/dungeons/d1-tail_cave.jsonc")
 Tracker:AddLocations("locations/dungeons/d2-bottle_grotto.jsonc")
+Tracker:AddLocations("locations/dungeons/d3-key_cavern.jsonc")
 
 --Layout
 Tracker:AddLayouts("layouts/maps.jsonc")

@@ -2,15 +2,13 @@
   {
     "name": "Ukuku Prairie",
     //This area is what is just right of the village's rocks
-    "access_rules": [
-      "bracelet1, ^^$can_access|@Mabe Village"
-    ],
+    "access_rules": "^$ukuku_prairie",
     "children": [
       {
         "name": "Boots 'n' Bomb Cave Entrance",
         "access_rules": [
           "bomb"
-        ],
+        ]
       },
       {
         "name": "Outside D3",
@@ -108,9 +106,7 @@
   },
   {
     "name": "Boots 'n' Bomb Cave",
-    "access_rules": [
-      "boots, ^$can_access|@Ukuku Prairie/Boots 'n' Bomb Cave Entrance"
-    ],
+    "access_rules": "^$boots_n_bomb_cave",
     "sections": [
       {
         "name": "Boots 'n' Bomb Cave Chest",
@@ -119,7 +115,7 @@
       {
         "name": "Boots 'n' Bomb Cave Bombable Wall",
         "item_count": 1,
-        "access_rules": "bomb"
+        "access_rules": ["bomb"]
       }
     ],
     "map_locations": [
@@ -141,8 +137,8 @@
     "map_locations": [
       {
         "map": "overworld",
-        "x": 990,
-        "y": 1088
+        "x": 1698,
+        "y": 1088,
       }
     ]
   }

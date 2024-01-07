@@ -25,6 +25,16 @@
             "y": 411
           }
         ]
+      },
+      {
+        "name": "Dungeon Access",
+        "access_rules": [
+          "bowWow",
+          "hookshot",
+          "rod",
+          "boomerang"
+        ],
+        "children": []
       }
     ]
   },

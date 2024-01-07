@@ -126,98 +126,8 @@
         ]
       },
       {
-        "name": "Post Key",
-        "access_rules": [
-          "[small_key1:3],small_key1:1"
-        ],
-        "children": [
-          {
-            "name": "Feather Chest",
-            "access_rules": [
-              "shield1",
-              "^$difficulty|hell,sword"
-            ],
-            "sections": [
-              {
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "dungeon1",
-                "x": 72,
-                "y": 298
-              }
-            ]
-          },
-          {
-            "name": "Three of a Kind Chest",
-            "access_rules": [
-              "shield1",
-              "$attack_hookshot"
-            ],
-            "sections": [
-              {
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "dungeon1",
-                "x": 941,
-                "y": 298
-              }
-            ]
-          },
-          {
-            "name": "Boss kill",
-            "access_rules": [
-              "nightmare_key1, sword1, [feather]",
-              "nightmare_key1, sword1, ^$difficulty|glitched"
-            ],
-            "children": [
-              {
-                "name": "Moldorm Heart Container",
-                "sections": [
-                  {
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "dungeon1",
-                    "x":1046,
-                    "y":193,
-                  },
-                ]
-              },
-              {
-                "name": "Full Moon Cello",
-                "sections": [
-                  {
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "dungeon1",
-                    "x":1046,
-                    "y":40,
-                  },
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Nightmare Key Chest",
-        //Also post key but there's a way to get it without
-        "access_rules": [
-          "feather, ^$difficulty|glitched",
-          "small_key1:1, ^$difficulty|hell, [small_key1:3]",
-          "feather, small_key1:1, [small_key1:3]"
-        ],
+        "name": "Feather Chest",
+        "access_rules": "^$d1_feather_chest",
         "sections": [
           {
             "item_count": 1
@@ -226,10 +136,74 @@
         "map_locations": [
           {
             "map": "dungeon1",
-            "x": 555,
-            "y": 282
+            "x": 72,
+            "y": 298
           }
         ]
+      },
+      {
+        "name": "Three of a Kind Chest",
+        "access_rules": "^$d1_three_of_a_kind",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon1",
+            "x": 941,
+            "y": 298
+          }
+        ]
+      },
+      {
+        "name": "Moldorm Heart Container",
+        "access_rules": "^$d1_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon1",
+            "x": 1046,
+            "y": 193,
+          },
+        ]
+      },
+      {
+        "name": "Full Moon Cello",
+        "access_rules": "^$d1_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon1",
+            "x": 1046,
+            "y": 40,
+          },
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nightmare Key Chest",
+    "access_rules": "^$d1_nightmare_key_chest",
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "dungeon1",
+        "x": 555,
+        "y": 282
       }
     ]
   }

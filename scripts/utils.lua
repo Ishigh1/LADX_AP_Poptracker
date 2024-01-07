@@ -20,8 +20,25 @@ function dump_table(o, depth)
     end
 end
 
-function has(item, amount)
+function A(result)
+    if result then
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
+    end
+end
+
+function has(item, amount, amountInLogic)
     local count = Tracker:ProviderCountForCode(item)
+    if amountInLogic then
+        if count >= amountInLogic then
+            return AccessibilityLevel.Normal
+        elseif count >= amount then
+            return AccessibilityLevel.SequenceBreak
+        else
+            return AccessibilityLevel.None
+        end
+    end
     if not amount then
         return count > 0
     else
@@ -30,12 +47,23 @@ function has(item, amount)
     end
 end
 
+local access_stack = {}
 function can_access(region_name)
-    local region = Tracker:FindObjectForCode(region_name)
-    if region == nil then
+    if region_name:sub(1, 1) ~= "@" then
+        region_name = "@" .. region_name
+    end
+    if access_stack[region_name] then
         return AccessibilityLevel.None
     end
-    return region.AccessibilityLevel
+    access_stack[region_name] = true
+    local region = Tracker:FindObjectForCode(region_name)
+    if region == nil then
+        print(region_name .. "not found!")
+        return AccessibilityLevel.None
+    end
+    local level = region.AccessibilityLevel
+    access_stack[region_name] = nil
+    return level
 end
 
 function difficulty(target)
@@ -60,4 +88,40 @@ end
 
 function or3(item1, item2, item3)
     return has(item1) or has(item2) or has(item3)
+end
+
+function andA(...)
+    local args = { ... }
+    local min = AccessibilityLevel.Normal
+    for i, v in ipairs(args) do
+        if type(v) == "boolean" then
+            v = A(v)
+        end
+        if v < min then
+            if v == AccessibilityLevel.None then
+                return AccessibilityLevel.None
+            else
+                min = v
+            end
+        end
+    end
+    return min
+end
+
+function orA(...)
+    local args = { ... }
+    local max = AccessibilityLevel.None
+    for i, v in ipairs(args) do
+        if type(v) == "boolean" then
+            v = A(v)
+        end
+        if v > max then
+            if v == AccessibilityLevel.Normal then
+                return AccessibilityLevel.Normal
+            else
+                max = v
+            end
+        end
+    end
+    return max
 end

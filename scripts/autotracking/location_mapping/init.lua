@@ -15,6 +15,23 @@ LOCATION_MAPPING = {
     [10001690] = "@Kennel/YipYip",
     -- [10003673] = "@Mabe Village/Shop 10 Item", -- I don't know what's this item
 
+    -- Tail Cave (D1)
+    [10000275] = "@Tail Cave/Pit Button Chest/",
+    [10000277] = "@Tail Cave/Four Zol Chest/",
+    [10000270] = "@Tail Cave/Spark, Mini-Moldorm Chest/",
+    [10000278] = "@Tail Cave/Hardhat Beetles Key/",
+    [10000269] = "@Tail Cave/Mini-Moldorm Spawn Chest/",
+    [10000276] = "@Tail Cave/Two Stalfos, Two Keese Chest/",
+    [10000268] = "@Tail Cave/Bombable Wall Seashell Chest/",
+    -- [10001259] = "@Tail Cave/Spiked Beetle Owl/",
+    -- [10001260] = "@Tail Cave/Movable Block Owl/",
+    [10000264] = "@Tail Cave/Nightmare Key Chest/",
+    [10000285] = "@Tail Cave/Feather Chest/",
+    [10000266] = "@Tail Cave/Three of a Kind Chest/",
+    -- [10001266] = "@Tail Cave/Three of a Kind Owl/",
+    [10000262] = "@Tail Cave/Moldorm Heart Container/",
+    [10000258] = "@Tail Cave/Full Moon Cello/",
+
     -- Toronbo Shores
     [10000210] = "@Outside D1 Tree Bonk/",
     [10000501] = "@Toronbo Shores/Boomerang Guy Item/",
@@ -37,6 +54,25 @@ LOCATION_MAPPING = {
     [10000687] = "@Write Cave/Write Cave East",
     -- [10001017] = "@Goponga Swamp/North of Write Owl",
     [10001680] = "@MrWrite/",
+
+    -- Bottle Grotto (D2)
+    [10000310] = "@Bottle Grotto/Entrance Chest/",
+    [10000302] = "@Bottle Grotto/Hardhat Beetle Pit Chest/",
+    [10000311] = "@Bottle Grotto/Mask-Mimic Chest/",
+    [10000306] = "@Bottle Grotto/Two Stalfos Key/",
+    -- [10001307] = "@Bottle Grotto/Switch Owl",
+    [10000312] = "@Bottle Grotto/First Switch Locked Chest/",
+    [10000313] = "@Bottle Grotto/Button Spawn Chest/",
+    [10000308] = "@Bottle Grotto/Mask-Mimic Key/",
+    -- [10001303] = "@Bottle Grotto/Before First Staircase Owl",
+    [10000294] = "@Bottle Grotto/Vacuum Mouth Chest/",
+    [10000289] = "@Bottle Grotto/Outside Boo Buddies Room Chest/",
+    -- [10001297] = "@Bottle Grotto/After Hinox Owl",
+    [10000288] = "@Bottle Grotto/Boo Buddies Room Chest/",
+    [10000290] = "@Bottle Grotto/Second Switch Locked Chest/",
+    [10000295] = "@Bottle Grotto/Enemy Order Room Chest/Pols Voice, Keese then Stalfos",
+    [10000299] = "@Bottle Grotto/Genie Heart Container",
+    [10000298] = "@Bottle Grotto/Conch Horn",
 
     -- Ukuku Prairie
     [10000717] = "@Cave East of Mabe/",
@@ -236,13 +272,3 @@ LOCATION_MAPPING = {
     [10002769] = "@Color Dungeon/Tunic Fairy Item 2",
     --[[]]
 }
-
-local script_location = "scripts/autotracking/location_mapping/"
-local dependencies = {
-    "d1.lua", "d2.lua"
-}
-for _, path in pairs(dependencies) do
-    for k, v in pairs(require(script_location .. path)) do
-        LOCATION_MAPPING[k] = v
-    end
-end
