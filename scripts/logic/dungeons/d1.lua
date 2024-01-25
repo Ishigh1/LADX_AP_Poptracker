@@ -18,6 +18,19 @@ end
 
 -- locations
 
+function d1_two_stalfos_two_keese_chest()
+    return orA(
+        andA(
+            attack_hookshot_powder(),
+            orA(
+                attack_skeleton(),
+                has("shield1"),
+                difficulty("hard")
+            )
+        )
+    )
+end
+
 function d1_feather_chest()
     return andA(
         d1_post_key(),
@@ -39,8 +52,9 @@ end
 
 function d1_nightmare_key_chest()
     return orA(
+        andA(d1_post_key(), has("feather")),
         andA(has("feather"), difficulty("glitched")),
         andA(d1_post_key(), difficulty("hell")),
-        andA(d1_post_key(), has("feather"))
+        andA(d1_post_key(), has("shield1"), difficulty("hard"), AccessibilityLevel.SequenceBreak) -- Going over the hole with a shield is fairly doable
     )
 end

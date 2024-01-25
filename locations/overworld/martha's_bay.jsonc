@@ -3,8 +3,6 @@
     "name": "Martha's Bay Outside Ghost House",
     "access_rules": [
       "bracelet1, ^$can_access|@Toronbo Shores"
-    ],
-    "children": [
     ]
   },
   {
@@ -48,6 +46,44 @@
     ]
   },
   {
+    "name": "Martha's Bay Water",
+    "access_rules": "^$mathas_bay_water",
+    "children": [
+      {
+        "name": "Fisher",
+        "access_rules": "^$fisher",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 0,
+            "y": 0
+          }
+        ]
+      },
+      {
+        "name": "Mermaid",
+        "access_rules": "^$mermaid",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 0,
+            "y": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Ghost House Barrel",
     "access_rules": [
       "bracelet1, ^$can_access|@Martha's Bay Outside Ghost House"
@@ -80,11 +116,15 @@
   },
   {
     "name": "Outside Mad Batter (Martha's Bay)",
-    "access_rules": ["^$can_access|@Mad Batter Connector (Martha's Bay)/Top Left"],
+    "access_rules": [
+      "^$can_access|@Mad Batter Connector (Martha's Bay)/Top Left"
+    ],
   },
   {
     "name": "Mad Batter (Martha's Bay)",
-    "access_rules": ["powder, ^$can_access|@Outside Mad Batter (Martha's Bay)"],
+    "access_rules": [
+      "powder, ^$can_access|@Outside Mad Batter (Martha's Bay)"
+    ],
     "sections": [
       {
         "item_count": 1
@@ -95,12 +135,16 @@
         "map": "overworld",
         "x": 1038,
         "y": 1862
-      },
+      }
+    ]
+  },
+  {
+    "name": "Martha's Bay Right",
+    "access_rules": "^$marthas_bay_right",
+    "children": [
       {
         "name": "Peninsula Dig",
-        "access_rules": [
-          "^$can_access|@Martha's Bay/Entrance"
-        ],
+        "access_rules": "^$peninsula_dig",
         "sections": [
           {
             "item_count": 1
@@ -109,126 +153,14 @@
         "map_locations": [
           {
             "map": "overworld",
-            "x": 1392,
-            "y": 368
-          }
-        ]
-      },
-      {
-        "name": "Peninsula Owl",
-        "access_rules": "^$marthas_bay_peninsula_dig",
-        "sections": [
-          {
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 1264,
-            "y": 496
-          }
-        ]
-      },
-      {
-        "name": "Desert Owl",
-        "access_rules": "^$marthas_bay_peninsula_owl",
-        "sections": [
-          {
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 1040,
-            "y": 240
-          }
-        ]
-      },
-      {
-        "name": "Bomb Arrow Cave",
-        "access_rules": "^$marthas_bay_desert_owl",
-        "sections": [
-          {
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 1120,
-            "y": 432
-          }
-        ]
-      },
-      {
-        "name": "Cave Under Lanmola",
-        "access_rules": "^$marthas_bay_bomb_arrow_cave",
-        "sections": [
-          {
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 1200,
-            "y": 560
-          }
-        ]
-      },
-      {
-        "name": "Rock Seashell",
-        "access_rules": "^$marthas_bay_cave_under_lanmola",
-        "sections": [
-          {
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 1296,
-            "y": 688
-          }
-        ]
-      },
-      {
-        "name": "Fisher",
-        "access_rules": "^$marthas_bay_rock_seashell",
-        "sections": [
-          {
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 784,
-            "y": 320
-          }
-        ]
-      },
-      {
-        "name": "Mermaid",
-        "access_rules": "^$marthas_bay_fisher",
-        "sections": [
-          {
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 880,
-            "y": 448
+            "x": 0,
+            "y": 0
           }
         ]
       },
       {
         "name": "Mermaid Statue",
-        "access_rules": "^$marthas_bay_mermaid",
+        "access_rules": "^$mermaid_statue",
         "sections": [
           {
             "item_count": 1
@@ -237,24 +169,8 @@
         "map_locations": [
           {
             "map": "overworld",
-            "x": 976,
-            "y": 576
-          }
-        ]
-      },
-      {
-        "name": "Witch Item",
-        "access_rules": "^$marthas_bay_mermaid_statue",
-        "sections": [
-          {
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 416,
-            "y": 672
+            "x": 0,
+            "y": 0
           }
         ]
       }

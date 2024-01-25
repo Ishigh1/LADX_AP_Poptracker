@@ -37,6 +37,24 @@
             "dungeon3"
           ]
         }
+      },
+      {
+        "title": "Angler's Tunnel (D4)",
+        "content": {
+          "type": "map",
+          "maps": [
+            "dungeon4"
+          ]
+        }
+      },
+      {
+        "title": "Catfish's Maw (D5)",
+        "content": {
+          "type": "map",
+          "maps": [
+            "dungeon5"
+          ]
+        }
       }
     ]
   }

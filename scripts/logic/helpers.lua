@@ -15,7 +15,10 @@ function attack_hookshot()
 end
 
 function attack_hookshot_powder()
-    return has("powder") or attack_hookshot()
+    return orA(
+        has("powder"),
+        attack_hookshot()
+    )
 end
 
 function attack_hookshot_no_bomb()

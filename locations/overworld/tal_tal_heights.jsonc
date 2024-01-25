@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Outside Windfish Egg",
+    "access_rules": "^$outside_windfish_egg"
+  },
+  {
+    "name": "Tal Tal Heights",
+    "access_rules": "^$tal_tal_heights"
+  },
+  {
+    "name": "Outside D4",
+    "access_rules": "^$outside_d4"
+  },
+  {
+    "name": "Tal Tal Waters",
+    "access_rules": "^$tal_tal_waters"
+  },
+  {
+    "name": "Moblin Cave",
+    "access_rules": "^$moblin_cave",
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 675,
+        "y": 1232
+      }
+    ]
+  },
+  {
+    "name": "Damp Cave Heart Piece",
+    "access_rules": "^$damp_cave_heart_piece",
+    "sections": [
+      {
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 1548,
+        "y": 1312
+      }
+    ]
+  },
+  {
+    "name": "Outside Raft",
+    "access_rules": "^$outside_raft",
+  },
+  {
+    "name": "Outside Manbo's Mambo",
+    "access_rules": "^$outside_manbos_mambo",
+  },
+  {
+    "name": "Manbo's Mambo",
+    "access_rules": "^$manbos_mambo",
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 1714,
+        "y": 1184
+      }
+    ]
+  },
+  {
+    "name": "Papahl",
+    "access_rules": "^$papahl",
+    "map_locations": [
+      {
+        "map": "overworld",
+        "x": 540,
+        "y": 1312
+      }
+    ]
+  }
+]

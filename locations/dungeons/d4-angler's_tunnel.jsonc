@@ -2,12 +2,11 @@
   {
     "name": "Angler's Tunnel",
     "access_rules": [
-      "^$can_access|@Yarna Desert/Dungeon Access"
+      "^$d4_access"
     ],
     "children": [
       {
-        "name": "Movable Wall Seashell Chest",
-        "access_rules": "^$d4_post_miniboss",
+        "name": "Watery Statue Chest",
         "sections": [
           {
             "item_count": 1
@@ -16,14 +15,13 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 208,
-            "y": 136
+            "x": 717,
+            "y": 686
           }
         ]
       },
       {
         "name": "NW of Boots Pit Ledge Chest",
-        "access_rules": "^$d4_post_miniboss",
         "sections": [
           {
             "item_count": 1
@@ -32,14 +30,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 472,
-            "y": 184
+            "x": 669,
+            "y": 347
           }
         ]
       },
       {
         "name": "Two Spiked Beetle, Zol Chest",
-        "access_rules": "^$d4_post_miniboss",
+        "access_rules": "^$d4_two_spiked_beetle_zol_chest",
         "sections": [
           {
             "item_count": 1
@@ -48,14 +46,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 344,
-            "y": 296
+            "x": 588,
+            "y": 718
           }
         ]
       },
       {
         "name": "Crystal Chest",
-        "access_rules": "^$d4_post_two_watery_chests",
+        "access_rules": "^$d4_crystal_chest",
         "sections": [
           {
             "item_count": 1
@@ -64,14 +62,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 656,
-            "y": 264
+            "x": 556,
+            "y": 847
           }
         ]
       },
       {
         "name": "Lower Bomb Locked Watery Chest",
-        "access_rules": "^$d4_post_miniboss",
+        "access_rules": "^$d4_lower_bomb_locked_watery_chest",
         "sections": [
           {
             "item_count": 1
@@ -80,14 +78,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 584,
-            "y": 408
+            "x": 926,
+            "y": 444
           }
         ]
       },
       {
         "name": "Upper Bomb Locked Watery Chest",
-        "access_rules": "^$d4_post_miniboss",
+        "access_rules": "^$d4_upper_bomb_locked_watery_chest",
         "sections": [
           {
             "item_count": 1
@@ -96,14 +94,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 472,
-            "y": 536
+            "x": 894,
+            "y": 170
           }
         ]
       },
       {
         "name": "Flipper Locked Before Boots Pit Chest",
-        "access_rules": "^$d4_post_flipper_locked",
+        "access_rules": "^$d4_flipper_locked_before_boots_pit_chest",
         "sections": [
           {
             "item_count": 1
@@ -112,14 +110,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 344,
-            "y": 584
+            "x": 685,
+            "y": 573
           }
         ]
       },
       {
         "name": "Pit Key",
-        "access_rules": "^$d4_post_flipper_locked",
+        "access_rules": "^$d4_pit_key",
         "sections": [
           {
             "item_count": 1
@@ -128,14 +126,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 128,
-            "y": 656
+            "x": 709,
+            "y": 879
           }
         ]
       },
       {
         "name": "Flipper Locked After Boots Pit Chest",
-        "access_rules": "^$d4_post_flipper_locked",
+        "access_rules": "^$d4_flipper_locked_after_boots_pit_chest",
         "sections": [
           {
             "item_count": 1
@@ -144,14 +142,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 344,
-            "y": 760
+            "x": 427,
+            "y": 444
           }
         ]
       },
       {
         "name": "Blob Chest",
-        "access_rules": "^$d4_post_upper_watery_chests",
+        "access_rules": "^$d4_blob_chest",
         "sections": [
           {
             "item_count": 1
@@ -160,14 +158,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 472,
-            "y": 808
+            "x": 266,
+            "y": 444
           }
         ]
       },
       {
         "name": "Spark Chest",
-        "access_rules": "^$d4_post_upper_watery_chests",
+        "access_rules": "^$d4_spark_chest",
         "sections": [
           {
             "item_count": 1
@@ -176,14 +174,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 656,
-            "y": 760
+            "x": 363,
+            "y": 299
           }
         ]
       },
       {
         "name": "Flippers Chest",
-        "access_rules": "^$d4_post_flipper_locked",
+        "access_rules": "^$d4_flippers_chest",
         "sections": [
           {
             "item_count": 1
@@ -192,14 +190,14 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 344,
-            "y": 1040
+            "x": 395,
+            "y": 41
           }
         ]
       },
       {
         "name": "Nightmare Key Ledge Chest",
-        "access_rules": "^$d4_post_upper_watery_chests",
+        "access_rules": "^$d4_nightmare_key_ledge_chest",
         "sections": [
           {
             "item_count": 1
@@ -208,8 +206,8 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 760,
-            "y": 968
+            "x": 202,
+            "y": 670
           }
         ]
       },
@@ -224,8 +222,8 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 992,
-            "y": 936
+            "x": 270,
+            "y": 182
           }
         ]
       },
@@ -240,8 +238,8 @@
         "map_locations": [
           {
             "map": "dungeon4",
-            "x": 656,
-            "y": 1144
+            "x": 81,
+            "y": 170
           }
         ]
       }

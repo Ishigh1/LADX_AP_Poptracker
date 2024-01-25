@@ -43,7 +43,6 @@ function mad_batter_martha_connector_top_left()
     )
 end
 
-
 function mad_batter_martha_connector_bottom_right()
     return orA(
         andA(
@@ -60,6 +59,62 @@ function mad_batter_martha_connector_bottom_right()
                 has("sword1"),
                 has("rod"),
                 has("boomerang")
+            )
+        )
+    )
+end
+
+function mathas_bay_water() --bay_water
+    return andA(
+        has("flippers"),
+        orA(
+            can_access("Ukuku Prairie"),
+            can_access("Martha's Bay Left"),
+            can_access("Tal Tal Waters")
+        )
+    )
+end
+
+function marthas_bay_right()
+    return can_access("Animal Village")
+end
+
+function peninsula_dig() --0x0DA
+    return A(has("shovel"))
+end
+
+function fisher() -- fisher_under_bridge
+    return andA(
+        orA(
+            has("trade_fishing_hook"),
+            andA(
+                difficulty("glitched"),
+                has("bomb")
+            )
+        ),
+        orA(
+            has("feather"),
+            difficulty("hard")
+        ),
+        has("flippers")
+    )
+end
+
+function mermaid() --0x0C9
+    return andA(
+        has("flippers"),
+        has("trade_necklace")
+    )
+end
+
+function mermaid_statue() -- mermaid_statue
+    return andA(
+        has("trade_scale"),
+        orA(
+            has("hookshot"),
+            andA(
+                difficulty("hell"),
+                has("feather")
             )
         )
     )

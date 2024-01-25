@@ -73,7 +73,7 @@
         "name": "Mini-Moldorm Spawn Chest",
         "access_rules": [
           "shield1",
-          "$attack_hookshot_powder"
+          "$^attack_hookshot_powder"
         ],
         "sections": [
           {
