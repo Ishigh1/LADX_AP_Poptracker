@@ -25,12 +25,14 @@ Tracker:AddLocations("locations/overworld/goponga_swamp.jsonc")
 Tracker:AddLocations("locations/overworld/ukuku_prairie.jsonc")
 Tracker:AddLocations("locations/overworld/martha's_bay.jsonc")
 Tracker:AddLocations("locations/overworld/tal_tal_heights.jsonc")
+Tracker:AddLocations("locations/overworld/southern_face_shrine.jsonc")
 --- Dungeon
 Tracker:AddLocations("locations/dungeons/d1-tail_cave.jsonc")
 Tracker:AddLocations("locations/dungeons/d2-bottle_grotto.jsonc")
 Tracker:AddLocations("locations/dungeons/d3-key_cavern.jsonc")
 Tracker:AddLocations("locations/dungeons/d4-angler's_tunnel.jsonc")
 Tracker:AddLocations("locations/dungeons/d5-catfish's_maw.jsonc")
+Tracker:AddLocations("locations/dungeons/d6-face_shrine.jsonc")
 
 --Layout
 Tracker:AddLayouts("layouts/maps.jsonc")

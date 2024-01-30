@@ -55,6 +55,15 @@
             "dungeon5"
           ]
         }
+      },
+      {
+        "title": "Face Shrine (D6)",
+        "content": {
+          "type": "map",
+          "maps": [
+            "dungeon6"
+          ]
+        }
       }
     ]
   }

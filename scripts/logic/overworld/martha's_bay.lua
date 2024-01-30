@@ -70,7 +70,9 @@ function mathas_bay_water() --bay_water
         orA(
             can_access("Ukuku Prairie"),
             can_access("Martha's Bay Left"),
-            can_access("Tal Tal Waters")
+            can_access("Tal Tal Waters"),
+            can_access("Southern Face Shrine/D6 Entrance"),
+            can_access("Southern Face Shrine/Armos Island")
         )
     )
 end

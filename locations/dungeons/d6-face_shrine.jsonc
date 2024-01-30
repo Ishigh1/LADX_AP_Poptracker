@@ -1,0 +1,266 @@
+[
+  {
+    "name": "Face Shrine",
+    "access_rules": [
+      "^$d6_access"
+    ],
+    "children": [
+      {
+        "name": "Mini-Moldorm, Spark Chest",
+        "access_rules": "^$d6_mini_moldorm_spark_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 758,
+            "y": 173
+          }
+        ]
+      },
+      {
+        "name": "Flying Heart, Statue Chest",
+        "access_rules": "^$d6_flying_heart_statue_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 894,
+            "y": 266
+          }
+        ]
+      },
+      {
+        "name": "L2 Bracelet Chest",
+        "access_rules": "^$d6_l2_bracelet_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 685,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "Three Wizzrobe, Switch Chest",
+        "access_rules": "^$d6_three_wizzrobe_switch_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 743,
+            "y": 592
+          }
+        ]
+      },
+      {
+        "name": "Stairs Across Statues Chest",
+        "access_rules": "^$d6_stairs_across_statues_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 874,
+            "y": 688
+          }
+        ]
+      },
+      {
+        "name": "Switch, Star Above Statues Chest",
+        "access_rules": "^$d6_switch_star_above_statues_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 667,
+            "y": 872
+          }
+        ]
+      },
+      {
+        "name": "Two Wizzrobe Key",
+        "access_rules": "^$d6_two_wizzrobe_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 719,
+            "y": 986
+          }
+        ]
+      },
+      {
+        "name": "Top Left Horse Heads Chest",
+        "access_rules": "^$d6_top_left_horse_heads_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 977,
+            "y": 964
+          }
+        ]
+      },
+      {
+        "name": "Raft Chest",
+        "access_rules": "^$d6_raft_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 1081,
+            "y": 654
+          }
+        ]
+      },
+      {
+        "name": "Water Tektite Chest",
+        "access_rules": "^$d6_water_tektite_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 1180,
+            "y": 788
+          }
+        ]
+      },
+      {
+        "name": "Four Wizzrobe Ledge Chest",
+        "access_rules": "^$d6_four_wizzrobe_ledge_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 1162,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "name": "Tile Room Key",
+        "access_rules": "^$d6_tile_room_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 1254,
+            "y": 862
+          }
+        ]
+      },
+      {
+        "name": "Top Right Horse Heads Chest",
+        "access_rules": "^$d6_top_right_horse_heads_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 1448,
+            "y": 796
+          }
+        ]
+      },
+      {
+        "name": "Pot Locked Chest",
+        "access_rules": "^$d6_pot_locked_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 1530,
+            "y": 652
+          }
+        ]
+      },
+      {
+        "name": "Facade Heart Container",
+        "access_rules": "^$d6_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 1520,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "name": "Coral Triangle",
+        "access_rules": "^$d6_boss_kill",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon6",
+            "x": 1378,
+            "y": 316
+          }
+        ]
+      }
+    ]
+  }
+]

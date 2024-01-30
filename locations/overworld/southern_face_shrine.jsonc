@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Southern Face Shrine",
+    "children": [
+      {
+        "name": "Armos Island",
+        "access_rules": "^$armos_island"
+      },
+      {
+        "name": "Face Shrine Connector",
+        "children": [
+          {
+            "name": "Left",
+            "access_rules": "^$face_shrine_connector_left"
+          },
+          {
+            "name": "Right",
+            "access_rules": "^$face_shrine_connector_right"
+          }
+        ]
+      },
+      {
+        "name": "D6 Entrance",
+        "access_rules": "^$d6_entrance",
+        "children": [
+          {
+            "name": "D6 Entry",
+            "access_rules": "^$d6_entry"
+          }
+        ]
+      }
+    ]
+  }
+]
