@@ -1,0 +1,187 @@
+[
+  {
+    "name": "Tal Tal Mountains",
+    "children": [
+      {
+        "name": "Obstacle Cave",
+        "children": [
+          {
+            "name": "Entrance Exterior",
+            "access_rules": "^$obstacle_cave_entrance_exterior"
+          },
+          {
+            "name": "Entrance Interior",
+            "access_rules": "^$obstacle_cave_entrance_interior"
+          },
+          {
+            "name": "Middle Interior",
+            "access_rules": "^$obstacle_cave_entrance_interior"
+          },
+          {
+            "name": "Access Tunnel Interior",
+            "access_rules": "^$access_tunnel_interior",
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworld",
+                "x": 1392,
+                "y": 137
+              }
+            ]
+          },
+          {
+            "name": "Access Tunnel Exterior",
+            "access_rules": "^$obstacle_cave_middle_exterior",
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworld",
+                "x": 1360,
+                "y": 153
+              }
+            ]
+          },
+          {
+            "name": "Exit Interior",
+            "access_rules": "^$obstacle_cave_middle_interior"
+          },
+          {
+            "name": "Exit Exterior",
+            "access_rules": "^$obstacle_cave_middle_exterior"
+          }
+        ]
+      },
+      {
+        "name": "Papahl Cave",
+        "children": [
+          {
+            "name": "Entrance Exterior",
+            "access_rules": "^$papahl_cave_entrance_exterior"
+          },
+          {
+            "name": "Entrance Interior",
+            "access_rules": "^$papahl_cave_entrance_interior"
+          },
+          {
+            "name": "Paphl Cave",
+            "access_rules": "^$papahl_cave_chest",
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworld",
+                "x": 1585,
+                "y": 185
+              }
+            ]
+          },
+          {
+            "name": "Exit Interior",
+            "access_rules": "^$papahl_cave_exit_interior"
+          },
+          {
+            "name": "Exit Exterior",
+            "access_rules": "^$papahl_cave_exit_exterior"
+          },
+        ]
+      },
+      {
+        "name": "Bridge Rock",
+        "access_rules": "^$bridge_rock",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2068,
+            "y": 40
+          }
+        ]
+      },
+      {
+        "name": "Outside Five Chest Game",
+        "access_rules": "^$outside_five_chest_game",
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 2181,
+            "y": 153
+          }
+        ]
+      },
+      {
+        "name": "Outside Mad Batter",
+        "access_rules": "^$outside_mad_batter",
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 732,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "Mad Batter",
+        "access_rules": "^$mad_batter",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 748,
+            "y": 104
+          }
+        ]
+      },
+      {
+        "name": "Access Tunnel Bombable Heart Piece",
+        "access_rules": "^$access_tunnel_bombable_heart_piece",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1183,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "Bird Key Cave",
+        "access_rules": "^$bird_key_cave",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "overworld",
+            "x": 1730,
+            "y": 104
+          }
+        ]
+      }
+    ]
+  }
+]

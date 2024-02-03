@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Eagle's Tower",
+    "access_rules": [
+      "^$d7_access"
+    ],
+    "children": [
+      {
+        "name": "Entrance Key",
+        "access_rules": "^$d7_entrance_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 744,
+            "y": 228
+          }
+        ]
+      },
+      {
+        "name": "Horse Head, Bubble Chest",
+        "access_rules": "^$d7_horse_head_bubble_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 228,
+            "y": 74
+          }
+        ]
+      },
+      {
+        "name": "Beamos Ledge Chest",
+        "access_rules": "^$d7_beamos_ledge_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 94,
+            "y": 288
+          }
+        ]
+      },
+      {
+        "name": "Switch Wrapped Chest",
+        "access_rules": "^$d7_switch_wrapped_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 252,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "name": "Three of a Kind, No Pit Chest",
+        "access_rules": "^$d7_three_of_a_kind_no_pit_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 794,
+            "y": 594
+          }
+        ]
+      },
+      {
+        "name": "Hinox Key",
+        "access_rules": "^$d7_hinox_key",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 672,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "name": "Kirby Ledge Chest",
+        "access_rules": "^$d7_kirby_ledge_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 748,
+            "y": 102
+          }
+        ]
+      },
+      {
+        "name": "Three of a Kind, Pit Chest",
+        "access_rules": "^$d7_three_of_a_kind_pit_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 518,
+            "y": 724
+          }
+        ]
+      },
+      {
+        "name": "Nightmare Key⁄After Grim Creeper Chest",
+        "access_rules": "^$d7_nightmare_key_after_grim_creeper_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 664,
+            "y": 842
+          }
+        ]
+      },
+      {
+        "name": "Mirror Shield Chest",
+        "access_rules": "^$d7_mirror_shield_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 524,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Conveyor Beamos Chest",
+        "access_rules": "^$d7_conveyor_beamos_chest",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 338,
+            "y": 680
+          }
+        ]
+      },
+      {
+        "name": "Evil Eagle Heart Container",
+        "access_rules": "^$d7_evil_eagle_heart_container",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 344,
+            "y": 828
+          }
+        ]
+      },
+      {
+        "name": "Organ of Evening Calm",
+        "access_rules": "^$d7_organ_of_evening_calm",
+        "sections": [
+          {
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dungeon7",
+            "x": 464,
+            "y": 936
+          }
+        ]
+      }
+    ]
+  }
+]

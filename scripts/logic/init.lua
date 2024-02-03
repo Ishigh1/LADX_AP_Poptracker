@@ -6,6 +6,7 @@ require(overworld .. "martha's_bay")
 require(overworld .. "ukuku_prairie")
 require(overworld .. "tal_tal_heights")
 require(overworld .. "southern_face_shrine")
+require(overworld .. "tal_tal_mountains")
 
 local dungeons = here .. "dungeons/"
 require(dungeons .. "d1")

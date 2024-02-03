@@ -26,6 +26,7 @@ Tracker:AddLocations("locations/overworld/ukuku_prairie.jsonc")
 Tracker:AddLocations("locations/overworld/martha's_bay.jsonc")
 Tracker:AddLocations("locations/overworld/tal_tal_heights.jsonc")
 Tracker:AddLocations("locations/overworld/southern_face_shrine.jsonc")
+Tracker:AddLocations("locations/overworld/tal_tal_mountains.jsonc")
 --- Dungeon
 Tracker:AddLocations("locations/dungeons/d1-tail_cave.jsonc")
 Tracker:AddLocations("locations/dungeons/d2-bottle_grotto.jsonc")

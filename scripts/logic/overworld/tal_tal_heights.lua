@@ -44,6 +44,10 @@ function tal_tal_heights()
                 has("hookshot"),
                 andA(has("feather"), difficulty("glitched"))
             )
+        ),
+        andA(
+            can_access("Tal Tal Mountains/Obstacle Cave/Entrance Exterior"),
+            has("bracelet1")
         )
     )
 end
@@ -71,8 +75,11 @@ function manbos_mambo()
     return andA(has("manbos_mambo"), can_access("Tal Tal Heights"))
 end
 
-function papahl()
-    return AccessibilityLevel.None
+function papahl() -- hibiscus_item
+    return andA(
+            has("trade_pineapple"),
+            lower_right_taltal()
+    )
 end
 
 function tal_tal_waters()

@@ -60,8 +60,8 @@
         "map_locations": [
           {
             "map": "overworld",
-            "x": 0,
-            "y": 0
+            "x": 1698,
+            "y": 1846
           }
         ]
       },
@@ -153,8 +153,8 @@
         "map_locations": [
           {
             "map": "overworld",
-            "x": 0,
-            "y": 0
+            "x": 1666,
+            "y": 1733
           }
         ]
       },
@@ -169,8 +169,8 @@
         "map_locations": [
           {
             "map": "overworld",
-            "x": 0,
-            "y": 0
+            "x": 1553,
+            "y": 1846
           }
         ]
       }
