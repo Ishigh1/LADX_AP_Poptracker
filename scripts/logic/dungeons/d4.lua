@@ -3,7 +3,7 @@
 function d4_access()
     return andA(
         can_access("Outside D4"),
-        can_access("Tal Tal Heights"),
+        can_access(tal_tal_heights),
         has("angler_key")
     )
 end

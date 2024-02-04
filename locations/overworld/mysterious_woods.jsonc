@@ -1,10 +1,7 @@
 [
   {
     "name": "Mysterious Woods South",
-    "access_rules": [
-      "$bush, ^$can_access|@Mabe Village",
-      "^$can_access|@Mysterious Woods North"
-    ],
+    "access_rules": "^$mysterious_woods_south",
     "children": [
       {
         "name": "Two Zol, Moblin Chest",
@@ -28,12 +25,7 @@
   },
   {
     "name": "Mysterious Woods North",
-    "access_rules": [
-      "powder, ^$can_access|@Mysterious Woods South",
-      "$jump, ^$can_access|@Mysterious Woods South",
-      "$jump, ^$can_access|@Toadstool",
-      "^$can_access|@Goponga Swamp"
-    ],
+    "access_rules": "^$mysterious_woods_north",
     "children": [
       {
         "name": "Tail Key Chest",
@@ -77,7 +69,7 @@
     "name": "Toadstool",
     "access_rules": [
       "^$can_access|@Forest Cave",
-      "$jump, ^$can_access|@Mysterious Woods North"
+      "$jump, ^$mysterious_woods_north"
     ],
     "sections": [
       {

@@ -18,7 +18,7 @@ require("scripts/logic/init")
 
 -- Locations
 --- Overworld
-Tracker:AddLocations("locations/overworld/mabe_village.jsonc")
+Tracker:AddLocations("locations/overworld/mabe_village.lua.jsonc")
 Tracker:AddLocations("locations/overworld/toronbo_shores.jsonc")
 Tracker:AddLocations("locations/overworld/mysterious_woods.jsonc")
 Tracker:AddLocations("locations/overworld/goponga_swamp.jsonc")
@@ -36,6 +36,7 @@ Tracker:AddLocations("locations/dungeons/d5-catfish's_maw.jsonc")
 Tracker:AddLocations("locations/dungeons/d6-face_shrine.jsonc")
 
 --Layout
+Tracker:AddLayouts("layouts/overworld_maps.jsonc")
 Tracker:AddLayouts("layouts/maps.jsonc")
 Tracker:AddLayouts("layouts/items.jsonc")
 Tracker:AddLayouts("layouts/items_vertical.jsonc")

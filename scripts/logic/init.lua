@@ -2,9 +2,12 @@ local here = "scripts/logic/"
 require(here .. "helpers")
 
 local overworld = here .. "overworld/"
-require(overworld .. "martha's_bay")
+require(overworld .. "mabe_village")
+require(overworld .. "mysterious_woods")
+require(overworld .. "goponga_swamp")
 require(overworld .. "ukuku_prairie")
 require(overworld .. "tal_tal_heights")
+require(overworld .. "martha's_bay")
 require(overworld .. "southern_face_shrine")
 require(overworld .. "tal_tal_mountains")
 

@@ -1,5 +1,8 @@
 function ukuku_prairie()
-    return andA(has("bracelet1"), can_access("Mabe Village"))
+    return andA(
+            has("bracelet1"),
+            can_access(mabe_village)
+    )
 end
 
 function boots_n_bomb_cave()

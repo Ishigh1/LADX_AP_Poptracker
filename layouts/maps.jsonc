@@ -64,6 +64,13 @@
             "dungeon6"
           ]
         }
+      },
+      {
+        "title": "Detailed Maps",
+        "content": {
+          "type": "layout",
+          "key": "overworld_maps"
+        },
       }
     ]
   }

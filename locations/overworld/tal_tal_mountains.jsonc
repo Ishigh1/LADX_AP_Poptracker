@@ -7,8 +7,22 @@
         "children": [
           {
             "name": "Entrance Exterior",
-            "access_rules": "^$obstacle_cave_entrance_exterior"
-          },
+            "access_rules": "^$obstacle_cave_entrance_exterior",
+            "sections": [
+            {
+              "item_count": 1,
+              "chest_unopened_img": "images/nothing.png"
+            }
+            ],
+              "map_locations": [
+                {
+                  "map": "tal_tal_mountains_2",
+                  "size": 5,
+                  "x": 56,
+                  "y": 169
+                }
+              ]
+            },
           {
             "name": "Entrance Interior",
             "access_rules": "^$obstacle_cave_entrance_interior"
@@ -46,6 +60,11 @@
                 "map": "overworld",
                 "x": 1360,
                 "y": 153
+              },
+              {
+                "map": "tal_tal_mountains_2",
+                "x": 233,
+                "y": 153
               }
             ]
           },
@@ -55,7 +74,21 @@
           },
           {
             "name": "Exit Exterior",
-            "access_rules": "^$obstacle_cave_middle_exterior"
+            "access_rules": "^$obstacle_cave_middle_exterior",
+            "sections": [
+              {
+                "item_count": 1,
+                "chest_unopened_img": "images/nothing.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "tal_tal_mountains_2",
+                "size": 5,
+                "x": 297,
+                "y": 137
+              }
+            ]
           }
         ]
       },
@@ -72,7 +105,7 @@
           },
           {
             "name": "Paphl Cave",
-            "access_rules": "^$papahl_cave_chest",
+            "access_rules": "^$paphl_cave",
             "sections": [
               {
                 "item_count": 1
@@ -97,35 +130,85 @@
         ]
       },
       {
-        "name": "Bridge Rock",
-        "access_rules": "^$bridge_rock",
+        "name": "Lower Right Tal Tal",
+        "access_rules": "^$lower_right_taltal"
+      },
+      {
+        "name": "Outside Rooster House",
+        "access_rules": "^$outside_rooster_house",
+        "children": [
+          {
+            "name": "Bridge Rock",
+            "access_rules": "^$bridge_rock",
+            "sections": [
+              {
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "overworld",
+                "x": 2068,
+                "y": 40
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Five Chest Game",
+        "children": [
+          {
+            "name": "Left Exterior",
+            "access_rules": "^$five_chest_game_left_exterior"
+          },
+          {
+            "name": "Right Exterior",
+            "access_rules": "^$five_chest_game_right_exterior"
+          },
+          {
+            "name": "Bottom Interior",
+            "access_rules": "^$five_chest_game_bottom_interior"
+          },
+          {
+            "name": "Top Interior",
+            "access_rules": "^$five_chest_game_top_interior"
+          },
+          {
+            "name": "Top Exterior",
+            "access_rules": "^$five_chest_game_top_exterior",
+            "children": [
+              {
+                "name": "Outside Five Chest Game",
+                "sections": [
+                  {
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "overworld",
+                    "x": 2181,
+                    "y": 153
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Water Cave Hole", // plateau between Five Chest Game Right and Rainbow Cave Left
+        "access_rules": "^$water_cave_hole"
+      },
+      {
+        "name": "Outside Mad Batter",
+        "access_rules": "^$outside_mad_batter",
         "sections": [
           {
             "item_count": 1
           }
         ],
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 2068,
-            "y": 40
-          }
-        ]
-      },
-      {
-        "name": "Outside Five Chest Game",
-        "access_rules": "^$outside_five_chest_game",
-        "map_locations": [
-          {
-            "map": "overworld",
-            "x": 2181,
-            "y": 153
-          }
-        ]
-      },
-      {
-        "name": "Outside Mad Batter",
-        "access_rules": "^$outside_mad_batter",
         "map_locations": [
           {
             "map": "overworld",

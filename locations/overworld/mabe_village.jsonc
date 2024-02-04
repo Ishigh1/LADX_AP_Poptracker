@@ -1,6 +1,7 @@
 [
   {
     "name": "Mabe Village",
+    "access_rules": "^$mabe_village",
     "children": [
       {
         "name": "Fishing Game Heart Piece",

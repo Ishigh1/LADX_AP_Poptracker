@@ -27,7 +27,7 @@ function d6_left_side()
 end
 
 function d6_top_left()
-    andA(
+    return andA(
         d6_left_side(),
         has("bracelet2")
     )

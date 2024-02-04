@@ -49,21 +49,35 @@ end
 
 local access_stack = {}
 function can_access(region_name)
-    if region_name:sub(1, 1) ~= "@" then
-        region_name = "@" .. region_name
+    if type(region_name) == "function" then
+        if access_stack[region_name] then
+            return AccessibilityLevel.None
+        else
+            access_stack[region_name] = true
+            local result = region_name()
+            access_stack[region_name] = nil
+            return result
+        end
+    else
+        if region_name:sub(1, 1) ~= "@" then
+            region_name = "@" .. region_name
+        end
+        if access_stack[region_name] then
+            return AccessibilityLevel.None
+        end
+        access_stack[region_name] = true
+        local region = Tracker:FindObjectForCode(region_name)
+        if region == nil then
+            print(region_name .. " not found!")
+            return AccessibilityLevel.None
+        end
+        local level = region.AccessibilityLevel
+        access_stack[region_name] = nil
+        if log then
+            print(region_name .. " has accessibility " .. level)
+        end
+        return level
     end
-    if access_stack[region_name] then
-        return AccessibilityLevel.None
-    end
-    access_stack[region_name] = true
-    local region = Tracker:FindObjectForCode(region_name)
-    if region == nil then
-        print(region_name .. " not found!")
-        return AccessibilityLevel.None
-    end
-    local level = region.AccessibilityLevel
-    access_stack[region_name] = nil
-    return level
 end
 
 function difficulty(target)

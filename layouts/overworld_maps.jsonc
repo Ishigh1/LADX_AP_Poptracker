@@ -1,0 +1,29 @@
+{
+  "overworld_maps": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Tal Tal Mountains",
+        "content": {
+          "type": "array",
+          "orientation": "vertical",
+          "margin": "0,0",
+          "content": [
+            {
+              "type": "map",
+              "maps": [
+                "tal_tal_mountains_1"
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "tal_tal_mountains_2"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

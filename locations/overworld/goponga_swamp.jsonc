@@ -1,9 +1,7 @@
 [
   {
     "name": "Goponga Swamp",
-    "access_rules": [
-      "^$can_access|@Mysterious Woods North"
-    ],
+    "access_rules": "^$goponga_swamp",
     "children": [
       {
         "name": "Swampy Chest",

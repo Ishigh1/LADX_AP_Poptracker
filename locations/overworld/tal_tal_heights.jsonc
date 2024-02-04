@@ -1,11 +1,39 @@
 [
   {
     "name": "Outside Windfish Egg",
-    "access_rules": "^$outside_windfish_egg"
+    "access_rules": "^$outside_windfish_egg",
+    "sections": [
+      {
+        "item_count": 1,
+        "chest_unopened_img": "images/nothing.png"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "tal_tal_mountains_1",
+        "size": 5,
+        "x": 1054,
+        "y": 225
+      }
+    ]
   },
   {
     "name": "Tal Tal Heights",
-    "access_rules": "^$tal_tal_heights"
+    "access_rules": "^$tal_tal_heights",
+    "sections": [
+      {
+        "item_count": 1,
+        "chest_unopened_img": "images/nothing.png"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "tal_tal_mountains_2",
+        "size": 5,
+        "x": 88,
+        "y": 233
+      }
+    ]
   },
   {
     "name": "Outside D4",

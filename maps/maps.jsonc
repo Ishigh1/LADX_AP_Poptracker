@@ -8,6 +8,18 @@
   },
 
   //Overworld parts
+  {
+    "name": "tal_tal_mountains_1",
+    "location_size": 14,
+    "location_border_thickness": 2,
+    "img": "images/map/overworld/tal_tal_mountains_1.png"
+  },
+  {
+    "name": "tal_tal_mountains_2",
+    "location_size": 14,
+    "location_border_thickness": 2,
+    "img": "images/map/overworld/tal_tal_mountains_2.png"
+  },
 
   //Dungeon
   {
