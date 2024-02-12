@@ -8,7 +8,11 @@ function lower_right_taltal()
             can_access(outside_rooster_house),
             orA(
                 has("flippers"),
-                has("rooster")
+                has("rooster"),
+                andA(
+                    difficulty("glitched"),
+                    has("feather")
+                )
             )
         ),
         andA(
@@ -27,7 +31,29 @@ function outside_rooster_house()
             can_access(lower_right_taltal),
             orA(
                 has("flippers"),
-                has("rooster")
+                has("rooster"),
+                andA(
+                    difficulty("glitched"),
+                    has("feather")
+                )
+            )
+        ),
+        --bird_cave
+        andA(
+            can_access(mountain_bridge_staircase),
+            orA(
+                has("hookshot"),
+                has("rooster"),
+                andA(
+                    difficulty("glitched"),
+                    has("boots"),
+                    has("feather")
+                ),
+                andA(
+                    difficulty("hell"),
+                    has("boots"),
+                    has("feather")
+                )
             )
         )
     )
@@ -39,14 +65,23 @@ function water_cave_hole()
     )
 end
 
+function outside_mad_batter() -- taltal_boulder_zone
+    return can_access(left_right_connector_cave_exit_exterior)
+end
+
 -- overworld locations
 
-function bridge_rock() -- bridge_seashell
+function bridge_rock() -- bridge_seashell / 0x00C
     return andA(
+        can_access(outside_rooster_house),
         has("bracelet1"),
         orA(
             has("feather"),
-            has("rooster")
+            has("rooster"),
+            andA(
+                difficulty("hell"),
+                has("boots")
+            )
         )
     )
 end
@@ -261,20 +296,104 @@ function five_chest_game_top_exterior() -- multichest_outside
     )
 end
 
+-- left_right_connector_cave
+
+function left_right_connector_cave_entrance_exterior()
+    return orA(
+        can_access(mountain_bridge_staircase),
+        can_access(left_right_connector_cave_entrance_interior)
+    )
+end
+
+function left_right_connector_cave_entrance_interior()
+    return orA(
+        can_access(left_right_connector_cave_entrance_exterior),
+        andA(
+            difficulty("glitched"),
+            can_access(left_right_connector_cave_exit_interior),
+            has("hookshot"),
+            has("feather")
+        ),
+        andA(
+            difficulty("hell"),
+            can_access(left_right_connector_cave_exit_interior),
+            has("rooster"),
+            orA(
+                has("boots"),
+                has("sword1"),
+                has("bow"),
+                has("rod")
+            )
+        )
+    )
+end
+
+function access_tunnel_bombable_heart_piece() -- mountain_heartpiece
+    return orA(
+        andA(
+            can_access(left_right_connector_cave_entrance_interior),
+            has("bomb")
+        ),
+        andA(
+            difficulty("glitched"),
+            can_access(obstacle_cave_middle_interior),
+            has("bomb")
+        )
+    )
+end
+
+function left_right_connector_cave_exit_interior()
+    return orA(
+        andA(
+            can_access(left_right_connector_cave_entrance_interior),
+            orA(
+                has("hookshot"),
+                has("rooster")
+            )
+        ),
+        andA(
+            difficulty("hell"),
+            can_access(left_right_connector_cave_entrance_interior),
+            has("boots"),
+            has("feather")
+        ),
+        can_access(left_right_connector_cave_exit_exterior)
+    )
+end
+
+function left_right_connector_cave_exit_exterior()
+    return orA(
+        can_access(left_right_connector_cave_exit_interior),
+        can_access(outside_mad_batter)
+    )
+end
+
 -- not implemented
 
-
-function outside_mad_batter()
-    -- Implement access rules if needed
-    return true
+function mountain_bridge_staircase()
+    return orA(
+        can_access(left_right_connector_cave_entrance_exterior),
+        andA(
+            can_access(outside_rooster_house),
+            orA(
+                has("hookshot"),
+                has("rooster"),
+                andA(
+                    difficulty("glitched"),
+                    has("boots"),
+                    has("feather")
+                ),
+                andA(
+                    difficulty("hell"),
+                    has("boots"),
+                    has("feather")
+                )
+            )
+        )
+    )
 end
 
 function mad_batter()
-    -- Implement access rules if needed
-    return true
-end
-
-function access_tunnel_bombable_heart_piece()
     -- Implement access rules if needed
     return true
 end
