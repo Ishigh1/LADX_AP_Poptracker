@@ -191,11 +191,11 @@ LOCATION_MAPPING = {
     -- [10001030] = "@Tal Tal Mountains/Outside D7 Owl",
     [10000012] = "@Tal Tal Mountains/Outside Rooster House/Bridge Rock/",
     -- [10000754] = "@Tal Tal Mountains/Five Chest Game",
-    [10000029] = "@Tal Tal Mountains/Outside Five Chest Game",
-    [10000004] = "@Tal Tal Mountains/Outside Mad Batter",
-    [10000482] = "@Tal Tal Mountains/Mad Batter",
-    [10000698] = "@Tal Tal Mountains/Access Tunnel Bombable Heart Piece",
-    [10000634] = "@Tal Tal Mountains/Bird Key Cave",
+    [10000029] = "@Tal Tal Mountains/Five Chest Game/Top Exterior/Outside Five Chest Game/",
+    [10000004] = "@Tal Tal Mountains/Outside Mad Batter/",
+    [10000482] = "@Tal Tal Mountains/Mad Batter (Tal Tal Mountains)/",
+    [10000698] = "@Tal Tal Mountains/Access Tunnel Bombable Heart Piece/",
+    [10000634] = "@Tal Tal Mountains/Bird Key Cave/",
 
     -- Eagle's Tower (D7)
     [10000528] = "@Eagle's Tower/Entrance Key/",

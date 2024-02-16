@@ -34,6 +34,7 @@ Tracker:AddLocations("locations/dungeons/d3-key_cavern.jsonc")
 Tracker:AddLocations("locations/dungeons/d4-angler's_tunnel.jsonc")
 Tracker:AddLocations("locations/dungeons/d5-catfish's_maw.jsonc")
 Tracker:AddLocations("locations/dungeons/d6-face_shrine.jsonc")
+Tracker:AddLocations("locations/dungeons/d7-eagle's_tower.jsonc")
 
 --Layout
 Tracker:AddLayouts("layouts/overworld_maps.jsonc")

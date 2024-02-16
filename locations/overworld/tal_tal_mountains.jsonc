@@ -218,8 +218,8 @@
         ]
       },
       {
-        "name": "Mad Batter",
-        "access_rules": "^$mad_batter",
+        "name": "Mad Batter (Tal Tal Mountains)",
+        "access_rules": "^$tal_tal_mountain_mad_batter_reward",
         "sections": [
           {
             "item_count": 1

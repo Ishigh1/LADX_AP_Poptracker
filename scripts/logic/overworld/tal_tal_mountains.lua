@@ -69,6 +69,29 @@ function outside_mad_batter() -- taltal_boulder_zone
     return can_access(left_right_connector_cave_exit_exterior)
 end
 
+function mountain_bridge_staircase()
+    return orA(
+        can_access(left_right_connector_cave_entrance_exterior),
+        andA(
+            can_access(outside_rooster_house),
+            orA(
+                has("hookshot"),
+                has("rooster"),
+                andA(
+                    difficulty("glitched"),
+                    has("boots"),
+                    has("feather")
+                ),
+                andA(
+                    difficulty("hell"),
+                    has("boots"),
+                    has("feather")
+                )
+            )
+        )
+    )
+end
+
 -- overworld locations
 
 function bridge_rock() -- bridge_seashell / 0x00C
@@ -368,37 +391,63 @@ function left_right_connector_cave_exit_exterior()
     )
 end
 
--- not implemented
+-- mad_batter
 
-function mountain_bridge_staircase()
+function tal_tal_mountain_mad_batter_exterior()
     return orA(
-        can_access(left_right_connector_cave_entrance_exterior),
+        can_access(tal_tal_mountain_mad_batter_interior),
         andA(
-            can_access(outside_rooster_house),
-            orA(
-                has("hookshot"),
-                has("rooster"),
-                andA(
-                    difficulty("glitched"),
-                    has("boots"),
-                    has("feather")
-                ),
-                andA(
-                    difficulty("hell"),
-                    has("boots"),
-                    has("feather")
-                )
-            )
+            can_access(outside_mad_batter),
+            has("powder")
         )
     )
 end
 
-function mad_batter()
-    -- Implement access rules if needed
-    return true
+function tal_tal_mountain_mad_batter_interior() -- taltal_madbatter
+    return can_access(tal_tal_mountain_mad_batter_exterior)
 end
 
-function bird_key_cave()
-    -- Implement access rules if needed
-    return true
+function tal_tal_mountain_mad_batter_reward() -- 0x1E2
+    return andA(
+        can_access(tal_tal_mountain_mad_batter_interior),
+        has("powder")
+    )
+end
+
+-- bird_cave
+function bird_cave_exterior() -- bird_cave
+    return orA(
+        can_access(outside_rooster_house),
+        can_access(bird_cave_interior)
+    )
+end
+
+function bird_cave_interior() -- bird_cave
+    return can_access(bird_cave_exterior)
+end
+
+function bird_key_cave() -- bird_key
+    return andA(
+        can_access(bird_cave_interior),
+        orA(
+            has("rooster"),
+            andA(
+                has("bracelet2"),
+                orA(
+                    has("feather"),
+                    difficulty("hard")
+                )
+            ),
+            andA(
+                difficulty("glitched"),
+                has("feather"),
+                has("hookshot")
+            ),
+            andA(
+                difficulty("hell"),
+                has("feather"),
+                has("boots")
+            )
+        )
+    )
 end

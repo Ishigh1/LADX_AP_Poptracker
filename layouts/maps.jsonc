@@ -66,6 +66,15 @@
         }
       },
       {
+        "title": "Eagle's Tower (D7)",
+        "content": {
+          "type": "map",
+          "maps": [
+            "dungeon7"
+          ]
+        }
+      },
+      {
         "title": "Detailed Maps",
         "content": {
           "type": "layout",
