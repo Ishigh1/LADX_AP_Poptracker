@@ -59,9 +59,14 @@ function outside_rooster_house()
     )
 end
 
-function water_cave_hole()
+function water_cave_hole() -- plateau where the hole is
     return orA(
-        can_access(five_chest_game_right_exterior)
+        can_access(five_chest_game_right_exterior),
+        can_access(right_taltal_connector1_left_exterior),
+        andA(
+            difficulty("glitched"),
+            can_access(d7_platau)
+        )
     )
 end
 
@@ -90,6 +95,29 @@ function mountain_bridge_staircase()
             )
         )
     )
+end
+
+function d7_tower()
+    return andA(
+        can_access(d7_platau),
+        has("bracelet1"),
+        has("bird_key")
+    )
+end
+
+function d7_platau()
+    return can_access(right_taltal_connector4_right_exterior)
+end
+
+function right_taltal_connector_outside1() -- todo
+    return orA(
+        can_access(right_taltal_connector1_right_exterior),
+        can_access(d7_platau)
+    )
+end
+
+function right_taltal_connector_outside2() -- todo
+
 end
 
 -- overworld locations
@@ -449,5 +477,51 @@ function bird_key_cave() -- bird_key
                 has("boots")
             )
         )
+    )
+end
+
+-- right_taltal_connector1
+
+function right_taltal_connector1_left_exterior()
+    return orA(
+        can_access(water_cave_hole),
+        can_access(right_taltal_connector1_interior)
+    )
+end
+
+function right_taltal_connector1_interior()
+    return orA(
+        can_access(right_taltal_connector1_left_exterior),
+        can_access(right_taltal_connector1_right_exterior)
+    )
+end
+
+function right_taltal_connector1_right_exterior()
+    return orA(
+        can_access(right_taltal_connector_outside1),
+        can_access(right_taltal_connector1_interior)
+    )
+end
+
+-- right_taltal_connector4
+
+function right_taltal_connector4_left_exterior()
+    return orA(
+        can_access(right_taltal_connector_outside2),
+        can_access(right_taltal_connector4_interior)
+    )
+end
+
+function right_taltal_connector4_interior()
+    return orA(
+        can_access(right_taltal_connector4_left_exterior),
+        can_access(right_taltal_connector4_right_exterior)
+    )
+end
+
+function right_taltal_connector4_right_exterior()
+    return orA(
+        can_access(d7_platau),
+        can_access(right_taltal_connector4_interior)
     )
 end

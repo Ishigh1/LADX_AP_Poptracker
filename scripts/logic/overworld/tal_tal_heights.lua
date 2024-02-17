@@ -60,13 +60,13 @@ function moblin_cave()
     )
 end
 
-function damp_cave_heart_piece()
+function damp_cave_heart_piece() -- heartpiece_swim_cave / 0x1F2
     return andA(
         has("flippers"),
         orA(
             can_access("Tal Tal Waters"),
             can_access("Water Cave Hole"),
-            can_access("D7 Plateau")
+            can_access(d7_platau)
         )
     )
 end
