@@ -48,13 +48,13 @@ function has(item, amount, amountInLogic)
 end
 
 local access_stack = {}
-function can_access(region_name)
+function can_access(region_name, key_used)
     if type(region_name) == "function" then
         if access_stack[region_name] then
             return AccessibilityLevel.None
         else
             access_stack[region_name] = true
-            local result = region_name()
+            local result = region_name(key_used or 0)
             access_stack[region_name] = nil
             return result
         end

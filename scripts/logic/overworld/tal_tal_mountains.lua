@@ -106,18 +106,23 @@ function d7_tower()
 end
 
 function d7_platau()
-    return can_access(right_taltal_connector4_right_exterior)
+    return can_access(right_taltal_connector4_top_exterior)
 end
 
-function right_taltal_connector_outside1() -- todo
+function right_taltal_connector_outside1()
     return orA(
         can_access(right_taltal_connector1_right_exterior),
+        can_access(right_taltal_connector2_exterior),
         can_access(d7_platau)
     )
 end
 
-function right_taltal_connector_outside2() -- todo
-
+function right_taltal_connector_outside2()
+    return orA(
+        can_access(right_taltal_connector3_exterior),
+        can_access(right_taltal_connector4_bottom_exterior),
+        can_access(right_fairy_exterior)
+    )
 end
 
 -- overworld locations
@@ -503,9 +508,48 @@ function right_taltal_connector1_right_exterior()
     )
 end
 
+-- right_taltal_connector2 / right_taltal_connector3
+
+function right_taltal_connector2_exterior()
+    return orA(
+        can_access(right_taltal_connector_outside1),
+        can_access(right_taltal_connector2_interior)
+    )
+end
+
+function right_taltal_connector2_interior()
+    return orA(
+        can_access(right_taltal_connector2_exterior)
+    )
+end
+
+function right_taltal_connector3_interior()
+    return orA(
+        andA(
+            can_access(right_taltal_connector2_interior),
+            orA(
+                has("feather"),
+                has("rooster")
+            ),
+            has("hookshot")
+        ),
+        andA(
+            can_access(right_taltal_connector2_interior),
+            difficulty("glitched")
+        )
+    )
+end
+
+function right_taltal_connector3_exterior()
+    return orA(
+        can_access(right_taltal_connector_outside2),
+        can_access(right_taltal_connector3_interior)
+    )
+end
+
 -- right_taltal_connector4
 
-function right_taltal_connector4_left_exterior()
+function right_taltal_connector4_bottom_exterior()
     return orA(
         can_access(right_taltal_connector_outside2),
         can_access(right_taltal_connector4_interior)
@@ -514,14 +558,30 @@ end
 
 function right_taltal_connector4_interior()
     return orA(
-        can_access(right_taltal_connector4_left_exterior),
-        can_access(right_taltal_connector4_right_exterior)
+        can_access(right_taltal_connector4_bottom_exterior),
+        can_access(right_taltal_connector4_top_exterior)
     )
 end
 
-function right_taltal_connector4_right_exterior()
+function right_taltal_connector4_top_exterior()
     return orA(
         can_access(d7_platau),
         can_access(right_taltal_connector4_interior)
     )
+end
+
+-- right fairy
+
+function right_fairy_exterior()
+    return orA(
+        andA(
+            can_access(right_taltal_connector_outside2),
+            has("bomb")
+        ),
+        can_access(right_fairy_interior)
+    )
+end
+
+function right_fairy_interior()
+    return can_access(right_fairy_exterior)
 end

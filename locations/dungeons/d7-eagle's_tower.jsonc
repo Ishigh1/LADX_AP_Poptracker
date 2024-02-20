@@ -2,7 +2,7 @@
   {
     "name": "Eagle's Tower",
     "access_rules": [
-      "^$d7_access"
+      "^$d7_tower"
     ],
     "children": [
       {
@@ -193,7 +193,7 @@
       },
       {
         "name": "Evil Eagle Heart Container",
-        "access_rules": "^$d7_evil_eagle_heart_container",
+        "access_rules": "^$d7_boss_kill",
         "sections": [
           {
             "item_count": 1
@@ -209,7 +209,7 @@
       },
       {
         "name": "Organ of Evening Calm",
-        "access_rules": "^$d7_organ_of_evening_calm",
+        "access_rules": "^$d7_boss_kill",
         "sections": [
           {
             "item_count": 1

@@ -18,4 +18,5 @@ require(dungeons .. "d3")
 require(dungeons .. "d4")
 require(dungeons .. "d5")
 require(dungeons .. "d6")
+require(dungeons .. "d7")
 

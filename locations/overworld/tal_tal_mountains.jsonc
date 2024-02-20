@@ -9,27 +9,19 @@
             "name": "Entrance Exterior",
             "access_rules": "^$obstacle_cave_entrance_exterior",
             "sections": [
-            {
-              "item_count": 1,
-              "chest_unopened_img": "images/nothing.png"
-            }
+              {
+                "item_count": 1,
+                "chest_unopened_img": "images/nothing.png"
+              }
             ],
-              "map_locations": [
-                {
-                  "map": "tal_tal_mountains_2",
-                  "size": 5,
-                  "x": 56,
-                  "y": 169
-                }
-              ]
-            },
-          {
-            "name": "Entrance Interior",
-            "access_rules": "^$obstacle_cave_entrance_interior"
-          },
-          {
-            "name": "Middle Interior",
-            "access_rules": "^$obstacle_cave_entrance_interior"
+            "map_locations": [
+              {
+                "map": "tal_tal_mountains_2",
+                "size": 5,
+                "x": 56,
+                "y": 169
+              }
+            ]
           },
           {
             "name": "Access Tunnel Interior",
@@ -69,10 +61,6 @@
             ]
           },
           {
-            "name": "Exit Interior",
-            "access_rules": "^$obstacle_cave_middle_interior"
-          },
-          {
             "name": "Exit Exterior",
             "access_rules": "^$obstacle_cave_middle_exterior",
             "sections": [
@@ -95,14 +83,6 @@
       {
         "name": "Papahl Cave",
         "children": [
-          {
-            "name": "Entrance Exterior",
-            "access_rules": "^$papahl_cave_entrance_exterior"
-          },
-          {
-            "name": "Entrance Interior",
-            "access_rules": "^$papahl_cave_entrance_interior"
-          },
           {
             "name": "Paphl Cave",
             "access_rules": "^$paphl_cave",
@@ -159,22 +139,6 @@
         "name": "Five Chest Game",
         "children": [
           {
-            "name": "Left Exterior",
-            "access_rules": "^$five_chest_game_left_exterior"
-          },
-          {
-            "name": "Right Exterior",
-            "access_rules": "^$five_chest_game_right_exterior"
-          },
-          {
-            "name": "Bottom Interior",
-            "access_rules": "^$five_chest_game_bottom_interior"
-          },
-          {
-            "name": "Top Interior",
-            "access_rules": "^$five_chest_game_top_interior"
-          },
-          {
             "name": "Top Exterior",
             "access_rules": "^$five_chest_game_top_exterior",
             "children": [
@@ -198,7 +162,8 @@
         ]
       },
       {
-        "name": "Water Cave Hole", // plateau between Five Chest Game Right and Rainbow Cave Left
+        "name": "Water Cave Hole",
+        // plateau between Five Chest Game Right and Rainbow Cave Left
         "access_rules": "^$water_cave_hole"
       },
       {
@@ -262,6 +227,24 @@
             "map": "overworld",
             "x": 1730,
             "y": 104
+          }
+        ]
+      },
+      {
+        "name": "D7 Platau",
+        "access_rules": "^$d7_platau",
+        "sections": [
+          {
+            "item_count": 1,
+            "chest_unopened_img": "images/nothing.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "tal_tal_mountains_2",
+            "size": 5,
+            "x": 1215,
+            "y": 96
           }
         ]
       }
