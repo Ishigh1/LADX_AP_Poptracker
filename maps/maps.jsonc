@@ -63,5 +63,11 @@
     "location_size": 14,
     "location_border_thickness": 2,
     "img": "images/map/dungeons/dungeon7.png"
+  },
+  {
+    "name": "dungeon8",
+    "location_size": 14,
+    "location_border_thickness": 2,
+    "img": "images/map/dungeons/dungeon8.png"
   }
 ]

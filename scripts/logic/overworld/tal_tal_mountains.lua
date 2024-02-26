@@ -106,7 +106,10 @@ function d7_tower()
 end
 
 function d7_platau()
-    return can_access(right_taltal_connector4_top_exterior)
+    return orA(
+        can_access(right_taltal_connector4_top_exterior),
+        can_access(d7_tower)
+    )
 end
 
 function right_taltal_connector_outside1()
@@ -123,6 +126,37 @@ function right_taltal_connector_outside2()
         can_access(right_taltal_connector4_bottom_exterior),
         can_access(right_fairy_exterior)
     )
+end
+
+function d8_entrance()
+    return orA(
+        can_access(d8_entrance_inside),
+        can_access(d8_phone),
+        can_access(fire_cave_top_exterior)
+    )
+end
+
+function outside_fire_cave()
+    return orA(
+        can_access(fire_cave_bottom_exterior),
+        can_access(d8_entrance),
+        can_access(outside_mad_batter)
+    )
+end
+
+-- d8 plateau
+
+function d8_entrance_inside()
+    return andA(
+        can_access(d8_entrance),
+        has("ocarina"),
+        has("song3"),
+        has("sword1")
+    )
+end
+
+function d8_phone()
+    return can_access(d8_entrance)
 end
 
 -- overworld locations
@@ -264,7 +298,7 @@ end
 function obstacle_cave_exit_exterior()
     return orA(
         can_access(obstacle_cave_exit_interior),
-        lower_right_taltal()
+        can_access(lower_right_taltal)
     )
 end
 
@@ -272,7 +306,7 @@ end
 
 function papahl_cave_entrance_exterior()
     return orA(
-        lower_right_taltal(),
+        can_access(lower_right_taltal),
         can_access(obstacle_cave_entrance_interior)
     )
 end
@@ -585,3 +619,151 @@ end
 function right_fairy_interior()
     return can_access(right_fairy_exterior)
 end
+
+-- fire_cave
+
+function fire_cave_top_exterior()
+    return orA(
+        can_access(d8_entrance),
+        can_access(fire_cave_top_interior)
+    )
+end
+
+function fire_cave_top_interior()
+    return orA(
+        can_access(fire_cave_top_exterior),
+        andA(
+            can_access(fire_cave_bottom_interior),
+            has("shield2")
+        )
+    )
+end
+
+function fire_cave_bottom_interior()
+    return orA(
+        can_access(fire_cave_bottom_interior),
+        andA(
+            can_access(fire_cave_top_interior),
+            orA(
+                has("shield2"),
+                andA(
+                    difficulty("hard"),
+                    has("boots")
+                )
+            )
+        )
+    )
+end
+
+function fire_cave_bottom_exterior()
+    return orA(
+        andA(
+            can_access(outside_fire_cave),
+            has("bomb")
+        )
+    )
+end
+
+-- class-based
+
+obstacle_cave_entrance = Ladx_location.new()
+obstacle_cave_entrance:connect_two_ways_entrance("obstacle_cave_entrance", windfish_egg, function()
+    return has("bracelet1")
+end)
+
+obstacle_cave_inside = Ladx_location.new()
+obstacle_cave_inside:connect_two_ways(obstacle_cave_entrance, function()
+    return has("sword1")
+end)
+obstacle_cave_inside:connect_one_way(obstacle_cave_entrance, function()
+    return has("feather")
+end)
+
+obstacle_cave_exit = Ladx_location.new()
+obstacle_cave_exit:connect_two_ways(obstacle_cave_inside, function()
+    return orA(
+        has("boots"),
+        has("rooster")
+    )
+end)
+
+lower_right_taltal = Ladx_location.new()
+lower_right_taltal:connect_two_ways_entrance("obstacle_cave_exit", obstacle_cave_exit)
+
+multichest_cave = Ladx_location.new()
+multichest_cave:connect_two_ways_entrance("multichest_left", lower_right_taltal, function()
+    return orA(
+        has("flippers"),
+        has("rooster")
+    )
+end)
+
+water_cave_hole = Ladx_location.new()
+water_cave_hole:connect_two_ways_entrance("multichest_right", multichest_cave)
+
+right_taltal_connector1 = Ladx_location.new()
+right_taltal_connector1:connect_two_ways_entrance("right_taltal_connector1", water_cave_hole)
+
+outside_rooster_house = Ladx_location.new()
+outside_rooster_house:connect_two_ways(lower_right_taltal, function()
+    return orA(
+        has("flippers"),
+        has("rooster")
+    )
+end)
+
+mountain_bridge_staircase = Ladx_location.new()
+mountain_bridge_staircase:connect_two_ways(outside_rooster_house, function()
+    return orA(
+        has("hookshot"),
+        has("rooster")
+    )
+end)
+
+left_right_connector_cave_entrance = Ladx_location.new()
+left_right_connector_cave_entrance:connect_two_ways_entrance("left_to_right_taltalentrance", mountain_bridge_staircase,
+    function()
+        return orA(
+            has("bomb"),
+            has("boomerang"),
+            has("powder"),
+            has("rod"),
+            has("sword1")
+        )
+    end)
+
+left_right_connector_cave_exit = Ladx_location.new()
+left_right_connector_cave_entrance:connect_one_way(left_right_connector_cave_exit, function()
+    return orA(
+        has("hookshot"),
+        has("rooster")
+    )
+end)
+
+taltal_boulder_zone = Ladx_location.new()
+taltal_boulder_zone:connect_two_ways_entrance("left_taltal_entrance", left_right_connector_cave_exit)
+
+outside_fire_cave = Ladx_location.new()
+taltal_boulder_zone:connect_one_way(outside_fire_cave)
+
+fire_cave_bottom = Ladx_location.new()
+outside_fire_cave:connect_two_ways_entrance_door_stuck("fire_cave_entrance", fire_cave_bottom, function()
+    return has("bomb")
+end)
+
+fire_cave_top = Ladx_location.new()
+fire_cave_top:connect_two_ways(fire_cave_bottom, function()
+    return has("shield2")
+end)
+
+d8_entrance = Ladx_location.new()
+d8_entrance:connect_two_ways_entrance("fire_cave_exit", fire_cave_top)
+
+d8 = Ladx_location.new("d8")
+d8_entrance:connect_two_ways_entrance_door_stuck("d8", d8, function()
+    return andA(
+        has("ocarina"),
+        has("song3"),
+        has("sword1")
+    )
+end)

@@ -1,5 +1,6 @@
 local here = "scripts/logic/"
 require(here .. "helpers")
+require(here .. "location")
 
 local overworld = here .. "overworld/"
 require(overworld .. "mabe_village")
@@ -19,4 +20,4 @@ require(dungeons .. "d4")
 require(dungeons .. "d5")
 require(dungeons .. "d6")
 require(dungeons .. "d7")
-
+require(dungeons .. "d8")

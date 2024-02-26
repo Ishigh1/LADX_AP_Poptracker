@@ -58,6 +58,8 @@ function can_access(region_name, key_used)
             access_stack[region_name] = nil
             return result
         end
+    elseif type(region_name) == "table" and getmetatable(region_name) == Ladx_location then
+        return region_name:accessibility()
     else
         if region_name:sub(1, 1) ~= "@" then
             region_name = "@" .. region_name

@@ -2,7 +2,7 @@
 --AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP = true and AUTOTRACKER_ENABLE_DEBUG_LOGGING
 
 require("scripts/autotracking/item_mapping")
-require("scripts/autotracking/location_mapping/init")
+require("scripts/autotracking/location_mapping")
 
 CUR_INDEX = -1
 SLOT_DATA = nil
