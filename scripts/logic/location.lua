@@ -62,9 +62,9 @@ function Ladx_location:connect_two_ways_entrance(name, exit, rule)
     exit:connect_one_way_entrance(name, self, rule)
 end
 
-function Ladx_location:connect_two_ways_entrance_door_stuck(name, exit, rule)
-    self:connect_one_way_entrance(name, exit, rule)
-    exit:connect_one_way_entrance(name, self)
+function Ladx_location:connect_two_ways_entrance_door_stuck(name, exit, rule1, rule2)
+    self:connect_one_way_entrance(name, exit, rule1)
+    exit:connect_one_way_entrance(name, self, rule2)
 end
 
 function Ladx_location:accessibility()
