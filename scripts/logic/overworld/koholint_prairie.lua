@@ -1,5 +1,5 @@
 witch_hut = Ladx_location.new()
-witch_hut:connect_one_way(Ladx_location.new("0x2A2"), function()
+witch_hut:connect_one_way("0x2A2", function()
     return has("toadstool")
 end)
 witch_hut:connect_two_ways_entrance("witch", witch_hut_inside)
@@ -10,7 +10,7 @@ crazy_tracy_hut:connect_two_ways(forest, function()
 end)
 
 crazy_tracy_hut_inside = Ladx_location.new()
-crazy_tracy_hut_inside:connect_one_way(Ladx_location.new("0x2F1"), function()
+crazy_tracy_hut_inside:connect_one_way("0x2F1", function()
     return can_spend(50)
 end)
 crazy_tracy_hut:connect_two_ways_entrance("crazy_tracy", crazy_tracy_hut_inside)
@@ -24,7 +24,7 @@ forest:connect_two_ways(ghost_grave, function()
     return has("bracelet1")
 end)
 
-ghost_grave:connect_one_way(Ladx_location.new("0x074"), function()
+ghost_grave:connect_one_way("0x074", function()
     return andA(
         bush(),
         has("shovel")

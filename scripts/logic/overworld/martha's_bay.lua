@@ -1,7 +1,7 @@
 -- ghost_hut_outside
 
 sword_beach_to_ghost_hut = Ladx_location.new()
-sword_beach_to_ghost_hut:connect_one_way(Ladx_location.new("0x0E5"), function()
+sword_beach_to_ghost_hut:connect_one_way("0x0E5", function()
     return has("bracelet1")
 end)
 sword_beach:connect_two_ways_entrance("sword_beach_to_ghost_hut", sword_beach_to_ghost_hut, function()
@@ -34,7 +34,7 @@ end)
 
 left_bay_area:connect_two_ways_entrance("prairie_low_phone", left_bay_area)
 
-left_bay_area:connect_one_way(Ladx_location.new("0x0E9"), function()
+left_bay_area:connect_one_way("0x0E9", function()
     return bush()
 end)
 
@@ -56,7 +56,7 @@ bay_madbatter_connector_exit:connect_two_ways(bay_madbatter_connector_entrance, 
 end)
 bay_madbatter_connector_outside = Ladx_location.new()
 bay_madbatter = Ladx_location.new()
-bay_madbatter:connect_one_way(Ladx_location.new("0x1E0"), function()
+bay_madbatter:connect_one_way("0x1E0", function()
     return has("powder")
 end)
 left_bay_area:connect_two_ways_entrance_door_stuck("prairie_madbatter_connector_entrance",
@@ -108,3 +108,13 @@ d5_entrance:connect_one_way(bay_water, function()
 end)
 d5 = Ladx_location.new()
 d5_entrance:connect_two_ways_entrance("d5", d5)
+
+mermaid_statue = Ladx_location.new("0x297-Trade")
+mermaid_statue:connect_two_ways(animal_village, function()
+    return andA(
+        has("trade_scale"),
+        has("hookshot")
+    )
+end)
+
+animal_village:connect_one_way("0x0DA")

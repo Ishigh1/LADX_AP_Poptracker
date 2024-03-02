@@ -3,7 +3,7 @@ mabe_village:connect_two_ways(forest, function()
     return bush()
 end)
 
-forest:connect_one_way(Ladx_location.new("0x071"), function()
+forest:connect_one_way("0x071", function()
     return has("bracelet1")
 end)
 
@@ -18,7 +18,7 @@ forest:connect_one_way(forest_heartpiece, function()
 end)
 
 forest_madbatter = Ladx_location.new()
-forest_madbatter:connect_one_way(Ladx_location.new("0x1E1"), function()
+forest_madbatter:connect_one_way("0x1E1", function()
     return has("powder")
 end)
 forest:connect_two_ways_entrance_door_stuck("forest_madbatter", forest_madbatter, function()
@@ -26,7 +26,7 @@ forest:connect_two_ways_entrance_door_stuck("forest_madbatter", forest_madbatter
 end)
 
 forest_cave = Ladx_location.new()
-forest_cave:connect_one_way(Ladx_location.new("0x2BD"), function()
+forest_cave:connect_one_way("0x2BD", function()
     return has("sword")
 end)
 log_cave_heartpiece = Ladx_location.new("0x2AB")

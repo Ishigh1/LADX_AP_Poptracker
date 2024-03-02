@@ -12,8 +12,8 @@ entrance_left:connect_two_ways(entrance, function()
 end)
 
 -- left side
-entrance_left:connect_one_way(Ladx_location.new("0x24D"))
-entrance_left:connect_one_way(Ladx_location.new("0x25C"), function()
+entrance_left:connect_one_way("0x24D")
+entrance_left:connect_one_way("0x25C", function()
     return attack_hookshot()
 end)
 local vire_drop_key = Ladx_location.new("0x24C")
@@ -27,7 +27,7 @@ sparks_chest:connect_two_ways(entrance_left, function()
         has("feather")
     )
 end)
-entrance_left:connect_one_way(Ladx_location.new("0x246"), function()
+entrance_left:connect_one_way("0x246", function()
     return has("rod")
 end)
 
@@ -72,7 +72,7 @@ upper_center:connect_two_ways(lower_center, function(keys)
     return has("small_key8", 1 + keys, 2), 1
 end)
 
-upper_center:connect_one_way(Ladx_location.new("0x23E"), function()
+upper_center:connect_one_way("0x23E", function()
     return attack_skeleton()
 end)
 
@@ -118,7 +118,7 @@ miniboss:connect_two_ways(miniboss_entrance, function()
         d8_can_beat_miniboss()
     )
 end)
-miniboss:connect_one_way(Ladx_location.new("0x237"))
+miniboss:connect_one_way("0x237")
 
 local up_left = Ladx_location.new()
 up_left:connect_two_ways(upper_center, function(keys)
@@ -137,20 +137,20 @@ entrance_up:connect_one_way(up_left, function()
     )
 end)
 
-up_left:connect_one_way(Ladx_location.new("0x240"))
+up_left:connect_one_way("0x240")
 
 up_left:connect_one_way(entrance_left)
-up_left:connect_one_way(Ladx_location.new("0x23D"), function()
+up_left:connect_one_way("0x23D", function()
     return has("bomb")
 end)
 up_left:connect_one_way(upper_center)
 
-up_left:connect_one_way(Ladx_location.new("0x000"))
-up_left:connect_one_way(Ladx_location.new("0x241"), function()
+up_left:connect_one_way("0x000")
+up_left:connect_one_way("0x241", function()
     return has("bow")
 end)
 
-up_left:connect_one_way(Ladx_location.new("0x23A"), function()
+up_left:connect_one_way("0x23A", function()
     return has("hookshot")
 end)
 
@@ -205,7 +205,7 @@ boss:connect_two_ways(bossdoor, function()
         d8_can_beat_boss()
     )
 end)
-boss:connect_one_way(Ladx_location.new("0x230"))
+boss:connect_one_way("0x230")
 
 -- hard
 entrance_left:connect_one_way(entrance, function()

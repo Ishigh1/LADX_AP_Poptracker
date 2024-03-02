@@ -21,10 +21,10 @@ ukuku_prairie:connect_two_ways_entrance_door_stuck("prairie_left_fairy", nil, fu
 end)
 
 prairie_left_cave2 = Ladx_location.new()
-prairie_left_cave2:connect_one_way(Ladx_location.new("0x2F4"), function()
+prairie_left_cave2:connect_one_way("0x2F4", function()
     return has("boots")
 end)
-prairie_left_cave2:connect_one_way(Ladx_location.new("0x2E5"), function()
+prairie_left_cave2:connect_one_way("0x2E5", function()
     return andA(
         has("bomb"),
         has("boots")
@@ -35,7 +35,7 @@ ukuku_prairie:connect_two_ways_entrance_door_stuck("prairie_left_cave2", prairie
 end)
 
 mamu = Ladx_location.new()
-mamu:connect_one_way(Ladx_location.new("0x2FB"), function()
+mamu:connect_one_way("0x2FB", function()
     return andA(
         has("ocarina"),
         can_spend(1480)
@@ -70,22 +70,22 @@ d3 = Ladx_location.new()
 dungeon3_entrance:connect_two_ways_entrance_door_stuck("d3", d3, function()
     return has("slime_key")
 end)
-dungeon3_entrance:connect_one_way(Ladx_location.new("0x0A5"), function()
+dungeon3_entrance:connect_one_way("0x0A5", function()
     return has("shovel")
 end)
 dungeon3_entrance:connect_one_way(ukuku_prairie)
 
 prairie_island_seashell = Ladx_location.new()
-prairie_island_seashell:connect_one_way(Ladx_location.new("0x0A6"), function()
+prairie_island_seashell:connect_one_way("0x0A6", function()
     return andA(
         has("flippers"),
         has("bush")
     )
 end)
-ukuku_prairie:connect_one_way(Ladx_location.new("0x08B"), function()
+ukuku_prairie:connect_one_way("0x08B", function()
     return has("bush")
 end)
-ukuku_prairie:connect_one_way(Ladx_location.new("0x0A4"), function()
+ukuku_prairie:connect_one_way("0x0A4", function()
     return has("boots")
 end)
 ukuku_prairie:connect_two_ways_entrance("castle_jump_cave", Ladx_location.new("0x1FD"), function()
@@ -98,12 +98,12 @@ ukuku_prairie:connect_two_ways_entrance("castle_jump_cave", Ladx_location.new("0
     )
 end)
 
-prairie_under_rock_chest:connect_one_way(Ladx_location.new("0x0B9"), function()
+prairie_under_rock_chest:connect_one_way("0x0B9", function()
     return has("bracelet1")
 end)
 
 prairie_plateau = Ladx_location.new() -- prairie plateau at the owl statue
-prairie_plateau:connect_one_way(Ladx_location.new("0x0A8"), function()
+prairie_plateau:connect_one_way("0x0A8", function()
     return has("shovel")
 end) -- at the owl statue
 

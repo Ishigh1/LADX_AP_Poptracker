@@ -36,6 +36,9 @@ local function always()
 end
 
 function Ladx_location:connect_one_way(exit, rule)
+    if type(exit) == "string" then
+        exit = Ladx_location.new(exit)
+    end
     if rule == nil then
         rule = always
     end

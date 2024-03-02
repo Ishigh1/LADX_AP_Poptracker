@@ -5,7 +5,7 @@ function can_beat_moblin_king()
     return has("sword1")
 end
 
-moblin_cave:connect_one_way(Ladx_location.new("0x2E2"), function()
+moblin_cave:connect_one_way("0x2E2", function()
     return andA(
         attack_hookshot_powder(),
         can_beat_moblin_king()

@@ -48,6 +48,48 @@ end)
 
 castle_courtyard:connect_two_ways_entrance("castle_secret_exit", castle_secret_entrance_left)
 
-bay_water:connect_one_way(Ladx_location.new("0x078"), function()
+bay_water:connect_one_way("0x078", function()
     return has("flippers")
 end)
+castle_top_outside = Ladx_location.new()
+castle_top_inside = Ladx_location.new()
+castle_frontdoor:connect_two_ways_entrance("castle_main_entrance", castle_inside, function()
+    return bush()
+end)
+castle_top_outside:connect_two_ways_entrance("castle_upper_left", castle_inside)
+castle_top_outside:connect_two_ways_entrance("castle_upper_right", castle_top_inside)
+-- GoldLeaf locations
+castle_courtyard:connect_one_way("0x05A", function()
+    return orA(
+        has("sword"),
+        has("bow"),
+        has("rod")
+    )
+end) -- Mad bomber, enemy hiding in the 6 holes
+
+crow_gold_leaf = Ladx_location.new("0x058")
+crow_gold_leaf:connect_two_ways(castle_courtyard, function()
+    return andA(
+        has("bracelet1"),
+        r.attack_hookshot_no_bomb
+    )
+end) -- Bird on tree, can't kill with bomb cause it flies off. Immune to magic_powder
+
+castle_inside:connect_one_way("0x2D2", function()
+    return attack_hookshot_powder()
+end) -- Inside the castle, kill enemies
+
+castle_inside:connect_one_way("0x2C5", function()
+    return andA(
+        has("bomb"),
+        attack_hookshot_powder()
+    )
+end) -- Inside the castle, bomb wall to reveal enemy
+
+kanalet_chain_trooper = Ladx_location.new("0x2C6")
+castle_top_inside:connect_one_way(kanalet_chain_trooper, function()
+    return andA(
+        has("bracelet1"),
+        attack_hookshot()
+    )
+end) -- Inside the castle, spinning spikeball enemy
