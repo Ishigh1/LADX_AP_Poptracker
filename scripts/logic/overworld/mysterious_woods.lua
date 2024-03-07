@@ -9,7 +9,7 @@ end)
 
 forest_heartpiece = Ladx_location.new("0x044")
 forest:connect_one_way(forest_heartpiece, function()
-    return orA(
+    return any(
         has("boomerang"),
         has("feather"),
         has("hookshot"),
@@ -40,7 +40,7 @@ forest_toadstool:connect_two_ways_entrance("toadstool_exit", forest_cave)
 hookshot_cave = Ladx_location.new()
 hookshot_cave_chest = Ladx_location.new("0x2B3")
 hookshot_cave:connect_two_ways(hookshot_cave_chest, function()
-    return orA(
+    return any(
             has("hookshot"),
             has("rooster")
     )

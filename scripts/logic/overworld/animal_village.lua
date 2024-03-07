@@ -20,7 +20,7 @@ animal_village:connect_two_ways_entrance("animal_house5", cookhouse)
 
 animal_village:connect_two_ways(bay_water)
 animal_village:connect_two_ways(ukuku_prairie, function()
-    return orA(
+    return any(
         has("hookshot"),
         has("rooster")
     )
@@ -31,7 +31,7 @@ animal_village_connector_left:connect_two_ways(animal_village_connector_right, f
     return has("boots")
 end)
 ukuku_prairie:connect_two_ways_entrance("prairie_to_animal_connector", animal_village_connector_left, function()
-    return orA(
+    return any(
         has("bomb"),
         has("boomerang"),
         has("powder"),

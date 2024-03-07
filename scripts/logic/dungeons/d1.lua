@@ -5,11 +5,11 @@ function d1_post_key()
 end
 
 function d1_boss_kill()
-    return andA(
+    return all(
         d1_post_key(),
         has("nightmare_key1"),
         has("sword1"),
-        orA(
+        any(
             difficulty("glitched"),
             has("feather")
         )
@@ -19,10 +19,10 @@ end
 -- locations
 
 function d1_two_stalfos_two_keese_chest()
-    return orA(
-        andA(
+    return any(
+        all(
             attack_hookshot_powder(),
-            orA(
+            any(
                 attack_skeleton(),
                 has("shield1"),
                 difficulty("hard")
@@ -32,10 +32,10 @@ function d1_two_stalfos_two_keese_chest()
 end
 
 function d1_feather_chest()
-    return andA(
+    return all(
         d1_post_key(),
         has("shield1"),
-        orA(
+        any(
             difficulty("hell"),
             has("sword1")
         )
@@ -43,7 +43,7 @@ function d1_feather_chest()
 end
 
 function d1_three_of_a_kind()
-    return andA(
+    return all(
         d1_post_key(),
         has("shield1"),
         attack_hookshot()
@@ -51,10 +51,10 @@ function d1_three_of_a_kind()
 end
 
 function d1_nightmare_key_chest()
-    return orA(
-        andA(d1_post_key(), has("feather")),
-        andA(has("feather"), difficulty("glitched")),
-        andA(d1_post_key(), difficulty("hell")),
-        andA(d1_post_key(), has("shield1"), difficulty("hard"), AccessibilityLevel.SequenceBreak) -- Going over the hole with a shield is fairly doable
+    return any(
+        all(d1_post_key(), has("feather")),
+        all(has("feather"), difficulty("glitched")),
+        all(d1_post_key(), difficulty("hell")),
+        all(d1_post_key(), has("shield1"), difficulty("hard"), AccessibilityLevel.SequenceBreak) -- Going over the hole with a shield is fairly doable
     )
 end

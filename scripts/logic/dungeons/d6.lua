@@ -5,19 +5,19 @@ function d6_access()
 end
 
 function d6_left_side()
-    return andA(
+    return all(
         has("bracelet1"),
-        orA(
+        any(
             has("bomb"),
             has("boomerang"),
-            andA(
+            all(
                 difficulty("glitched"),
                 has("feather")
             ),
-            andA(
+            all(
                 difficulty("hell"),
                 has("boots"),
-                orA(
+                any(
                     has("bow"),
                     has("rod")
                 )
@@ -27,7 +27,7 @@ function d6_left_side()
 end
 
 function d6_top_left()
-    return andA(
+    return all(
         d6_left_side(),
         has("bracelet2")
     )
@@ -42,7 +42,7 @@ function d6_can_beat_miniboss()
 end
 
 function d6_miniboss()
-    return andA(
+    return all(
         d6_to_miniboss(),
         has("bomb"),
         d6_can_beat_miniboss()
@@ -50,8 +50,8 @@ function d6_miniboss()
 end
 
 function d6_lower_right_side()
-    return andA(
-        orA(
+    return all(
+        any(
             has("bomb"),
             has("bow"),
             has("rod")
@@ -61,20 +61,20 @@ function d6_lower_right_side()
 end
 
 function d6_center_1()
-    return orA(
-        andA(
+    return any(
+        all(
             d6_miniboss(),
             has("bracelet2"),
-            orA(
+            any(
                 has("feather"),
-                andA(
+                all(
                     difficulty("hard"),
                     has("boots")
                 ),
                 difficulty("hell")
             )
         ),
-        andA(
+        all(
             difficulty("glitched"),
             d6_center_2_and_upper_right_side_0_keys(),
             has("bracelet1"),
@@ -84,11 +84,11 @@ function d6_center_1()
 end
 
 function d6_center_2_and_upper_right_side_0_keys()
-    return andA(
+    return all(
         difficulty("glitched"),
         d6_lower_right_side(),
         has("feather"),
-        orA(
+        any(
             has("sword1"),
             has("bow"),
             has("rod"),
@@ -98,14 +98,14 @@ function d6_center_2_and_upper_right_side_0_keys()
 end
 
 function d6_center_2_and_upper_right_side_2_keys()
-    return andA(
+    return all(
         d6_center_1(),
         has("small_key6", 2)
     )
 end
 
 function d6_center_2_and_upper_right_side()
-    return orA(
+    return any(
         d6_center_2_and_upper_right_side_0_keys(),
         d6_center_2_and_upper_right_side_2_keys()
     )
@@ -116,7 +116,7 @@ function d6_can_beat_boss()
 end
 
 function d6_boss_kill()
-    return andA(
+    return all(
         has("nightmare_key6"),
         d6_can_beat_boss()
     )
@@ -124,7 +124,7 @@ end
 
 -- locations
 function d6_mini_moldorm_spark_chest() -- 0x1CF
-    return orA(
+    return any(
         has("bomb"),
         has("bow"),
         has("rod"),
@@ -137,9 +137,9 @@ function d6_flying_heart_statue_chest() -- 0x1C9
 end
 
 function d6_l2_bracelet_chest() -- bracelet_chest
-    return andA(
+    return all(
         has("bomb"),
-        orA(
+        any(
             has("feather"),
             difficulty("hard")
         )
@@ -147,9 +147,9 @@ function d6_l2_bracelet_chest() -- bracelet_chest
 end
 
 function d6_three_wizzrobe_switch_chest() -- 0x1C0
-    return andA(
+    return all(
         has("bracelet1"),
-        orA(
+        any(
             has("bomb"),
             has("bow"),
             has("rod")
@@ -166,9 +166,9 @@ function d6_switch_star_above_statues_chest() -- 0x1B3
 end
 
 function d6_two_wizzrobe_key() -- 0x1B4
-    return andA(
+    return all(
         d6_left_side(),
-        orA(
+        any(
             has("bomb"),
             has("bow"),
             has("rod")
@@ -181,7 +181,7 @@ function d6_top_left_horse_heads_chest() -- 0x1B0
 end
 
 function d6_raft_chest() -- 0x06C
-    return andA(
+    return all(
         d6_top_left(),
         has("bracelet1")
     )
@@ -192,14 +192,14 @@ function d6_water_tektite_chest() -- 0x1BE
 end
 
 function d6_four_wizzrobe_ledge_chest() -- medicine_chest
-    return andA(
+    return all(
         d6_lower_right_side(),
-        orA(
+        any(
             has("feather"),
-            andA(
+            all(
                 difficulty("hell"),
                 has("boots"),
-                orA(
+                any(
                     has("rod"),
                     has("bow")
                 )
@@ -217,21 +217,21 @@ function d6_top_right_horse_heads_chest() -- 0x1B1
 end
 
 function d6_pot_locked_chest() -- boss_key
-    return orA(
-        andA(
+    return any(
+        all(
             has("hookshot"),
-            orA(
-                andA(
+            any(
+                all(
                     d6_center_2_and_upper_right_side_0_keys(),
                     has("small_key6", 1, 3)
                 ),
-                andA(
+                all(
                     d6_center_2_and_upper_right_side_2_keys(),
                     has("small_key6", 3)
                 )
             )
         ),
-        andA(
+        all(
             difficulty("glitched"),
             d6_lower_right_side(),
             has("feather")

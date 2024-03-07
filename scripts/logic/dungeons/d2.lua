@@ -9,30 +9,30 @@ function d2_post_torches()
 end
 
 function d2_post_switch()
-    return andA(d2_post_torches(), attack_hookshot())
+    return all(d2_post_torches(), attack_hookshot())
 end
 
 function d2_post_holes()
-    return andA(d2_post_switch(), orA(
+    return all(d2_post_switch(), any(
         has("feather"),
-        andA(has("boots"), difficulty("hell")),
-        andA(has("hookshot"), difficulty("hell"))
+        all(has("boots"), difficulty("hell")),
+        all(has("hookshot"), difficulty("hell"))
     ))
 end
 
 function d2_post_first_key()
-    return andA(
+    return all(
         d2_post_holes(), has("small_key2", 1, 3)
     )
 end
 
 function d2_post_miniboss()
-    return andA(
+    return all(
         d2_post_first_key(),
         attack_hookshot(),
-        orA(
+        any(
             has("feather"),
-            andA(
+            all(
                 has("boots"),
                 difficulty("hell")
             )
@@ -41,22 +41,22 @@ function d2_post_miniboss()
 end
 
 function d2_switch_corridor()
-    return andA(
+    return all(
         d2_post_miniboss(),
-        orA(
+        any(
             has("bracelet1"),
-            andA(has("feather"), difficulty("glitched"))
+            all(has("feather"), difficulty("glitched"))
         )
     )
 end
 
 function d2_pre_stairs()
-    return andA(
+    return all(
         d2_switch_corridor(),
         has("small_key2", 2, 5),
-        orA(
+        any(
             has("bracelet1"),
-            andA(
+            all(
                 has("hookshot"),
                 attack_pols_voice(),
                 difficulty("hell")
@@ -66,77 +66,77 @@ function d2_pre_stairs()
 end
 
 function d2_post_stairs()
-    return andA(
+    return all(
         d2_pre_stairs(),
-        orA(
+        any(
             has("bracelet1"),
-            andA(has("bomb"), difficulty("hell")),
-            andA(has("boots"), has("feather"), difficulty("hell"))
+            all(has("bomb"), difficulty("hell")),
+            all(has("boots"), has("feather"), difficulty("hell"))
         )
     )
 end
 
 function d2_boss_access()
-    return andA(
+    return all(
         d2_post_stairs(),
         has("nightmare_key2"),
-        orA(has("feather"),
-            andA(has("boots"), has("hookshot"), difficulty("hell"))
+        any(has("feather"),
+            all(has("boots"), has("hookshot"), difficulty("hell"))
         )
     )
 end
 
 function d2_boss_kill()
-    return andA(
+    return all(
         d2_boss_access(),
         has("bracelet1"),
-        orA(has("sword1"), has("rod"))
+        any(has("sword1"), has("rod"))
     )
 end
 
 -- locations
 
 function d2_hardhat_beetle_pit_chest()
-    return andA(
+    return all(
         d2_keys_for_dead_ends(),
         attack_hookshot_powder(),
-        orA(has("feather"), has("powder"))
+        any(has("feather"), has("powder"))
     )
 end
 
 function d2_mask_mimic_chest()
-    return andA(
+    return all(
         d2_keys_for_dead_ends(),
-        orA(rear_attack(), rear_attack_range())
+        any(rear_attack(), rear_attack_range())
     )
 end
 
 function d2_two_stalfos_key()
-    return andA(d2_post_torches(), attack_skeleton())
+    return all(d2_post_torches(), attack_skeleton())
 end
 
 function d2_mask_mimic_key()
-    return orA(
-        andA(d2_post_torches(), rear_attack()),
-        andA(d2_post_holes(), rear_attack_range())
+    return any(
+        all(d2_post_torches(), rear_attack()),
+        all(d2_post_holes(), rear_attack_range())
     )
 end
 
 function d2_boo_buddies_room_chest()
-    return andA(
+    return all(
         d2_post_miniboss(),
         has("small_key2", 2, 5),
-        orA(
+        any(
             has("bow"),
             fire(),
-            andA(has("sword1"), difficulty("glitched"))
+            all(has("sword1"), difficulty("glitched"))
         ))
 end
 
 function d2_enemy_order_room_chest()
-    return andA(
+    return all(
         d2_switch_corridor(),
         attack_hookshot_powder(),
-        orA(has("bracelet1"), attack_pols_voice())
+        any(has("bracelet1"), attack_pols_voice())
     )
 end

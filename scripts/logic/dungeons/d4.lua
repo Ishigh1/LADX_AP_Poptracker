@@ -1,7 +1,7 @@
 -- utils
 
 function d4_access()
-    return andA(
+    return all(
         can_access("Outside D4"),
         can_access(tal_tal_heights),
         has("angler_key")
@@ -9,12 +9,12 @@ function d4_access()
 end
 
 function d4_right_of_entrance()
-    return orA(
-        andA(
+    return any(
+        all(
             has("shield1"),
             attack_hookshot_powder()
         ),
-        andA(
+        all(
             d4_after_double_lock_0_keys(),
             has("small_key4", 2, 5)
         )
@@ -22,18 +22,18 @@ function d4_right_of_entrance()
 end
 
 function d4_rightside_crossroads()
-    return orA(
-        andA(
+    return any(
+        all(
             has("feather"),
-            orA(
+            any(
                 has("boots"),
                 difficulty("hard")
             )
         ),
-        andA(
+        all(
             difficulty("hell"),
             has("boots"),
-            orA(
+            any(
                 has("hookshot"),
                 has("small_key4", 2, 5)
             )
@@ -42,12 +42,12 @@ function d4_rightside_crossroads()
 end
 
 function d4_after_double_lock_0_keys()
-    return orA(
-        andA(
+    return any(
+        all(
             difficulty("hard"),
             has("feather")
         ),
-        andA(
+        all(
             difficulty("hell"),
             has("boots")
         )
@@ -55,10 +55,10 @@ function d4_after_double_lock_0_keys()
 end
 
 function d4_after_double_lock_2_keys()
-    return andA(
+    return all(
         d4_right_of_entrance(),
         has("small_key4", 2),
-        orA(
+        any(
             has("feather"),
             has("flippers")
         )
@@ -66,19 +66,19 @@ function d4_after_double_lock_2_keys()
 end
 
 function d4_after_double_lock()
-    return orA(
+    return any(
         d4_after_double_lock_0_keys(),
         d4_after_double_lock_2_keys()
     )
 end
 
 function d4_north_crossroads_0_keys()
-    return orA(
-        andA(
+    return any(
+        all(
             difficulty("hard"),
             has("feather")
         ),
-        andA(
+        all(
             difficulty("hell"),
             has("boots"),
             has("hookshot")
@@ -87,7 +87,7 @@ function d4_north_crossroads_0_keys()
 end
 
 function d4_north_crossroads_2_keys()
-    return andA(
+    return all(
         d4_after_double_lock_2_keys(),
         has("feather"),
         has("boots")
@@ -95,43 +95,43 @@ function d4_north_crossroads_2_keys()
 end
 
 function d4_north_crossroads()
-    return orA(
+    return any(
         d4_north_crossroads_0_keys(),
         d4_north_crossroads_2_keys()
     )
 end
 
 function d4_before_miniboss_1_keys()
-    return andA(
+    return all(
         d4_north_crossroads_0_keys(),
         has("small_key4", 1, 3)
     )
 end
 
 function d4_before_miniboss_3_keys()
-    return andA(
+    return all(
         d4_north_crossroads_2_keys(),
         has("small_key4", 3)
     )
 end
 
 function d4_before_miniboss()
-    return orA(
+    return any(
         d4_before_miniboss_1_keys(),
         d4_before_miniboss_3_keys()
     )
 end
 
 function d4_left_water_area_1_keys()
-    return orA(
-        andA(
+    return any(
+        all(
             d4_before_miniboss_1_keys(),
-            orA(
+            any(
                 has("feather"),
                 has("flippers")
             )
         ),
-        andA(
+        all(
             d4_terrace_zols_chest_1_keys(),
             attack_hookshot_powder()
         )
@@ -139,22 +139,22 @@ function d4_left_water_area_1_keys()
 end
 
 function d4_left_water_area_2_keys()
-    return andA(
+    return all(
         d4_terrace_zols_chest_2_keys(),
         attack_hookshot_powder()
     )
 end
 
 function d4_left_water_area_3_keys()
-    return orA(
-        andA(
+    return any(
+        all(
             d4_before_miniboss_3_keys(),
-            orA(
+            any(
                 has("feather"),
                 has("flippers")
             )
         ),
-        andA(
+        all(
             d4_terrace_zols_chest_3_keys(),
             attack_hookshot_powder()
         )
@@ -162,14 +162,14 @@ function d4_left_water_area_3_keys()
 end
 
 function d4_left_water_area_4_keys()
-    return andA(
+    return all(
         d4_terrace_zols_chest_4_keys(),
         attack_hookshot_powder()
     )
 end
 
 function d4_left_water_area()
-    return orA(
+    return any(
         d4_left_water_area_1_keys(),
         d4_left_water_area_2_keys(),
         d4_left_water_area_3_keys(),
@@ -182,7 +182,7 @@ function d4_can_beat_miniboss()
 end
 
 function d4_post_miniboss_2_keys()
-    return andA(
+    return all(
         d4_before_miniboss_1_keys(),
         has("small_key4", 2, 5),
         d4_can_beat_miniboss()
@@ -190,7 +190,7 @@ function d4_post_miniboss_2_keys()
 end
 
 function d4_post_miniboss_4_keys()
-    return andA(
+    return all(
         d4_before_miniboss_3_keys(),
         has("small_key4", 4, 5),
         d4_can_beat_miniboss()
@@ -198,11 +198,11 @@ function d4_post_miniboss_4_keys()
 end
 
 function d4_terrace_zols_chest_1_keys()
-    return andA(
+    return all(
         d4_before_miniboss_1_keys(),
-        orA(
+        any(
             has("flippers"),
-            andA(
+            all(
                 difficulty("glitched"),
                 has("feather")
             )
@@ -211,9 +211,9 @@ function d4_terrace_zols_chest_1_keys()
 end
 
 function d4_terrace_zols_chest_2_keys()
-    return andA(
+    return all(
         d4_post_miniboss_2_keys(),
-        orA(
+        any(
             has("bracelet1"),
             difficulty("hard")
         )
@@ -221,11 +221,11 @@ function d4_terrace_zols_chest_2_keys()
 end
 
 function d4_terrace_zols_chest_3_keys()
-    return andA(
+    return all(
         d4_before_miniboss_3_keys(),
-        orA(
+        any(
             has("flippers"),
-            andA(
+            all(
                 difficulty("glitched"),
                 has("feather")
             )
@@ -234,9 +234,9 @@ function d4_terrace_zols_chest_3_keys()
 end
 
 function d4_terrace_zols_chest_4_keys()
-    return andA(
+    return all(
         d4_post_miniboss_4_keys(),
-        orA(
+        any(
             has("bracelet1"),
             difficulty("hard")
         )
@@ -244,7 +244,7 @@ function d4_terrace_zols_chest_4_keys()
 end
 
 function d4_terrace_zols_chest()
-    return orA(
+    return any(
         d4_terrace_zols_chest_1_keys(),
         d4_terrace_zols_chest_2_keys(),
         d4_terrace_zols_chest_3_keys(),
@@ -253,35 +253,35 @@ function d4_terrace_zols_chest()
 end
 
 function d4_before_boss_base_2_keys()
-    return andA(
+    return all(
         d4_before_miniboss_1_keys(),
         has("small_key4", 2, 5)
     )
 end
 
 function d4_before_boss_base_4_keys()
-    return andA(
+    return all(
         d4_before_miniboss_3_keys(),
         has("small_key4", 4, 5)
     )
 end
 
 function d4_before_boss()
-    return orA(
-        andA(
-            orA(
+    return any(
+        all(
+            any(
                 d4_before_boss_base_2_keys(),
                 d4_before_boss_base_4_keys()
             ),
             attack_hookshot(),
             has("flippers")
         ),
-        andA(
+        all(
             difficulty("hard"),
             d4_left_water_area(),
             has("feather")
         ),
-        andA(
+        all(
             difficulty("hell"),
             d4_left_water_area(),
             has("boots")
@@ -290,13 +290,13 @@ function d4_before_boss()
 end
 
 function d4_can_beat_boss()
-    return andA(
+    return all(
         has("flippers"),
-        orA(
+        any(
             has("sword1"),
             has("rod"),
             has("bow"),
-            andA(has("bomb"), difficulty("hard"))
+            all(has("bomb"), difficulty("hard"))
         )
     )
 end
@@ -308,7 +308,7 @@ function d4_two_spiked_beetle_zol_chest()
 end
 
 function d4_crystal_chest()
-    return andA(
+    return all(
         d4_right_of_entrance(),
         has("shield1"),
         has("sword1")
@@ -316,19 +316,19 @@ function d4_crystal_chest()
 end
 
 function d4_lower_bomb_locked_watery_chest() -- pushable_block_chest
-    return andA(
+    return all(
         d4_rightside_crossroads(),
-        orA(
+        any(
             has("bomb"),
-            andA(
+            all(
                 difficulty("glitched"),
                 has("flippers")
             ),
-            andA(
+            all(
                 difficulty("hell"),
                 has("boots")
             ),
-            andA(
+            all(
                 difficulty("hell"),
                 has("feather")
             )
@@ -337,12 +337,12 @@ function d4_lower_bomb_locked_watery_chest() -- pushable_block_chest
 end
 
 function d4_upper_bomb_locked_watery_chest() -- puddle_crack_block_chest
-    return andA(
+    return all(
         d4_rightside_crossroads(),
-        orA(
+        any(
             has("bomb"),
             has("flippers"),
-            andA(
+            all(
                 difficulty("hard"),
                 has("feather")
             )
@@ -351,15 +351,15 @@ function d4_upper_bomb_locked_watery_chest() -- puddle_crack_block_chest
 end
 
 function d4_flipper_locked_before_boots_pit_chest() -- dungeon4_puddle_before_crossroads
-    return andA(
+    return all(
         d4_after_double_lock(),
-        orA(
+        any(
             has("flippers"),
-            andA(
+            all(
                 difficulty("hard"),
                 has("feather")
             ),
-            andA(
+            all(
                 difficulty("hell"),
                 has("boots"),
                 has("hookshot")
@@ -369,29 +369,29 @@ function d4_flipper_locked_before_boots_pit_chest() -- dungeon4_puddle_before_cr
 end
 
 function d4_pit_key() -- sidescroller_key
-    return orA(
-        andA(
+    return any(
+        all(
             d4_before_miniboss(),
             attack_hookshot_powder(),
             has("flippers")
         ),
-        andA(
+        all(
             difficulty("hard"),
             d4_before_miniboss(),
             has("feather"),
             has("boomerang")
         ),
-        andA(
+        all(
             difficulty("hard"),
             d4_before_miniboss(),
             has("bracelet1"),
             has("flippers")
         ),
-        andA(
+        all(
             difficulty("glitched"),
             d4_before_miniboss(),
             has("feather"),
-            orA(
+            any(
                 attack_hookshot_powder(),
                 has("bracelet1")
             )
@@ -400,11 +400,11 @@ function d4_pit_key() -- sidescroller_key
 end
 
 function d4_flipper_locked_after_boots_pit_chest() -- center_puddle_chest
-    return andA(
+    return all(
         d4_before_miniboss(),
-        orA(
+        any(
             has("flippers"),
-            andA(
+            all(
                 difficulty("hard"),
                 has("feather")
             )
@@ -425,17 +425,17 @@ function d4_flippers_chest()
 end
 
 function d4_nightmare_key_ledge_chest() -- to_the_nightmare_key
-    return orA(
-        andA(
+    return any(
+        all(
             d4_left_water_area(),
             has("feather"),
-            orA(
+            any(
                 difficulty("hard"),
                 has("flippers"),
                 has("boots")
             )
         ),
-        andA(
+        all(
             difficulty("hell"),
             d4_left_water_area(),
             has("flippers"),
@@ -445,7 +445,7 @@ function d4_nightmare_key_ledge_chest() -- to_the_nightmare_key
 end
 
 function d4_boss_kill()
-    return andA(
+    return all(
         d4_before_boss(),
         has("nightmare_key4"),
         d4_can_beat_boss()

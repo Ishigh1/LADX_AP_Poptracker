@@ -15,7 +15,7 @@ function attack_hookshot()
 end
 
 function attack_hookshot_powder()
-    return orA(
+    return any(
         has("powder"),
         attack_hookshot()
     )
@@ -62,9 +62,9 @@ function rupee_farm_ool()
 end
 
 function rupee_farm()
-    return andA(
+    return all(
         free_weapon(),
-        orA(
+        any(
             can_access("@Trendy Game"),
             can_access("@Raft")
         )
@@ -72,9 +72,9 @@ function rupee_farm()
 end
 
 function can_spend(amount)
-    return andA(
+    return all(
         has("rupee", amount),
-        orA(
+        any(
             rupee_farm(),
             rupee_farm_ool()
         )
@@ -86,7 +86,7 @@ function jump()
 end
 
 function medicine()
-    return andA(
+    return all(
         can_spend(50),
         can_access("@Crazy Tracy's House")
     )

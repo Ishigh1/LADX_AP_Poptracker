@@ -4,7 +4,7 @@ desert:connect_two_ways(animal_village, function()
 end)
 desert_lanmola = Ladx_location.new("0x0CE")
 desert_lanmola:connect_two_ways(desert, function()
-    return orA(
+    return any(
         has("bow"),
         has("sword1"),
         has("hookshot"),

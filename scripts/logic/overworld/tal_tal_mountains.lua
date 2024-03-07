@@ -1,23 +1,23 @@
 -- overworld
 function lower_right_taltal()
-    return orA(
+    return any(
         can_access(obstacle_cave_exit_exterior),
         can_access(papahl_cave_entrance_exterior),
         can_access(papahl_cave_exit_exterior),
-        andA(
+        all(
             can_access(outside_rooster_house),
-            orA(
+            any(
                 has("flippers"),
                 has("rooster"),
-                andA(
+                all(
                     difficulty("glitched"),
                     has("feather")
                 )
             )
         ),
-        andA(
+        all(
             can_access(five_chest_game_left_exterior),
-            orA(
+            any(
                 has("flippers"),
                 has("rooster")
             )
@@ -26,30 +26,30 @@ function lower_right_taltal()
 end
 
 function outside_rooster_house()
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(lower_right_taltal),
-            orA(
+            any(
                 has("flippers"),
                 has("rooster"),
-                andA(
+                all(
                     difficulty("glitched"),
                     has("feather")
                 )
             )
         ),
         --bird_cave
-        andA(
+        all(
             can_access(mountain_bridge_staircase),
-            orA(
+            any(
                 has("hookshot"),
                 has("rooster"),
-                andA(
+                all(
                     difficulty("glitched"),
                     has("boots"),
                     has("feather")
                 ),
-                andA(
+                all(
                     difficulty("hell"),
                     has("boots"),
                     has("feather")
@@ -60,10 +60,10 @@ function outside_rooster_house()
 end
 
 function water_cave_hole() -- plateau where the hole is
-    return orA(
+    return any(
         can_access(five_chest_game_right_exterior),
         can_access(right_taltal_connector1_left_exterior),
-        andA(
+        all(
             difficulty("glitched"),
             can_access(d7_platau)
         )
@@ -75,19 +75,19 @@ function outside_mad_batter() -- taltal_boulder_zone
 end
 
 function mountain_bridge_staircase()
-    return orA(
+    return any(
         can_access(left_right_connector_cave_entrance_exterior),
-        andA(
+        all(
             can_access(outside_rooster_house),
-            orA(
+            any(
                 has("hookshot"),
                 has("rooster"),
-                andA(
+                all(
                     difficulty("glitched"),
                     has("boots"),
                     has("feather")
                 ),
-                andA(
+                all(
                     difficulty("hell"),
                     has("boots"),
                     has("feather")
@@ -98,7 +98,7 @@ function mountain_bridge_staircase()
 end
 
 function d7_tower()
-    return andA(
+    return all(
         can_access(d7_platau),
         has("bracelet1"),
         has("bird_key")
@@ -106,14 +106,14 @@ function d7_tower()
 end
 
 function d7_platau()
-    return orA(
+    return any(
         can_access(right_taltal_connector4_top_exterior),
         can_access(d7_tower)
     )
 end
 
 function right_taltal_connector_outside1()
-    return orA(
+    return any(
         can_access(right_taltal_connector1_right_exterior),
         can_access(right_taltal_connector2_exterior),
         can_access(d7_platau)
@@ -121,7 +121,7 @@ function right_taltal_connector_outside1()
 end
 
 function right_taltal_connector_outside2()
-    return orA(
+    return any(
         can_access(right_taltal_connector3_exterior),
         can_access(right_taltal_connector4_bottom_exterior),
         can_access(right_fairy_exterior)
@@ -129,7 +129,7 @@ function right_taltal_connector_outside2()
 end
 
 function d8_entrance()
-    return orA(
+    return any(
         can_access(d8_entrance_inside),
         can_access(d8_phone),
         can_access(fire_cave_top_exterior)
@@ -137,7 +137,7 @@ function d8_entrance()
 end
 
 function outside_fire_cave()
-    return orA(
+    return any(
         can_access(fire_cave_bottom_exterior),
         can_access(d8_entrance),
         can_access(outside_mad_batter)
@@ -147,7 +147,7 @@ end
 -- d8 plateau
 
 function d8_entrance_inside()
-    return andA(
+    return all(
         can_access(d8_entrance),
         has("ocarina"),
         has("song3"),
@@ -162,13 +162,13 @@ end
 -- overworld locations
 
 function bridge_rock() -- bridge_seashell / 0x00C
-    return andA(
+    return all(
         can_access(outside_rooster_house),
         has("bracelet1"),
-        orA(
+        any(
             has("feather"),
             has("rooster"),
-            andA(
+            all(
                 difficulty("hell"),
                 has("boots")
             )
@@ -179,12 +179,12 @@ end
 -- obstacle_cave
 
 function obstacle_cave_entrance_exterior() -- obstacle_cave_entrance (entrance)
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(tal_tal_heights),
-            orA(
+            any(
                 has("bracelet1"),
-                andA(
+                all(
                     difficulty("glitched"),
                     has("hookshot")
                 )
@@ -195,18 +195,18 @@ function obstacle_cave_entrance_exterior() -- obstacle_cave_entrance (entrance)
 end
 
 function obstacle_cave_entrance_interior() -- obstacle_cave_entrance
-    return orA(
+    return any(
         can_access(obstacle_cave_entrance_exterior),
-        andA(
+        all(
             can_access(obstacle_cave_middle_interior),
-            orA(
+            any(
                 has("sword1"),
                 has("feather"),
-                andA(
+                all(
                     difficulty("hell"),
                     has("hookshot")
                 ),
-                andA(
+                all(
                     difficulty("hell"),
                     has("rooster"),
                     has("boots")
@@ -217,26 +217,26 @@ function obstacle_cave_entrance_interior() -- obstacle_cave_entrance
 end
 
 function obstacle_cave_middle_interior() -- obstacle_cave_inside
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(obstacle_cave_entrance_interior),
-            orA(
+            any(
                 has("sword1"),
-                andA(
+                all(
                     difficulty("hell"),
                     has("hookshot")
                 ),
-                andA(
+                all(
                     difficulty("hell"),
                     has("feather"),
                     has("boots"),
-                    orA(
+                    any(
                         has("sword1"),
                         has("rod"),
                         has("bow")
                     )
                 ),
-                andA(
+                all(
                     difficulty("hell"),
                     has("boots"),
                     has("rooster")
@@ -244,9 +244,9 @@ function obstacle_cave_middle_interior() -- obstacle_cave_inside
             )
         ),
         can_access(obstacle_cave_middle_exterior),
-        andA(
+        all(
             can_access(obstacle_cave_exit_interior),
-            orA(
+            any(
                 has("boots"),
                 has("rooster")
             )
@@ -255,13 +255,13 @@ function obstacle_cave_middle_interior() -- obstacle_cave_inside
 end
 
 function access_tunnel_interior() -- obstacle_cave_inside_chest
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(obstacle_cave_middle_interior),
-            orA(
+            any(
                 has("hookshot"),
                 has("rooster"),
-                andA(
+                all(
                     difficulty("glitched"),
                     has("feather")
                 )
@@ -272,21 +272,21 @@ function access_tunnel_interior() -- obstacle_cave_inside_chest
 end
 
 function obstacle_cave_middle_exterior() -- obstacle_cave_outside_chest
-    return orA(
+    return any(
         can_access(obstacle_cave_middle_interior),
         can_access(papahl_cave_entrance_exterior)
     )
 end
 
 function obstacle_cave_exit_interior() -- obstacle_cave_exit
-    return orA(
+    return any(
         can_access(obstacle_cave_exit_exterior),
-        andA(
+        all(
             can_access(obstacle_cave_middle_interior),
-            orA(
+            any(
                 has("boots"),
                 has("rooster"),
-                andA(
+                all(
                     difficulty("glitched"),
                     has("feather")
                 )
@@ -296,7 +296,7 @@ function obstacle_cave_exit_interior() -- obstacle_cave_exit
 end
 
 function obstacle_cave_exit_exterior()
-    return orA(
+    return any(
         can_access(obstacle_cave_exit_interior),
         can_access(lower_right_taltal)
     )
@@ -305,35 +305,35 @@ end
 -- papahl cave
 
 function papahl_cave_entrance_exterior()
-    return orA(
+    return any(
         can_access(lower_right_taltal),
         can_access(obstacle_cave_entrance_interior)
     )
 end
 
 function papahl_cave_entrance_interior()
-    return orA(
+    return any(
         can_access(papahl_cave_entrance_exterior),
         can_access(paphl_cave)
     )
 end
 
 function paphl_cave() -- papahl_cave
-    return orA(
+    return any(
         can_access(papahl_cave_entrance_interior),
         can_access(papahl_cave_exit_interior)
     )
 end
 
 function papahl_cave_exit_interior()
-    return orA(
+    return any(
         can_access(papahl_cave_exit_exterior),
         can_access(paphl_cave)
     )
 end
 
 function papahl_cave_exit_exterior() -- papahl
-    return orA(
+    return any(
         can_access(papahl_cave_exit_interior)
     )
 end
@@ -341,10 +341,10 @@ end
 -- five chest game
 
 function five_chest_game_left_exterior()
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(lower_right_taltal),
-            orA(
+            any(
                 has("flippers"),
                 has("rooster")
             )
@@ -354,16 +354,16 @@ function five_chest_game_left_exterior()
 end
 
 function five_chest_game_right_exterior()
-    return orA(
+    return any(
         can_access(five_chest_game_bottom_interior)
     )
 end
 
 function five_chest_game_bottom_interior() -- multichest_cave
-    return orA(
+    return any(
         can_access(five_chest_game_left_exterior),
         can_access(five_chest_game_right_exterior),
-        andA(
+        all(
             can_access(five_chest_game_top_interior),
             has("bomb")
         )
@@ -371,9 +371,9 @@ function five_chest_game_bottom_interior() -- multichest_cave
 end
 
 function five_chest_game_top_interior() -- multichest_cave_secret
-    return orA(
+    return any(
         can_access(five_chest_game_top_exterior),
-        andA(
+        all(
             can_access(five_chest_game_bottom_interior),
             has("bomb")
         )
@@ -381,7 +381,7 @@ function five_chest_game_top_interior() -- multichest_cave_secret
 end
 
 function five_chest_game_top_exterior() -- multichest_outside
-    return orA(
+    return any(
         can_access(five_chest_game_top_interior)
     )
 end
@@ -389,26 +389,26 @@ end
 -- left_right_connector_cave
 
 function left_right_connector_cave_entrance_exterior()
-    return orA(
+    return any(
         can_access(mountain_bridge_staircase),
         can_access(left_right_connector_cave_entrance_interior)
     )
 end
 
 function left_right_connector_cave_entrance_interior()
-    return orA(
+    return any(
         can_access(left_right_connector_cave_entrance_exterior),
-        andA(
+        all(
             difficulty("glitched"),
             can_access(left_right_connector_cave_exit_interior),
             has("hookshot"),
             has("feather")
         ),
-        andA(
+        all(
             difficulty("hell"),
             can_access(left_right_connector_cave_exit_interior),
             has("rooster"),
-            orA(
+            any(
                 has("boots"),
                 has("sword1"),
                 has("bow"),
@@ -419,12 +419,12 @@ function left_right_connector_cave_entrance_interior()
 end
 
 function access_tunnel_bombable_heart_piece() -- mountain_heartpiece
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(left_right_connector_cave_entrance_interior),
             has("bomb")
         ),
-        andA(
+        all(
             difficulty("glitched"),
             can_access(obstacle_cave_middle_interior),
             has("bomb")
@@ -433,15 +433,15 @@ function access_tunnel_bombable_heart_piece() -- mountain_heartpiece
 end
 
 function left_right_connector_cave_exit_interior()
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(left_right_connector_cave_entrance_interior),
-            orA(
+            any(
                 has("hookshot"),
                 has("rooster")
             )
         ),
-        andA(
+        all(
             difficulty("hell"),
             can_access(left_right_connector_cave_entrance_interior),
             has("boots"),
@@ -452,7 +452,7 @@ function left_right_connector_cave_exit_interior()
 end
 
 function left_right_connector_cave_exit_exterior()
-    return orA(
+    return any(
         can_access(left_right_connector_cave_exit_interior),
         can_access(outside_mad_batter)
     )
@@ -461,9 +461,9 @@ end
 -- mad_batter
 
 function tal_tal_mountain_mad_batter_exterior()
-    return orA(
+    return any(
         can_access(tal_tal_mountain_mad_batter_interior),
-        andA(
+        all(
             can_access(outside_mad_batter),
             has("powder")
         )
@@ -475,7 +475,7 @@ function tal_tal_mountain_mad_batter_interior() -- taltal_madbatter
 end
 
 function tal_tal_mountain_mad_batter_reward() -- 0x1E2
-    return andA(
+    return all(
         can_access(tal_tal_mountain_mad_batter_interior),
         has("powder")
     )
@@ -483,7 +483,7 @@ end
 
 -- bird_cave
 function bird_cave_exterior() -- bird_cave
-    return orA(
+    return any(
         can_access(outside_rooster_house),
         can_access(bird_cave_interior)
     )
@@ -494,23 +494,23 @@ function bird_cave_interior() -- bird_cave
 end
 
 function bird_key_cave() -- bird_key
-    return andA(
+    return all(
         can_access(bird_cave_interior),
-        orA(
+        any(
             has("rooster"),
-            andA(
+            all(
                 has("bracelet2"),
-                orA(
+                any(
                     has("feather"),
                     difficulty("hard")
                 )
             ),
-            andA(
+            all(
                 difficulty("glitched"),
                 has("feather"),
                 has("hookshot")
             ),
-            andA(
+            all(
                 difficulty("hell"),
                 has("feather"),
                 has("boots")
@@ -522,21 +522,21 @@ end
 -- right_taltal_connector1
 
 function right_taltal_connector1_left_exterior()
-    return orA(
+    return any(
         can_access(water_cave_hole),
         can_access(right_taltal_connector1_interior)
     )
 end
 
 function right_taltal_connector1_interior()
-    return orA(
+    return any(
         can_access(right_taltal_connector1_left_exterior),
         can_access(right_taltal_connector1_right_exterior)
     )
 end
 
 function right_taltal_connector1_right_exterior()
-    return orA(
+    return any(
         can_access(right_taltal_connector_outside1),
         can_access(right_taltal_connector1_interior)
     )
@@ -545,29 +545,29 @@ end
 -- right_taltal_connector2 / right_taltal_connector3
 
 function right_taltal_connector2_exterior()
-    return orA(
+    return any(
         can_access(right_taltal_connector_outside1),
         can_access(right_taltal_connector2_interior)
     )
 end
 
 function right_taltal_connector2_interior()
-    return orA(
+    return any(
         can_access(right_taltal_connector2_exterior)
     )
 end
 
 function right_taltal_connector3_interior()
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(right_taltal_connector2_interior),
-            orA(
+            any(
                 has("feather"),
                 has("rooster")
             ),
             has("hookshot")
         ),
-        andA(
+        all(
             can_access(right_taltal_connector2_interior),
             difficulty("glitched")
         )
@@ -575,7 +575,7 @@ function right_taltal_connector3_interior()
 end
 
 function right_taltal_connector3_exterior()
-    return orA(
+    return any(
         can_access(right_taltal_connector_outside2),
         can_access(right_taltal_connector3_interior)
     )
@@ -584,21 +584,21 @@ end
 -- right_taltal_connector4
 
 function right_taltal_connector4_bottom_exterior()
-    return orA(
+    return any(
         can_access(right_taltal_connector_outside2),
         can_access(right_taltal_connector4_interior)
     )
 end
 
 function right_taltal_connector4_interior()
-    return orA(
+    return any(
         can_access(right_taltal_connector4_bottom_exterior),
         can_access(right_taltal_connector4_top_exterior)
     )
 end
 
 function right_taltal_connector4_top_exterior()
-    return orA(
+    return any(
         can_access(d7_platau),
         can_access(right_taltal_connector4_interior)
     )
@@ -607,8 +607,8 @@ end
 -- right fairy
 
 function right_fairy_exterior()
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(right_taltal_connector_outside2),
             has("bomb")
         ),
@@ -623,16 +623,16 @@ end
 -- fire_cave
 
 function fire_cave_top_exterior()
-    return orA(
+    return any(
         can_access(d8_entrance),
         can_access(fire_cave_top_interior)
     )
 end
 
 function fire_cave_top_interior()
-    return orA(
+    return any(
         can_access(fire_cave_top_exterior),
-        andA(
+        all(
             can_access(fire_cave_bottom_interior),
             has("shield2")
         )
@@ -640,13 +640,13 @@ function fire_cave_top_interior()
 end
 
 function fire_cave_bottom_interior()
-    return orA(
+    return any(
         can_access(fire_cave_bottom_interior),
-        andA(
+        all(
             can_access(fire_cave_top_interior),
-            orA(
+            any(
                 has("shield2"),
-                andA(
+                all(
                     difficulty("hard"),
                     has("boots")
                 )
@@ -656,8 +656,8 @@ function fire_cave_bottom_interior()
 end
 
 function fire_cave_bottom_exterior()
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(outside_fire_cave),
             has("bomb")
         )
@@ -681,7 +681,7 @@ end)
 
 obstacle_cave_exit = Ladx_location.new()
 obstacle_cave_exit:connect_two_ways(obstacle_cave_inside, function()
-    return orA(
+    return any(
         has("boots"),
         has("rooster")
     )
@@ -692,7 +692,7 @@ lower_right_taltal:connect_two_ways_entrance("obstacle_cave_exit", obstacle_cave
 
 multichest_cave = Ladx_location.new()
 multichest_cave:connect_two_ways_entrance("multichest_left", lower_right_taltal, function()
-    return orA(
+    return any(
         has("flippers"),
         has("rooster")
     )
@@ -706,7 +706,7 @@ right_taltal_connector1:connect_two_ways_entrance("right_taltal_connector1", wat
 
 outside_rooster_house = Ladx_location.new()
 outside_rooster_house:connect_two_ways(lower_right_taltal, function()
-    return orA(
+    return any(
         has("flippers"),
         has("rooster")
     )
@@ -714,7 +714,7 @@ end)
 
 mountain_bridge_staircase = Ladx_location.new()
 mountain_bridge_staircase:connect_two_ways(outside_rooster_house, function()
-    return orA(
+    return any(
         has("hookshot"),
         has("rooster")
     )
@@ -723,7 +723,7 @@ end)
 left_right_connector_cave_entrance = Ladx_location.new()
 left_right_connector_cave_entrance:connect_two_ways_entrance("left_to_right_taltalentrance", mountain_bridge_staircase,
     function()
-        return orA(
+        return any(
             has("bomb"),
             has("boomerang"),
             has("powder"),
@@ -734,7 +734,7 @@ left_right_connector_cave_entrance:connect_two_ways_entrance("left_to_right_talt
 
 left_right_connector_cave_exit = Ladx_location.new()
 left_right_connector_cave_entrance:connect_one_way(left_right_connector_cave_exit, function()
-    return orA(
+    return any(
         has("hookshot"),
         has("rooster")
     )
@@ -761,7 +761,7 @@ d8_entrance:connect_two_ways_entrance("fire_cave_exit", fire_cave_top)
 
 d8 = Ladx_location.new("d8")
 d8_entrance:connect_two_ways_entrance_door_stuck("d8", d8, function()
-    return andA(
+    return all(
         has("ocarina"),
         has("song3"),
         has("sword1")

@@ -23,8 +23,8 @@ ghost_hut_outside:connect_two_ways_entrance("ghost_house", ghost_hut_inside)
 left_bay_area = Ladx_location.new()
 
 left_bay_area:connect_one_way(ghost_hut_outside, function()
-    return orA(
-        andA(
+    return any(
+        all(
             has("feather"),
             has("boots")
         ),
@@ -40,8 +40,8 @@ end)
 
 tiny_island = Ladx_location.new("0x0F8")
 tiny_island:connect_one_way(left_bay_area, function()
-    return andA(
-        orA(
+    return all(
+        any(
             has("flippers"),
             has("rooster")
         ),
@@ -62,12 +62,12 @@ end)
 left_bay_area:connect_two_ways_entrance_door_stuck("prairie_madbatter_connector_entrance",
     bay_madbatter_connector_entrance,
     function()
-        return andA(
-            orA(
+        return all(
+            any(
                 has("feather"),
                 has("rooster")
             ),
-            orA(
+            any(
                 has("sword"),
                 has("rod"),
                 has("boomerang")
@@ -90,14 +90,14 @@ bay_water:connect_two_ways(left_bay_area, function()
 end)
 fisher_under_bridge = Ladx_location.new("0x2F5-Trade")
 bay_water:add_one_way(fisher_under_bridge, function()
-    return andA(
+    return all(
         has("fishing_hook"),
         has("feather"),
         has("flippers")
     )
 end)
 bay_water:connect_one_way(Location().add("0x0C9-Trade"), function()
-    return andA(
+    return all(
         has("necklace"),
         has("flippers")
     )
@@ -111,7 +111,7 @@ d5_entrance:connect_two_ways_entrance("d5", d5)
 
 mermaid_statue = Ladx_location.new("0x297-Trade")
 mermaid_statue:connect_two_ways(animal_village, function()
-    return andA(
+    return all(
         has("trade_scale"),
         has("hookshot")
     )

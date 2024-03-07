@@ -25,7 +25,7 @@ forest:connect_two_ways(ghost_grave, function()
 end)
 
 ghost_grave:connect_one_way("0x074", function()
-    return andA(
+    return all(
         bush(),
         has("shovel")
     )
@@ -35,7 +35,7 @@ graveyard_cave_left = Ladx_location.new()
 graveyard_cave_right = Ladx_location.new()
 
 graveyard_cave_right:connect_two_ways(graveyard_cave_left, function()
-    return orA(
+    return any(
         has("feather"),
         has("rooster")
     )
@@ -43,10 +43,10 @@ end)
 
 graveyard_heartpiece = Ladx_location.new("0x2DF")
 graveyard_heartpiece:connect_two_ways(graveyard_cave_right, function()
-    return orA(
-        andA(
+    return any(
+        all(
             has("bomb"),
-            orA(
+            any(
                 has("hookshot"),
                 has("boots")
             ),

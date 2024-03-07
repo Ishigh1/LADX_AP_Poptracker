@@ -1,18 +1,18 @@
 function d7_topright_pillar_area(key_used)
-    return orA(
+    return any(
         has("small_key7", 1 + key_used),
-        andA(
+        all(
             difficulty("glitched"),
             has("feather"),
             has("sword1")
         ),
-        andA(
+        all(
             difficulty("hell"),
-            orA(
+            any(
                 has("feather"),
-                andA(
+                all(
                     has("boots"),
-                    orA(
+                    any(
                         has("bow"),
                         has("rod")
                     )
@@ -23,12 +23,12 @@ function d7_topright_pillar_area(key_used)
 end
 
 function d7_bottomleftF2_area(key_used)
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(d7_topright_pillar_area, key_used),
             attack_hookshot()
         ),
-        andA(
+        all(
             difficulty("glitched"),
             can_access(d7_kirby_ledge_chest, key_used),
             has("boots"),
@@ -38,7 +38,7 @@ function d7_bottomleftF2_area(key_used)
 end
 
 function d7_topleftF2_area(key_used)
-    return andA(
+    return all(
         can_access(d7_topright_pillar_area, key_used),
         has("feather")
     )
@@ -49,12 +49,12 @@ function d7_can_beat_miniboss()
 end
 
 function d7_final_pillar()
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(d7_three_of_a_kind_pit_chest),
             has("bracelet1")
         ),
-        andA(
+        all(
             difficulty("glitched"),
             can_access(d7_bottomleftF2_area),
             has("bomb")
@@ -63,8 +63,8 @@ function d7_final_pillar()
 end
 
 function d7_beamos_horseheads_area()
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(d7_final_pillar),
             has("nightmare_key7")
         ),
@@ -73,21 +73,21 @@ function d7_beamos_horseheads_area()
 end
 
 function d7_pre_boss()
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(d7_beamos_horseheads_area),
             has("hookshot")
         ),
-        andA(
+        all(
             difficulty("glitched"),
             can_access(d7_final_pillar),
             has("feather")
         ),
-        andA(
+        all(
             difficulty("hell"),
             can_access(d7_final_pillar),
             has("boots"),
-            orA(
+            any(
                 has("bow"),
                 has("rod")
             )
@@ -96,17 +96,17 @@ function d7_pre_boss()
 end
 
 function d7_can_beat_boss()
-    return orA(
-        andA(
-            orA(
+    return any(
+        all(
+            any(
                 has("rod"),
                 has("sword1"),
                 has("hookshot")
             ),
-            orA(
+            any(
                 has("shield2"),
-                andA(
-                    orA(
+                all(
+                    any(
                         difficulty("hard"),
                         AccessibilityLevel.SequenceBreak
                     ),
@@ -114,20 +114,20 @@ function d7_can_beat_boss()
                 )
             )
         ),
-        andA(
+        all(
             difficulty("hard"),
-            orA(
+            any(
                 has("rod"),
-                andA(
+                all(
                     has("bomb"),
                     has("bow"),
                     has("sword2")
                 )
             )
         ),
-        andA(
+        all(
             difficulty("glitched"),
-            orA(
+            any(
                 has("bomb"),
                 has("bow"),
                 has("hookshot")
@@ -137,7 +137,7 @@ function d7_can_beat_boss()
 end
 
 function d7_boss_kill()
-    return andA(
+    return all(
         d7_pre_boss(),
         d7_can_beat_boss()
     )
@@ -149,28 +149,28 @@ function d7_entrance_key() -- first_key / 0x210
 end
 
 function d7_horse_head_bubble_chest() -- topright_pillar / 0x212
-    return andA(
+    return all(
         can_access(d7_topright_pillar_area),
         has("bracelet1")
     )
 end
 
 function d7_beamos_ledge_chest() -- toprightF1_chest / 0x204
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(d7_bottomleftF2_area),
             attack_hookshot()
         ),
-        andA(
+        all(
             difficulty("glitched"),
             can_access(d7_topright_pillar_area),
             has("feather")
         ),
-        andA(
+        all(
             difficulty("hell"),
             can_access(d7_topright_pillar_area),
             has("boots"),
-            orA(
+            any(
                 has("bow"),
                 has("rod")
             )
@@ -183,11 +183,11 @@ function d7_switch_wrapped_chest() -- 0x209
 end
 
 function d7_three_of_a_kind_no_pit_chest() -- three_of_a_kind_north / 0x211
-    return andA(
+    return all(
         can_access(d7_topright_pillar_area),
-        orA(
+        any(
             attack_hookshot(),
-            andA(
+            all(
                 has("feather"),
                 has("shield1")
             )
@@ -196,33 +196,33 @@ function d7_three_of_a_kind_no_pit_chest() -- three_of_a_kind_north / 0x211
 end
 
 function d7_hinox_key() -- 0x21B
-    return andA(
+    return all(
         can_access(d7_kirby_ledge_chest),
         attack_hookshot()
     )
 end
 
 function d7_kirby_ledge_chest(key_used) -- topleftF1_chest / 0x201
-    return orA(
+    return any(
         can_access(d7_bottomleftF2_area, key_used),
         can_access(d7_topleftF2_area, key_used)
     )
 end
 
 function d7_three_of_a_kind_pit_chest() -- final_pillar_area / 0x21C
-    return andA(
+    return all(
         can_access(d7_bottomleftF2_area),
-        orA(
-            andA(
+        any(
+            all(
                 has("bomb"),
                 has("hookshot")
             ),
-            andA(
+            all(
                 difficulty("glitched"),
-                orA(
+                any(
                     attack_hookshot(),
                     has("bracelet1"),
-                    andA(
+                    all(
                         has("feather"),
                         has("shield1")
                     )
@@ -233,19 +233,19 @@ function d7_three_of_a_kind_pit_chest() -- final_pillar_area / 0x21C
 end
 
 function d7_nightmare_key_after_grim_creeper_chest() -- nightmare_key / 0x224
-    return andA(
+    return all(
         can_access(d7_bottomleftF2_area),
         d7_can_beat_miniboss()
     )
 end
 
 function d7_mirror_shield_chest() -- mirror_shield_chest / 0x21A
-    return orA(
-        andA(
+    return any(
+        all(
             can_access(d7_bottomleftF2_area),
             attack_hookshot()
         ),
-        andA(
+        all(
             can_access(d7_bottomleftF2_area, 1),
             has("small_key7", 1, 3)
         )
@@ -253,7 +253,7 @@ function d7_mirror_shield_chest() -- mirror_shield_chest / 0x21A
 end
 
 function d7_conveyor_beamos_chest() -- beamos_horseheads / 0x220
-    return andA(
+    return all(
         can_access(d7_beamos_horseheads_area),
         has("bracelet1")
     )

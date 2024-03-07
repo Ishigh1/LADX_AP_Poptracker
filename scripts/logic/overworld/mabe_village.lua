@@ -3,7 +3,7 @@ mabe_village:connect_one_way("0x2A4", function()
     return bush()
 end)
 mabe_village:connect_one_way("0x2B1", function()
-    return andA(
+    return all(
         bush(),
         can_spend(20)
     )
@@ -20,7 +20,7 @@ mabe_village:connect_one_way(marins_song, function()
 end)
 rooster_cave = Ladx_location.new()
 rooster_cave:connect_one_way("0x1E4", function()
-    return andA(
+    return all(
         has("ocarina"),
         has("song3")
     )
@@ -57,15 +57,15 @@ entry_point:connect_one_way(start_house)
 
 shop = Ladx_location.new()
 shop:connect_one_way("0x2A1", function()
-    return orA(
+    return any(
         can_spend(500),
-        has("sword")
+        has("sword1")
     )
 end)
 shop:connect_one_way("0x2A7", function()
-    return orA(
+    return any(
         can_spend(1480),
-        has("sword")
+        has("sword1")
     )
 end)
 mabe_village:connect_two_ways_entrance("shop", shop, function()
@@ -75,7 +75,7 @@ end)
 dream_hut = Ladx_location.new()
 dream_hut_right = Ladx_location.new("0x2BF")
 dream_hut_right:connect_two_ways(dream_hut, function()
-    return orA(
+    return any(
         has("boomerang"),
         has("hookshot"),
         has("feather")
@@ -86,7 +86,7 @@ dream_hut_left:connect_two_ways(dream_hut_right, function()
     return has("boots")
 end)
 mabe_village:connect_two_ways_entrance("dream_hut", dream_hut, function()
-    return has("power_bracelet")
+    return has("bracelet1")
 end)
 
 kennel = Ladx_location.new()
@@ -94,6 +94,6 @@ kennel:connect_one_way("0x2B2", function()
     return has("shovel")
 end)
 kennel:connect_one_way(Ladx_location.new("0x2B2-Trade"), function()
-    return has("ribbon")
+    return has("trade_ribbon")
 end)
 mabe_village:connect_two_ways_entrance("kennel", kennel)

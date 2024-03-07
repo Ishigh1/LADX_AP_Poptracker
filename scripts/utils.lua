@@ -98,7 +98,7 @@ function difficulty(target)
     end
 end
 
-function andA(...)
+function all(...)
     local args = { ... }
     local min = AccessibilityLevel.Normal
     for i, v in ipairs(args) do
@@ -116,7 +116,7 @@ function andA(...)
     return min
 end
 
-function orA(...)
+function any(...)
     local args = { ... }
     local max = AccessibilityLevel.None
     for i, v in ipairs(args) do

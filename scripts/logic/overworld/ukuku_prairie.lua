@@ -25,7 +25,7 @@ prairie_left_cave2:connect_one_way("0x2F4", function()
     return has("boots")
 end)
 prairie_left_cave2:connect_one_way("0x2E5", function()
-    return andA(
+    return all(
         has("bomb"),
         has("boots")
     )
@@ -36,21 +36,21 @@ end)
 
 mamu = Ladx_location.new()
 mamu:connect_one_way("0x2FB", function()
-    return andA(
+    return all(
         has("ocarina"),
         can_spend(1480)
     )
 end)
 ukuku_prairie:connect_two_ways_entrance("mamu", mamu, function()
-    return andA(
-        orA(
-            andA(
+    return all(
+        any(
+            all(
                 has("feather"),
                 has("boots")
             ),
             has("rooster")
         ),
-        orA(
+        any(
             has("hookshot"),
             has("rooster")
         ),
@@ -60,7 +60,7 @@ end)
 
 dungeon3_entrance = Ladx_location.new()
 dungeon3_entrance:connect_two_ways(ukuku_prairie, function()
-    return orA(
+    return any(
         has("feather"),
         has("rooster"),
         has("flippers")
@@ -77,7 +77,7 @@ dungeon3_entrance:connect_one_way(ukuku_prairie)
 
 prairie_island_seashell = Ladx_location.new()
 prairie_island_seashell:connect_one_way("0x0A6", function()
-    return andA(
+    return all(
         has("flippers"),
         has("bush")
     )
@@ -89,8 +89,8 @@ ukuku_prairie:connect_one_way("0x0A4", function()
     return has("boots")
 end)
 ukuku_prairie:connect_two_ways_entrance("castle_jump_cave", Ladx_location.new("0x1FD"), function()
-    return orA(
-        andA(
+    return any(
+        all(
             has("feather"),
             has("boots")
         ),
@@ -110,9 +110,9 @@ end) -- at the owl statue
 prairie_cave = Ladx_location.new()
 prairie_cave_secret_exit = Ladx_location.new()
 prairie_cave_secret_exit:connect_two_ways(prairie_cave, function()
-    return andA(
+    return all(
         has("bomb"),
-        orA(
+        any(
             has("feather"),
             has("rooster")
         )
@@ -136,7 +136,7 @@ end)
 richard_cave:connect_one_way(richard_house) -- can exit richard's cave even without leaves
 richard_cave_chest = Ladx_location.new("0x2C8")
 richard_cave_chest:add_two_ways(richard_cave, function()
-    return orA(
+    return any(
         has("feather"),
         has("hookshot"),
         has("rooster")
@@ -146,7 +146,7 @@ richard_maze = Ladx_location.new()
 ukuku_prairie:connect_two_ways_entrance("richard_house", richard_house)
 richard_maze:connect_two_ways_entrance("richard_maze", richard_cave)
 richard_maze:add_one_way(Ladx_location.new("0x0C6"), function()
-    return andA(
+    return all(
         bush(),
         shovel()
     )

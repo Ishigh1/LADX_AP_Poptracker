@@ -1,6 +1,6 @@
 graveyard = Ladx_location.new()
 graveyard:connect_two_ways(forest, function()
-    return orA(
+    return any(
             has("feather"),
             has("rooster"),
             has("bracelet1")

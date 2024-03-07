@@ -37,7 +37,7 @@ castle_inside:connect_one_way(castle_frontdoor, function()
 end)
 
 next_to_castle:connect_two_ways_entrance("castle_secret_entrance", castle_secret_entrance_right, function()
-    return orA(
+    return any(
         has("bomb"),
         has("boomerang"),
         has("powder"),
@@ -60,7 +60,7 @@ castle_top_outside:connect_two_ways_entrance("castle_upper_left", castle_inside)
 castle_top_outside:connect_two_ways_entrance("castle_upper_right", castle_top_inside)
 -- GoldLeaf locations
 castle_courtyard:connect_one_way("0x05A", function()
-    return orA(
+    return any(
         has("sword"),
         has("bow"),
         has("rod")
@@ -69,7 +69,7 @@ end) -- Mad bomber, enemy hiding in the 6 holes
 
 crow_gold_leaf = Ladx_location.new("0x058")
 crow_gold_leaf:connect_two_ways(castle_courtyard, function()
-    return andA(
+    return all(
         has("bracelet1"),
         r.attack_hookshot_no_bomb
     )
@@ -80,7 +80,7 @@ castle_inside:connect_one_way("0x2D2", function()
 end) -- Inside the castle, kill enemies
 
 castle_inside:connect_one_way("0x2C5", function()
-    return andA(
+    return all(
         has("bomb"),
         attack_hookshot_powder()
     )
@@ -88,7 +88,7 @@ end) -- Inside the castle, bomb wall to reveal enemy
 
 kanalet_chain_trooper = Ladx_location.new("0x2C6")
 castle_top_inside:connect_one_way(kanalet_chain_trooper, function()
-    return andA(
+    return all(
         has("bracelet1"),
         attack_hookshot()
     )
